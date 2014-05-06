@@ -78,4 +78,29 @@
 (for ((i 5)) (> i 0) () (display i) (set! i (- i 2)) (newline))
 
 
+; Stream mocnin 0 ~ infty
+
+(define-macro cons-stream
+  (lambda (a b)
+    `(cons ,a (delay ,b))))
+
+(define stream-car car)
+
+(define stream-cdr
+  (lambda (stream)
+    (force (cdr stream))))
+
+(define powers (let iter ((i 0))
+                   (cons-stream 
+                    (lambda (x) (expt x i)) 
+                    (iter (+ i 1)))))
+
+(newline)
+
+((stream-car powers) 2)
+((stream-car (stream-cdr powers)) 2)
+((stream-car (stream-cdr (stream-cdr powers))) 2)
+((stream-car (stream-cdr (stream-cdr (stream-cdr powers)))) 2)
+
+
 
