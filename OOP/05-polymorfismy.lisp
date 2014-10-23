@@ -589,4 +589,3 @@
 (set-window flag win)
 (set-shape win flag)
 (redraw win)
-(+ 2 2)
