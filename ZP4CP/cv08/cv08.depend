@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1428417213 source:/home/kamil/Dropbox/UPOL/4semestr/ZP4CP/cv08/main.cpp
+	<iostream>
+	<string>
+	<regex>
+	"Cas.cpp"
+
+1428215844 /home/kamil/Dropbox/UPOL/4semestr/ZP4CP/cv08/Cas.cpp
+

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1424794914 source:/home/kamil/Dropbox/UPOL/4semestr/ZP4CP/cv02/cv02.cpp
+	<iostream>
+	<string>
+	<vector>
+	<algorithm>
+

@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1427811571 source:/home/kamil/Dropbox/UPOL/4semestr/ZP4CP/cv07/main.cpp
+	<iostream>
+	<string>
+	<string.h>
+	<unordered_map>
+	"Ovoce.cpp"
+
+1427810193 /home/kamil/Dropbox/UPOL/4semestr/ZP4CP/cv07/Ovoce.cpp
+

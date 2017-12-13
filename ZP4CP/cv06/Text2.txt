@@ -1,0 +1,13 @@
+
+In 2011, the new C++ standard was finished. 
+
+Many new features were added around this time, the most notable of which are virtual functions, function overloading, 
+references with the & symbol, the const keyword, and single-line comments using two forward slashes. 
+
+Some of the new features included regular expression support, 
+a comprehensive randomization library, a new C++ time library, atomics support, a standard threading library , a new for loop 
+          syntax providing functionality similar to foreach loops in certain other languages, 
+the auto keyword, new unordered set and map container classes, and better support for unions and array-initialization 
+lists.
+
+The ++ operator in the C language is an operator for incrementing a variable. 

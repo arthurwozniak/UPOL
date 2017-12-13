@@ -450,7 +450,7 @@
 ; napsat funkci make-eu-flag - nakreslení vlajky eu
 
 (defvar *unit*)
-(setf *unit* 500)
+(setf *unit* 150)
 
 (defmethod make-star (n r1 r2)
   (unless (and (typep n 'number)
@@ -487,23 +487,6 @@
     (set-y p3 (* side-b ref))
     (set-x p4 0)
     (set-y p4 (* side-b ref))
-    (set-items my-poly (list p1 p2 p3 p4))
-    my-poly))
-
-(defmethod make-background ()
-  (let ((p1 (make-instance 'point))
-        (p2 (make-instance 'point))
-        (p3 (make-instance 'point))
-        (p4 (make-instance 'point))
-        (my-poly (make-instance 'polygon)))
-    (set-x p1 0)
-    (set-y p1 0)
-    (set-x p2 (* 3 *unit*))
-    (set-y p2 0)
-    (set-x p3 (* 3 *unit*))
-    (set-y p3 (* 2 *unit*))
-    (set-x p4 0)
-    (set-y p4 (* 2 *unit*))
     (set-items my-poly (list p1 p2 p3 p4))
     my-poly))
 
@@ -584,7 +567,7 @@
     
 
 
-(setf flag (make-usa-flag))
+(setf flag (make-eu-flag))
 (setf win (make-instance 'window))
 (set-window flag win)
 (set-shape win flag)
