@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/meter_item_name"
+        android:textSize="24sp"
+         />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/low_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/meter_item_low_lbl"
+            android:layout_marginRight="5dp"
+            android:textSize="13sp" />
+        <TextView
+            android:text="5678"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/meter_item_low_val"
+            android:layout_marginRight="10dp"
+            android:textSize="13sp" />
+        <TextView
+            android:text="@string/high_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/meter_item_high_lbl"
+            android:layout_marginRight="5dp"
+            android:textSize="13sp" />
+        <TextView
+            android:text="1234"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/meter_item_high_val"
+            android:layout_marginRight="10dp"
+            android:textSize="13sp" />
+        </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/last_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/meter_item_last_update_lbl"
+            android:layout_marginRight="5dp"
+            android:textSize="13sp" />
+        <TextView
+            android:text="1234"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/meter_item_last_update_val"
+            android:layout_marginRight="10dp"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

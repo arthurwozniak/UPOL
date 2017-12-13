@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">DeMeter</string>
+    <string name="action_settings">Settings</string>
+    <string name="meter_name">Name</string>
+    <string name="action_new_meter">New meter</string>
+    <string name="save">Save</string>
+    <string name="high_value">High value:</string>
+    <string name="low_value">Low value:</string>
+    <string name="meter">Meter</string>
+    <string name="time">Time</string>
+    <string name="date">Date</string>
+    <string name="title_activity_meter_overview">Overview of meter</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="last_update">Updated:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="setting_change_name">Change name</string>
+    <string name="delete">Delete meter</string>
+    <string name="no_data">no data</string>
+    <string name="never">never</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

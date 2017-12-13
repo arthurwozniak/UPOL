@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">DeMeter</string>
+    <string name="action_settings">Nastavení</string>
+    <string name="meter_name">Název</string>
+    <string name="action_new_meter">Nové měřidlo</string>
+    <string name="save">Uložit</string>
+    <string name="high_value">Vysoký tarif</string>
+    <string name="low_value">Nízký tarif</string>
+    <string name="meter">Měřidlo</string>
+    <string name="time">Čas</string>
+    <string name="date">Den</string>
+    <string name="title_activity_meter_overview">Přehled měřidla</string>
+    <string name="last_update">Aktualizováno:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="setting_change_name">Změnit jméno</string>
+    <string name="delete">Smazat měřidlo</string>
+    <string name="no_data">žádná data</string>
+    <string name="never">nikdy</string>
+</resources>
