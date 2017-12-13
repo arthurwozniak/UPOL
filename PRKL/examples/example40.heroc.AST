@@ -1,0 +1,254 @@
+Function print_string
+Arguments: 
+	Identifier: string
+	Identifier: n
+Body: 
+	Block
+		WhileExpression
+		Condition: 
+			Identifier: n
+		Statement: 
+			Block
+				FunctionCall print_char
+				Arguments: 
+					UnaryExpression
+					Operation: *
+					Expression: 
+						Identifier: string
+				BinaryExpression
+				Operation: +=
+				Left: 
+					Identifier: string
+				Right: 
+					Number: 8
+				PostfixExpression
+				Operation: --
+				Expression: 
+					Identifier: n
+		FunctionCall print_nl
+Function swap
+Arguments: 
+	Identifier: s
+	Identifier: i
+	Identifier: j
+Body: 
+	Block
+		Variable
+			Identifier: temp
+			Type: VariableType.LONG
+			SubscriptExpression
+			Expression: 
+				Identifier: s
+			Inner Expression: 
+				Identifier: i
+		BinaryExpression
+		Operation: =
+		Left: 
+			SubscriptExpression
+			Expression: 
+				Identifier: s
+			Inner Expression: 
+				Identifier: i
+		Right: 
+			SubscriptExpression
+			Expression: 
+				Identifier: s
+			Inner Expression: 
+				Identifier: j
+		BinaryExpression
+		Operation: =
+		Left: 
+			SubscriptExpression
+			Expression: 
+				Identifier: s
+			Inner Expression: 
+				Identifier: j
+		Right: 
+			Identifier: temp
+Function copy
+Arguments: 
+	Identifier: array
+	Identifier: n
+Body: 
+	Block
+		Variable
+			Identifier: i
+			Type: VariableType.LONG
+			Number: 0
+		ForExpression
+		Initial value: 
+			BinaryExpression
+			Operation: =
+			Left: 
+				Identifier: i
+			Right: 
+				Identifier: n
+		Condition: 
+			BinaryExpression
+			Operation: >=
+			Left: 
+				Identifier: i
+			Right: 
+				Number: 0
+		Step: 
+			PostfixExpression
+			Operation: --
+			Expression: 
+				Identifier: i
+		Statement: 
+			Block
+				BinaryExpression
+				Operation: =
+				Left: 
+					SubscriptExpression
+					Expression: 
+						Identifier: array
+					Inner Expression: 
+						BinaryExpression
+						Operation: +
+						Left: 
+							Identifier: i
+						Right: 
+							Identifier: n
+				Right: 
+					SubscriptExpression
+					Expression: 
+						Identifier: array
+					Inner Expression: 
+						Identifier: i
+Function permute
+Arguments: 
+	Identifier: string
+	Identifier: k
+	Identifier: n
+Body: 
+	Block
+		IfStatement
+		Condition: 
+			BinaryExpression
+			Operation: >=
+			Left: 
+				Identifier: k
+			Right: 
+				Identifier: n
+		Then: 
+			Block
+				FunctionCall print_string
+				Arguments: 
+					Identifier: string
+					Identifier: n
+		Else: 
+			Block
+				Variable
+					Identifier: i
+					Type: VariableType.LONG
+					Number: 0
+				ForExpression
+				Initial value: 
+					BinaryExpression
+					Operation: =
+					Left: 
+						Identifier: i
+					Right: 
+						Identifier: k
+				Condition: 
+					BinaryExpression
+					Operation: <
+					Left: 
+						Identifier: i
+					Right: 
+						Identifier: n
+				Step: 
+					PostfixExpression
+					Operation: ++
+					Expression: 
+						Identifier: i
+				Statement: 
+					Block
+						FunctionCall swap
+						Arguments: 
+							Identifier: string
+							Identifier: k
+							Identifier: i
+						FunctionCall copy
+						Arguments: 
+							Identifier: string
+							Identifier: n
+						FunctionCall permute
+						Arguments: 
+							BinaryExpression
+							Operation: +
+							Left: 
+								Identifier: string
+							Right: 
+								Identifier: n
+							BinaryExpression
+							Operation: +
+							Left: 
+								Identifier: k
+							Right: 
+								Number: 1
+							Identifier: n
+Function permutations
+Arguments: 
+	Identifier: string
+	Identifier: n
+Body: 
+	Block
+		FunctionCall permute
+		Arguments: 
+			Identifier: string
+			Number: 0
+			Identifier: n
+Function main
+Arguments: 
+Body: 
+	Block
+		Variable
+			Identifier: s
+			Type: VariableType.ARRAY
+		Variable
+			Identifier: i
+			Type: VariableType.LONG
+			Number: 0
+		ForExpression
+		Initial value: 
+			BinaryExpression
+			Operation: =
+			Left: 
+				Identifier: i
+			Right: 
+				Number: 0
+		Condition: 
+			BinaryExpression
+			Operation: <=
+			Left: 
+				Identifier: i
+			Right: 
+				Number: 3
+		Step: 
+			PostfixExpression
+			Operation: ++
+			Expression: 
+				Identifier: i
+		Statement: 
+			Block
+				BinaryExpression
+				Operation: =
+				Left: 
+					SubscriptExpression
+					Expression: 
+						Identifier: s
+					Inner Expression: 
+						Identifier: i
+				Right: 
+					BinaryExpression
+					Operation: +
+					Left: 
+						Identifier: i
+					Right: 
+						Number: 65
+		FunctionCall permutations
+		Arguments: 
+			Identifier: s
+			Number: 4

@@ -1,0 +1,100 @@
+Function fa
+Arguments: 
+	Identifier: n
+Body: 
+	Block
+		JumpStatement
+		Type: JumpStatementType.RETURN
+		Return value: 
+			IfEvalStatement
+			Condition: 
+				BinaryExpression
+				Operation: <=
+				Left: 
+					Identifier: n
+				Right: 
+					Number: 1
+			Then: 
+				Number: 1
+			Else: 
+				BinaryExpression
+				Operation: *
+				Left: 
+					Identifier: n
+				Right: 
+					FunctionCall fb
+					Arguments: 
+						BinaryExpression
+						Operation: -
+						Left: 
+							Identifier: n
+						Right: 
+							Number: 1
+Function fb
+Arguments: 
+	Identifier: n
+Body: 
+	Block
+		JumpStatement
+		Type: JumpStatementType.RETURN
+		Return value: 
+			IfEvalStatement
+			Condition: 
+				BinaryExpression
+				Operation: <=
+				Left: 
+					Identifier: n
+				Right: 
+					Number: 1
+			Then: 
+				Number: 1
+			Else: 
+				BinaryExpression
+				Operation: *
+				Left: 
+					Identifier: n
+				Right: 
+					FunctionCall fa
+					Arguments: 
+						BinaryExpression
+						Operation: -
+						Left: 
+							Identifier: n
+						Right: 
+							Number: 1
+Function main
+Arguments: 
+Body: 
+	Block
+		Variable
+			Identifier: n
+			Type: VariableType.LONG
+			Number: 0
+		ForExpression
+		Initial value: 
+			BinaryExpression
+			Operation: =
+			Left: 
+				Identifier: n
+			Right: 
+				Number: 0
+		Condition: 
+			BinaryExpression
+			Operation: <
+			Left: 
+				Identifier: n
+			Right: 
+				Number: 10
+		Step: 
+			PostfixExpression
+			Operation: ++
+			Expression: 
+				Identifier: n
+		Statement: 
+			Block
+				FunctionCall print_long
+				Arguments: 
+					FunctionCall fa
+					Arguments: 
+						Identifier: n
+				FunctionCall print_nl

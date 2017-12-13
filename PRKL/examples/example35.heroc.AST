@@ -1,0 +1,96 @@
+Function helper
+Arguments: 
+	Identifier: foo
+Body: 
+	Block
+		FunctionCall print_long
+		Arguments: 
+			Identifier: foo
+		FunctionCall print_nl
+		Block
+			Variable
+				Identifier: arg
+				Type: VariableType.LONG
+				Identifier: foo
+			Variable
+				Identifier: foo
+				Type: VariableType.LONG
+				BinaryExpression
+				Operation: +
+				Left: 
+					Identifier: arg
+				Right: 
+					Number: 111
+			FunctionCall print_long
+			Arguments: 
+				Identifier: foo
+			FunctionCall print_nl
+			Block
+				Variable
+					Identifier: bar
+					Type: VariableType.LONG
+					Identifier: foo
+				Variable
+					Identifier: foo
+					Type: VariableType.LONG
+					BinaryExpression
+					Operation: *
+					Left: 
+						Identifier: bar
+					Right: 
+						Number: 2
+				FunctionCall print_long
+				Arguments: 
+					Identifier: foo
+				FunctionCall print_nl
+			FunctionCall print_long
+			Arguments: 
+				Identifier: foo
+			FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			Identifier: foo
+		FunctionCall print_nl
+		JumpStatement
+		Type: JumpStatementType.RETURN
+		Return value: 
+			Number: 0
+Function main
+Arguments: 
+Body: 
+	Block
+		Variable
+			Identifier: foo
+			Type: VariableType.LONG
+			Number: 111
+		FunctionCall print_long
+		Arguments: 
+			Identifier: foo
+		FunctionCall print_nl
+		FunctionCall helper
+		Arguments: 
+			Identifier: foo
+		FunctionCall print_long
+		Arguments: 
+			Identifier: foo
+		FunctionCall print_nl
+		Block
+			Variable
+				Identifier: foo
+				Type: VariableType.LONG
+				Number: 222
+			FunctionCall print_long
+			Arguments: 
+				Identifier: foo
+			FunctionCall print_nl
+			FunctionCall helper
+			Arguments: 
+				Identifier: foo
+			FunctionCall print_long
+			Arguments: 
+				Identifier: foo
+			FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			Identifier: foo
+		FunctionCall print_nl

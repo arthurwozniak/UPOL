@@ -1,0 +1,158 @@
+Function fill_array
+Arguments: 
+	Identifier: array
+	Identifier: begin
+	Identifier: size
+Body: 
+	Block
+		Variable
+			Identifier: i
+			Type: VariableType.LONG
+			Number: 0
+		ForExpression
+		Initial value: 
+			BinaryExpression
+			Operation: =
+			Left: 
+				Identifier: i
+			Right: 
+				Number: 0
+		Condition: 
+			BinaryExpression
+			Operation: <
+			Left: 
+				Identifier: i
+			Right: 
+				Identifier: size
+		Step: 
+			PostfixExpression
+			Operation: ++
+			Expression: 
+				Identifier: i
+		Statement: 
+			Block
+				BinaryExpression
+				Operation: =
+				Left: 
+					SubscriptExpression
+					Expression: 
+						Identifier: array
+					Inner Expression: 
+						Identifier: i
+				Right: 
+					BinaryExpression
+					Operation: +
+					Left: 
+						Identifier: begin
+					Right: 
+						Identifier: i
+Function print_comma
+Arguments: 
+Body: 
+	Block
+		FunctionCall print_char
+		Arguments: 
+			Number: 44
+		FunctionCall print_char
+		Arguments: 
+			Number: 32
+Function print_array
+Arguments: 
+	Identifier: array
+	Identifier: size
+Body: 
+	Block
+		Variable
+			Identifier: i
+			Type: VariableType.LONG
+			Number: 0
+		ForExpression
+		Initial value: 
+			BinaryExpression
+			Operation: =
+			Left: 
+				Identifier: i
+			Right: 
+				Number: 0
+		Condition: 
+			BinaryExpression
+			Operation: <
+			Left: 
+				Identifier: i
+			Right: 
+				Identifier: size
+		Step: 
+			PostfixExpression
+			Operation: ++
+			Expression: 
+				Identifier: i
+		Statement: 
+			Block
+				IfStatement
+				Condition: 
+					Identifier: i
+				Then: 
+					Block
+						FunctionCall print_comma
+				FunctionCall print_long
+				Arguments: 
+					SubscriptExpression
+					Expression: 
+						Identifier: array
+					Inner Expression: 
+						Identifier: i
+		FunctionCall print_nl
+Function main
+Arguments: 
+Body: 
+	Block
+		Variable
+			Identifier: a
+			Type: VariableType.ARRAY
+		Variable
+			Identifier: b
+			Type: VariableType.ARRAY
+		Variable
+			Identifier: c
+			Type: VariableType.ARRAY
+			Number: 1
+			Number: 3
+			Number: 5
+			Number: 7
+			Number: 9
+			Number: 8
+			Number: 6
+			Number: 4
+			Number: 2
+		FunctionCall fill_array
+		Arguments: 
+			Identifier: a
+			Number: 666
+			Number: 10
+		FunctionCall fill_array
+		Arguments: 
+			Identifier: b
+			Number: 10
+			Number: 10
+		FunctionCall fill_array
+		Arguments: 
+			BinaryExpression
+			Operation: +
+			Left: 
+				Identifier: b
+			Right: 
+				Number: 10
+			Number: 90
+			Number: 10
+		FunctionCall print_array
+		Arguments: 
+			Identifier: a
+			Number: 10
+		FunctionCall print_array
+		Arguments: 
+			Identifier: b
+			Number: 20
+		FunctionCall print_array
+		Arguments: 
+			Identifier: c
+			Number: 9

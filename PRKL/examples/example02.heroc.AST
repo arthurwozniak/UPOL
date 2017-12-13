@@ -1,0 +1,63 @@
+Function main
+Arguments: 
+Body: 
+	Block
+		Variable
+			Identifier: a
+			Type: VariableType.LONG
+			Number: 0
+		Variable
+			Identifier: b
+			Type: VariableType.LONG
+			Number: 1
+		Variable
+			Identifier: i
+			Type: VariableType.LONG
+			Number: 0
+		ForExpression
+		Initial value: 
+			BinaryExpression
+			Operation: =
+			Left: 
+				Identifier: i
+			Right: 
+				Number: 0
+		Condition: 
+			BinaryExpression
+			Operation: <
+			Left: 
+				Identifier: i
+			Right: 
+				Number: 20
+		Step: 
+			PostfixExpression
+			Operation: ++
+			Expression: 
+				Identifier: i
+		Statement: 
+			Block
+				Variable
+					Identifier: c
+					Type: VariableType.LONG
+					Identifier: b
+				BinaryExpression
+				Operation: =
+				Left: 
+					Identifier: b
+				Right: 
+					BinaryExpression
+					Operation: +
+					Left: 
+						Identifier: a
+					Right: 
+						Identifier: b
+				BinaryExpression
+				Operation: =
+				Left: 
+					Identifier: a
+				Right: 
+					Identifier: c
+				FunctionCall print_long
+				Arguments: 
+					Identifier: a
+				FunctionCall print_nl

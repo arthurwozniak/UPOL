@@ -1,0 +1,85 @@
+Function swap
+Arguments: 
+	Identifier: a
+	Identifier: b
+Body: 
+	Block
+		BinaryExpression
+		Operation: ^=
+		Left: 
+			UnaryExpression
+			Operation: *
+			Expression: 
+				Identifier: a
+		Right: 
+			UnaryExpression
+			Operation: *
+			Expression: 
+				Identifier: b
+		BinaryExpression
+		Operation: ^=
+		Left: 
+			UnaryExpression
+			Operation: *
+			Expression: 
+				Identifier: b
+		Right: 
+			UnaryExpression
+			Operation: *
+			Expression: 
+				Identifier: a
+		BinaryExpression
+		Operation: ^=
+		Left: 
+			UnaryExpression
+			Operation: *
+			Expression: 
+				Identifier: a
+		Right: 
+			UnaryExpression
+			Operation: *
+			Expression: 
+				Identifier: b
+Function main
+Arguments: 
+Body: 
+	Block
+		Variable
+			Identifier: a
+			Type: VariableType.LONG
+			Number: 666
+		Variable
+			Identifier: b
+			Type: VariableType.LONG
+			Number: 999
+		Variable
+			Identifier: c
+			Type: VariableType.LONG
+			UnaryExpression
+			Operation: &
+			Expression: 
+				Identifier: b
+		FunctionCall print_long
+		Arguments: 
+			Identifier: a
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			Identifier: b
+		FunctionCall print_nl
+		FunctionCall print_nl
+		FunctionCall swap
+		Arguments: 
+			UnaryExpression
+			Operation: &
+			Expression: 
+				Identifier: a
+			Identifier: c
+		FunctionCall print_long
+		Arguments: 
+			Identifier: a
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			Identifier: b
+		FunctionCall print_nl

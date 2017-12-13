@@ -1,0 +1,99 @@
+Function fac
+Arguments: 
+	Identifier: n
+	Identifier: p
+Body: 
+	Block
+		IfStatement
+		Condition: 
+			BinaryExpression
+			Operation: >
+			Left: 
+				Identifier: n
+			Right: 
+				Number: 0
+		Then: 
+			Block
+				FunctionCall fac
+				Arguments: 
+					BinaryExpression
+					Operation: -
+					Left: 
+						Identifier: n
+					Right: 
+						Number: 1
+					Identifier: p
+				Block
+					Variable
+						Identifier: result
+						Type: VariableType.LONG
+						UnaryExpression
+						Operation: *
+						Expression: 
+							Identifier: p
+					BinaryExpression
+					Operation: *=
+					Left: 
+						Identifier: result
+					Right: 
+						Identifier: n
+					BinaryExpression
+					Operation: =
+					Left: 
+						UnaryExpression
+						Operation: *
+						Expression: 
+							Identifier: p
+					Right: 
+						Identifier: result
+Function main
+Arguments: 
+Body: 
+	Block
+		Variable
+			Identifier: n
+			Type: VariableType.LONG
+			Number: 0
+		Variable
+			Identifier: result
+			Type: VariableType.LONG
+			Number: 0
+		ForExpression
+		Initial value: 
+			BinaryExpression
+			Operation: =
+			Left: 
+				Identifier: n
+			Right: 
+				Number: 0
+		Condition: 
+			BinaryExpression
+			Operation: <
+			Left: 
+				Identifier: n
+			Right: 
+				Number: 10
+		Step: 
+			PostfixExpression
+			Operation: ++
+			Expression: 
+				Identifier: n
+		Statement: 
+			Block
+				BinaryExpression
+				Operation: =
+				Left: 
+					Identifier: result
+				Right: 
+					Number: 1
+				FunctionCall fac
+				Arguments: 
+					Identifier: n
+					UnaryExpression
+					Operation: &
+					Expression: 
+						Identifier: result
+				FunctionCall print_long
+				Arguments: 
+					Identifier: result
+				FunctionCall print_nl

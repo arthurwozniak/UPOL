@@ -1,0 +1,80 @@
+Function fib
+Arguments: 
+	Identifier: n
+Body: 
+	Block
+		IfStatement
+		Condition: 
+			BinaryExpression
+			Operation: <=
+			Left: 
+				Identifier: n
+			Right: 
+				Number: 1
+		Then: 
+			Block
+				JumpStatement
+				Type: JumpStatementType.RETURN
+				Return value: 
+					Identifier: n
+		Else: 
+			Block
+				JumpStatement
+				Type: JumpStatementType.RETURN
+				Return value: 
+					BinaryExpression
+					Operation: +
+					Left: 
+						FunctionCall fib
+						Arguments: 
+							BinaryExpression
+							Operation: -
+							Left: 
+								Identifier: n
+							Right: 
+								Number: 1
+					Right: 
+						FunctionCall fib
+						Arguments: 
+							BinaryExpression
+							Operation: -
+							Left: 
+								Identifier: n
+							Right: 
+								Number: 2
+Function main
+Arguments: 
+Body: 
+	Block
+		Variable
+			Identifier: n
+			Type: VariableType.LONG
+			Number: 0
+		ForExpression
+		Initial value: 
+			BinaryExpression
+			Operation: =
+			Left: 
+				Identifier: n
+			Right: 
+				Number: 0
+		Condition: 
+			BinaryExpression
+			Operation: <
+			Left: 
+				Identifier: n
+			Right: 
+				Number: 15
+		Step: 
+			PostfixExpression
+			Operation: ++
+			Expression: 
+				Identifier: n
+		Statement: 
+			Block
+				FunctionCall print_long
+				Arguments: 
+					FunctionCall fib
+					Arguments: 
+						Identifier: n
+				FunctionCall print_nl

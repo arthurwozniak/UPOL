@@ -1,0 +1,76 @@
+Function fib
+Arguments: 
+	Identifier: n
+Body: 
+	Block
+		FunctionCall print_char
+		Arguments: 
+			Number: 43
+		IfStatement
+		Condition: 
+			BinaryExpression
+			Operation: <=
+			Left: 
+				Identifier: n
+			Right: 
+				Number: 1
+		Then: 
+			Block
+				FunctionCall print_char
+				Arguments: 
+					Number: 46
+		Else: 
+			Block
+				FunctionCall fib
+				Arguments: 
+					BinaryExpression
+					Operation: -
+					Left: 
+						Identifier: n
+					Right: 
+						Number: 1
+				FunctionCall fib
+				Arguments: 
+					BinaryExpression
+					Operation: -
+					Left: 
+						Identifier: n
+					Right: 
+						Number: 2
+		FunctionCall print_char
+		Arguments: 
+			Number: 45
+Function main
+Arguments: 
+Body: 
+	Block
+		Variable
+			Identifier: n
+			Type: VariableType.LONG
+			Number: 0
+		ForExpression
+		Initial value: 
+			BinaryExpression
+			Operation: =
+			Left: 
+				Identifier: n
+			Right: 
+				Number: 0
+		Condition: 
+			BinaryExpression
+			Operation: <
+			Left: 
+				Identifier: n
+			Right: 
+				Number: 7
+		Step: 
+			PostfixExpression
+			Operation: ++
+			Expression: 
+				Identifier: n
+		Statement: 
+			Block
+				FunctionCall fib
+				Arguments: 
+					Identifier: n
+				FunctionCall print_nl

@@ -1,0 +1,153 @@
+Function main
+Arguments: 
+Body: 
+	Block
+		Variable
+			Identifier: a
+			Type: VariableType.LONG
+			Number: 888888888
+		Variable
+			Identifier: b
+			Type: VariableType.LONG
+			Number: 0
+		Variable
+			Identifier: c
+			Type: VariableType.LONG
+			Number: 0
+		Variable
+			Identifier: d
+			Type: VariableType.LONG
+			Number: 0
+		BinaryExpression
+		Operation: =
+		Left: 
+			Identifier: b
+		Right: 
+			UnaryExpression
+			Operation: &
+			Expression: 
+				Identifier: a
+		BinaryExpression
+		Operation: =
+		Left: 
+			Identifier: c
+		Right: 
+			UnaryExpression
+			Operation: &
+			Expression: 
+				Identifier: b
+		BinaryExpression
+		Operation: =
+		Left: 
+			Identifier: d
+		Right: 
+			UnaryExpression
+			Operation: &
+			Expression: 
+				Identifier: c
+		FunctionCall print_long
+		Arguments: 
+			UnaryExpression
+			Operation: *
+			Expression: 
+				Identifier: b
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			UnaryExpression
+			Operation: *
+			Expression: 
+				UnaryExpression
+				Operation: *
+				Expression: 
+					Identifier: c
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			UnaryExpression
+			Operation: *
+			Expression: 
+				UnaryExpression
+				Operation: *
+				Expression: 
+					UnaryExpression
+					Operation: *
+					Expression: 
+						Identifier: d
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			SubscriptExpression
+			Expression: 
+				Identifier: b
+			Inner Expression: 
+				Number: 0
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			SubscriptExpression
+			Expression: 
+				SubscriptExpression
+				Expression: 
+					Identifier: c
+				Inner Expression: 
+					Number: 0
+			Inner Expression: 
+				Number: 0
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			UnaryExpression
+			Operation: *
+			Expression: 
+				SubscriptExpression
+				Expression: 
+					Identifier: c
+				Inner Expression: 
+					Number: 0
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			SubscriptExpression
+			Expression: 
+				SubscriptExpression
+				Expression: 
+					SubscriptExpression
+					Expression: 
+						Identifier: d
+					Inner Expression: 
+						Number: 0
+				Inner Expression: 
+					Number: 0
+			Inner Expression: 
+				Number: 0
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			UnaryExpression
+			Operation: *
+			Expression: 
+				SubscriptExpression
+				Expression: 
+					SubscriptExpression
+					Expression: 
+						Identifier: d
+					Inner Expression: 
+						Number: 0
+				Inner Expression: 
+					Number: 0
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			UnaryExpression
+			Operation: *
+			Expression: 
+				UnaryExpression
+				Operation: *
+				Expression: 
+					SubscriptExpression
+					Expression: 
+						Identifier: d
+					Inner Expression: 
+						Number: 0
+		FunctionCall print_nl

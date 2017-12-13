@@ -1,0 +1,85 @@
+Function fac_iter
+Arguments: 
+	Identifier: n
+	Identifier: accum
+Body: 
+	Block
+		IfStatement
+		Condition: 
+			BinaryExpression
+			Operation: <=
+			Left: 
+				Identifier: n
+			Right: 
+				Number: 0
+		Then: 
+			Block
+				JumpStatement
+				Type: JumpStatementType.RETURN
+				Return value: 
+					Identifier: accum
+		JumpStatement
+		Type: JumpStatementType.RETURN
+		Return value: 
+			FunctionCall fac_iter
+			Arguments: 
+				BinaryExpression
+				Operation: -
+				Left: 
+					Identifier: n
+				Right: 
+					Number: 1
+				BinaryExpression
+				Operation: *
+				Left: 
+					Identifier: accum
+				Right: 
+					Identifier: n
+Function fac
+Arguments: 
+	Identifier: n
+Body: 
+	Block
+		JumpStatement
+		Type: JumpStatementType.RETURN
+		Return value: 
+			FunctionCall fac_iter
+			Arguments: 
+				Identifier: n
+				Number: 1
+Function main
+Arguments: 
+Body: 
+	Block
+		Variable
+			Identifier: n
+			Type: VariableType.LONG
+			Number: 0
+		ForExpression
+		Initial value: 
+			BinaryExpression
+			Operation: =
+			Left: 
+				Identifier: n
+			Right: 
+				Number: 0
+		Condition: 
+			BinaryExpression
+			Operation: <
+			Left: 
+				Identifier: n
+			Right: 
+				Number: 10
+		Step: 
+			PostfixExpression
+			Operation: ++
+			Expression: 
+				Identifier: n
+		Statement: 
+			Block
+				FunctionCall print_long
+				Arguments: 
+					FunctionCall fac
+					Arguments: 
+						Identifier: n
+				FunctionCall print_nl

@@ -1,0 +1,136 @@
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/moment.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <title>Log management</title>
+</head>
+
+<body>
+    <div>
+        <div class="page-header text-center">
+            <h1>Log management</h1>
+        </div>
+
+        <script>
+            String.prototype.format = function() {
+                var args = arguments;
+                return this.replace(/\{\{|\}\}|\{(\d+)\}/g, function(m, n) {
+                    if (m == "{{") {
+                        return "{";
+                    }
+                    if (m == "}}") {
+                        return "}";
+                    }
+                    return args[n];
+                });
+            };
+
+            function deleteBtn(id) {
+                console.log("clicked " + id)
+                var db_id = $("#id_" + id)[0].value
+                $.ajax({
+                    type: "POST",
+                    url: "delete",
+                    data: {
+                        'id': db_id
+                    },
+                    success: function(text) {
+                        var res = JSON.parse(text)
+                        var status = res["status"]
+                        if (status) {
+                            $("#item-" + id).remove()
+                        }
+                    }
+                });
+            }
+
+            var element = "<li class='list-group-item list-group-item-{5}' id='item-{4}'>" +
+                "<input type='hidden' id='id_{4}' value='{3}' />" +
+                "<div class='d-flex w-100 justify-content-between'>" +
+                "    <p class='mb-1'><b>Level</b>: {0}" +
+                "        <b>Log date: </b>{1}" +
+                "    </p>" +
+                "    <p class='mb-2'>{2}</p>" +
+                "</div>" +
+                "<button type='button' class='btn btn-primary btn-small' onclick='deleteBtn({4})'>Delete</button>" +
+                "</li>"
+
+            function makeEntry(key, log) {
+                var id = log["_id"]
+                var time = moment(log["date"]).format("YYYY-MM-DD HH:mm:ss")
+                var level = log["type"]
+                var message = log["message"]
+                var color = level == "warn" ? "warning" : level == "info" ? "info" : "success"
+                return element.format(level, time, message, id, key, color);
+            }
+
+
+            $(document).ready(function() {
+                var list = $(".list-group")[0]
+                $.ajax({
+                    type: "GET",
+                    url: "list-log",
+                    data: null,
+                    success: function(text) {
+                        console.log("Data loaded")
+                        var res = JSON.parse(text)
+                        if (res.length > 0) {
+                            list.removeChild(list.firstChild)
+                            list.removeChild(list.firstChild)
+                            list.removeChild(list.firstChild)
+
+                            $.each(res, function(key, value) {
+                                //console.log(value)
+                                var entry = makeEntry(key, value)
+                                list.append($.parseHTML(entry)[0])
+                            })
+
+                        }
+                    }
+                });
+            });
+        </script>
+
+        <div class="container">
+            <ul class="list-group">
+                <li>No data</li>
+                <% if(false) {%>
+                    <% for(var i=0; i<logs.length; i++) {%>
+
+                        <%if (logs[i].type == "warn") { %>
+                            <li class="list-group-item list-group-item-warning" id="item-<%= i%>">
+                                <% } else if (logs[i].type == "info") { %>
+                                    <li class="list-group-item list-group-item-info" id="item-<%= i%>">
+                                        <% } else { %>
+                                            <li class="list-group-item list-group-item-success" id="item-<%= i%>">
+                                                <% } %>
+                                                    <input type="hidden" id="id_<%= i%>" value="<%= logs[i]._id %>" />
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <p class="mb-1"><b>Level</b>:
+                                                            <%= logs[i].type %> <b>Log date:</b>
+                                                                <%= moment(logs[i].date).format("YYYY-MM-DD HH:mm:ss") %>
+                                                        </p>
+                                                        <p class="mb-2">
+                                                            <%= logs[i].message %>
+                                                        </p>
+                                                    </div>
+                                                    <button type="button" class="btn btn-primary" onclick="deleteBtn(<%=i%>)">Delete selected</button>
+
+                                            </li>
+
+                                            <% } %>
+
+                                                <% }%>
+
+            </ul>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

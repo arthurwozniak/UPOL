@@ -1,0 +1,207 @@
+Function main
+Arguments: 
+Body: 
+	Block
+		FunctionCall print_long
+		Arguments: 
+			BinaryExpression
+			Operation: |
+			Left: 
+				BinaryExpression
+				Operation: |
+				Left: 
+					BinaryExpression
+					Operation: |
+					Left: 
+						Number: 1
+					Right: 
+						Number: 2
+				Right: 
+					Number: 3
+			Right: 
+				Number: 4
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			BinaryExpression
+			Operation: &
+			Left: 
+				Number: 65535
+			Right: 
+				Number: 65280
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			BinaryExpression
+			Operation: ^
+			Left: 
+				Number: 12345
+			Right: 
+				Number: 678
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			BinaryExpression
+			Operation: |
+			Left: 
+				Number: 891010
+			Right: 
+				BinaryExpression
+				Operation: ^
+				Left: 
+					Number: 12345
+				Right: 
+					Number: 678
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			BinaryExpression
+			Operation: ^
+			Left: 
+				Identifier: (891010|12345)
+			Right: 
+				Number: 678
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			BinaryExpression
+			Operation: |
+			Left: 
+				Number: 891010
+			Right: 
+				BinaryExpression
+				Operation: ^
+				Left: 
+					Number: 12345
+				Right: 
+					BinaryExpression
+					Operation: <<
+					Left: 
+						Number: 678
+					Right: 
+						Number: 9
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			BinaryExpression
+			Operation: |
+			Left: 
+				Number: 891010
+			Right: 
+				BinaryExpression
+				Operation: <<
+				Left: 
+					Identifier: (12345^678)
+				Right: 
+					Number: 9
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			BinaryExpression
+			Operation: <<
+			Left: 
+				Identifier: (891010|(12345^678))
+			Right: 
+				Number: 9
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			BinaryExpression
+			Operation: |
+			Left: 
+				BinaryExpression
+				Operation: +
+				Left: 
+					Number: 10
+				Right: 
+					Number: 891010
+			Right: 
+				BinaryExpression
+				Operation: <<
+				Left: 
+					Identifier: (12345^678)
+				Right: 
+					Number: 9
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			BinaryExpression
+			Operation: |
+			Left: 
+				BinaryExpression
+				Operation: +
+				Left: 
+					UnaryExpression
+					Operation: ~
+					Expression: 
+						Number: 10
+				Right: 
+					Number: 891010
+			Right: 
+				BinaryExpression
+				Operation: <<
+				Left: 
+					Identifier: (12345^678)
+				Right: 
+					Number: 9
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			BinaryExpression
+			Operation: |
+			Left: 
+				BinaryExpression
+				Operation: +
+				Left: 
+					UnaryExpression
+					Operation: ~
+					Expression: 
+						Number: 10
+				Right: 
+					Number: 891010
+			Right: 
+				BinaryExpression
+				Operation: <<
+				Left: 
+					Identifier: (12345^678)
+				Right: 
+					Number: 9
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			UnaryExpression
+			Operation: ~
+			Expression: 
+				UnaryExpression
+				Operation: ~
+				Expression: 
+					Number: 123
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			BinaryExpression
+			Operation: &&
+			Left: 
+				BinaryExpression
+				Operation: <
+				Left: 
+					Number: 10
+				Right: 
+					Number: 20
+			Right: 
+				BinaryExpression
+				Operation: <=
+				Left: 
+					Number: 40
+				Right: 
+					Number: 40
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			BinaryExpression
+			Operation: +
+			Left: 
+				Number: 10
+			Right: 
+				Identifier: (10<20&&40>=40||333)
+		FunctionCall print_nl

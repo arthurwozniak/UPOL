@@ -1,0 +1,136 @@
+Function main
+Arguments: 
+Body: 
+	Block
+		Variable
+			Identifier: a
+			Type: VariableType.LONG
+			Number: 0
+		Variable
+			Identifier: b
+			Type: VariableType.LONG
+			Number: 20
+		Variable
+			Identifier: c
+			Type: VariableType.LONG
+			Number: 30
+		Variable
+			Identifier: d
+			Type: VariableType.LONG
+			Number: 0
+		Variable
+			Identifier: e
+			Type: VariableType.LONG
+			Number: 0
+		BinaryExpression
+		Operation: =
+		Left: 
+			Identifier: a
+		Right: 
+			Number: 10
+		BinaryExpression
+		Operation: *=
+		Left: 
+			Identifier: a
+		Right: 
+			BinaryExpression
+			Operation: +
+			Left: 
+				Identifier: b
+			Right: 
+				Number: 2
+		BinaryExpression
+		Operation: <<=
+		Left: 
+			Identifier: b
+		Right: 
+			Number: 16
+		BinaryExpression
+		Operation: /=
+		Left: 
+			Identifier: c
+		Right: 
+			Number: 5
+		BinaryExpression
+		Operation: -=
+		Left: 
+			Identifier: b
+		Right: 
+			Number: 1
+		PostfixExpression
+		Operation: ++
+		Expression: 
+			Identifier: a
+		UnaryExpression
+		Operation: --
+		Expression: 
+			Identifier: b
+		BinaryExpression
+		Operation: =
+		Left: 
+			Identifier: c
+		Right: 
+			BinaryExpression
+			Operation: -
+			Left: 
+				PostfixExpression
+				Operation: --
+				Expression: 
+					Identifier: b
+			Right: 
+				UnaryExpression
+				Operation: --
+				Expression: 
+					Identifier: a
+		BinaryExpression
+		Operation: =
+		Left: 
+			Identifier: d
+		Right: 
+			BinaryExpression
+			Operation: *
+			Left: 
+				UnaryExpression
+				Operation: --
+				Expression: 
+					Identifier: a
+			Right: 
+				Number: 20
+		PostfixExpression
+		Operation: ++
+		Expression: 
+			Identifier: a
+		BinaryExpression
+		Operation: =
+		Left: 
+			Identifier: e
+		Right: 
+			BinaryExpression
+			Operation: *
+			Left: 
+				PostfixExpression
+				Operation: --
+				Expression: 
+					Identifier: a
+			Right: 
+				Number: 20
+		FunctionCall print_long
+		Arguments: 
+			Identifier: a
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			Identifier: b
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			Identifier: c
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			Identifier: d
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			Identifier: e
+		FunctionCall print_nl

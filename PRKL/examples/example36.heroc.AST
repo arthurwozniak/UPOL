@@ -1,0 +1,119 @@
+Variable
+	Identifier: y
+	Type: VariableType.ARRAY
+	Number: 100
+	Number: 200
+	Number: 300
+	Number: 400
+Function foo
+Arguments: 
+	Identifier: x
+Body: 
+	Block
+		BinaryExpression
+		Operation: +=
+		Left: 
+			SubscriptExpression
+			Expression: 
+				Identifier: y
+			Inner Expression: 
+				Number: 2
+		Right: 
+			Identifier: x
+		JumpStatement
+		Type: JumpStatementType.RETURN
+		Return value: 
+			SubscriptExpression
+			Expression: 
+				Identifier: y
+			Inner Expression: 
+				Number: 2
+Function bar
+Arguments: 
+	Identifier: x
+Body: 
+	Block
+		Variable
+			Identifier: y
+			Type: VariableType.ARRAY
+			Number: 100
+			Number: 200
+			Number: 300
+			Number: 400
+		BinaryExpression
+		Operation: +=
+		Left: 
+			SubscriptExpression
+			Expression: 
+				Identifier: y
+			Inner Expression: 
+				Number: 2
+		Right: 
+			Identifier: x
+		JumpStatement
+		Type: JumpStatementType.RETURN
+		Return value: 
+			SubscriptExpression
+			Expression: 
+				Identifier: y
+			Inner Expression: 
+				Number: 2
+Function main
+Arguments: 
+Body: 
+	Block
+		Variable
+			Identifier: i
+			Type: VariableType.LONG
+			Number: 0
+		ForExpression
+		Initial value: 
+			BinaryExpression
+			Operation: =
+			Left: 
+				Identifier: i
+			Right: 
+				Number: 10
+		Condition: 
+			BinaryExpression
+			Operation: <
+			Left: 
+				Identifier: i
+			Right: 
+				Number: 80
+		Step: 
+			BinaryExpression
+			Operation: +=
+			Left: 
+				Identifier: i
+			Right: 
+				Number: 10
+		Statement: 
+			Block
+				FunctionCall print_long
+				Arguments: 
+					FunctionCall foo
+					Arguments: 
+						Number: 10
+				FunctionCall print_char
+				FunctionCall print_char
+				FunctionCall print_long
+				Arguments: 
+					FunctionCall foo
+					Arguments: 
+						Identifier: i
+				FunctionCall print_char
+				FunctionCall print_char
+				FunctionCall print_long
+				Arguments: 
+					FunctionCall bar
+					Arguments: 
+						Number: 10
+				FunctionCall print_char
+				FunctionCall print_char
+				FunctionCall print_long
+				Arguments: 
+					FunctionCall bar
+					Arguments: 
+						Identifier: i
+				FunctionCall print_nl

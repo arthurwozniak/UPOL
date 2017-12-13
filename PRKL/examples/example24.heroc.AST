@@ -1,0 +1,225 @@
+Variable
+	Identifier: heap
+	Type: VariableType.ARRAY
+Variable
+	Identifier: front
+	Type: VariableType.LONG
+	UnaryExpression
+	Operation: &
+	Expression: 
+		Identifier: heap
+Function lalloc
+Arguments: 
+	Identifier: size
+Body: 
+	Block
+		Variable
+			Identifier: ptr
+			Type: VariableType.LONG
+			Identifier: front
+		BinaryExpression
+		Operation: +=
+		Left: 
+			Identifier: front
+		Right: 
+			BinaryExpression
+			Operation: *
+			Left: 
+				Identifier: size
+			Right: 
+				Number: 8
+		JumpStatement
+		Type: JumpStatementType.RETURN
+		Return value: 
+			Identifier: ptr
+Function cons
+Arguments: 
+	Identifier: a
+	Identifier: b
+Body: 
+	Block
+		Variable
+			Identifier: new
+			Type: VariableType.LONG
+			FunctionCall lalloc
+			Arguments: 
+				Number: 3
+		BinaryExpression
+		Operation: =
+		Left: 
+			SubscriptExpression
+			Expression: 
+				Identifier: new
+			Inner Expression: 
+				Number: 0
+		Right: 
+			Number: 1
+		BinaryExpression
+		Operation: =
+		Left: 
+			SubscriptExpression
+			Expression: 
+				Identifier: new
+			Inner Expression: 
+				Number: 1
+		Right: 
+			Identifier: a
+		BinaryExpression
+		Operation: =
+		Left: 
+			SubscriptExpression
+			Expression: 
+				Identifier: new
+			Inner Expression: 
+				Number: 2
+		Right: 
+			Identifier: b
+		JumpStatement
+		Type: JumpStatementType.RETURN
+		Return value: 
+			Identifier: new
+Function pairp
+Arguments: 
+	Identifier: x
+Body: 
+	Block
+		JumpStatement
+		Type: JumpStatementType.RETURN
+		Return value: 
+			BinaryExpression
+			Operation: ==
+			Left: 
+				SubscriptExpression
+				Expression: 
+					Identifier: x
+				Inner Expression: 
+					Number: 0
+			Right: 
+				Number: 1
+Function car
+Arguments: 
+	Identifier: p
+Body: 
+	Block
+		JumpStatement
+		Type: JumpStatementType.RETURN
+		Return value: 
+			SubscriptExpression
+			Expression: 
+				Identifier: p
+			Inner Expression: 
+				Number: 1
+Function cdr
+Arguments: 
+	Identifier: p
+Body: 
+	Block
+		JumpStatement
+		Type: JumpStatementType.RETURN
+		Return value: 
+			SubscriptExpression
+			Expression: 
+				Identifier: p
+			Inner Expression: 
+				Number: 2
+Function num
+Arguments: 
+	Identifier: x
+Body: 
+	Block
+		Variable
+			Identifier: new
+			Type: VariableType.LONG
+			FunctionCall lalloc
+			Arguments: 
+				Number: 2
+		BinaryExpression
+		Operation: =
+		Left: 
+			SubscriptExpression
+			Expression: 
+				Identifier: new
+			Inner Expression: 
+				Number: 0
+		Right: 
+			Number: 0
+		BinaryExpression
+		Operation: =
+		Left: 
+			SubscriptExpression
+			Expression: 
+				Identifier: new
+			Inner Expression: 
+				Number: 1
+		Right: 
+			Identifier: x
+		JumpStatement
+		Type: JumpStatementType.RETURN
+		Return value: 
+			Identifier: new
+Function value
+Arguments: 
+	Identifier: n
+Body: 
+	Block
+		JumpStatement
+		Type: JumpStatementType.RETURN
+		Return value: 
+			SubscriptExpression
+			Expression: 
+				Identifier: n
+			Inner Expression: 
+				Number: 1
+Function main
+Arguments: 
+Body: 
+	Block
+		Variable
+			Identifier: a
+			Type: VariableType.LONG
+			FunctionCall cons
+			Arguments: 
+				FunctionCall num
+				Arguments: 
+					Number: 10
+				FunctionCall cons
+				Arguments: 
+					FunctionCall num
+					Arguments: 
+						Number: 20
+					FunctionCall cons
+					Arguments: 
+						FunctionCall num
+						Arguments: 
+							Number: 30
+						Number: 0
+		FunctionCall print_long
+		Arguments: 
+			FunctionCall value
+			Arguments: 
+				FunctionCall car
+				Arguments: 
+					Identifier: a
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			FunctionCall value
+			Arguments: 
+				FunctionCall car
+				Arguments: 
+					FunctionCall cdr
+					Arguments: 
+						Identifier: a
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			FunctionCall value
+			Arguments: 
+				FunctionCall car
+				Arguments: 
+					FunctionCall cdr
+					Arguments: 
+						FunctionCall cdr
+						Arguments: 
+							Identifier: a
+		FunctionCall print_nl

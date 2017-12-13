@@ -1,0 +1,78 @@
+Function bar
+Arguments: 
+	Identifier: x
+Body: 
+	Block
+		JumpStatement
+		Type: JumpStatementType.RETURN
+		Return value: 
+			BinaryExpression
+			Operation: +
+			Left: 
+				Identifier: x
+			Right: 
+				Number: 10
+Function foo
+Arguments: 
+	Identifier: x
+Body: 
+	Block
+		JumpStatement
+		Type: JumpStatementType.RETURN
+		Return value: 
+			FunctionCall bar
+			Arguments: 
+				BinaryExpression
+				Operation: *
+				Left: 
+					Number: 2
+				Right: 
+					Identifier: x
+Function main
+Arguments: 
+Body: 
+	Block
+		Variable
+			Identifier: n
+			Type: VariableType.LONG
+			Number: 100
+		FunctionCall print_long
+		Arguments: 
+			FunctionCall bar
+			Arguments: 
+				Identifier: n
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			FunctionCall foo
+			Arguments: 
+				Identifier: n
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			FunctionCall bar
+			Arguments: 
+				FunctionCall foo
+				Arguments: 
+					Identifier: n
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			FunctionCall foo
+			Arguments: 
+				FunctionCall bar
+				Arguments: 
+					Identifier: n
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			FunctionCall foo
+			Arguments: 
+				FunctionCall foo
+				Arguments: 
+					Identifier: n
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			Identifier: n
+		FunctionCall print_nl

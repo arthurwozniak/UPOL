@@ -1,0 +1,99 @@
+Function main
+Arguments: 
+	Identifier: a
+	Identifier: b
+	Identifier: c
+Body: 
+	Block
+		Variable
+			Identifier: c
+			Type: VariableType.ARRAY
+			Number: 1
+			Number: 2
+			Number: 3
+		BinaryExpression
+		Operation: <<
+		Left: 
+			Identifier: a
+		Right: 
+			Number: 1
+		BinaryExpression
+		Operation: *
+		Left: 
+			BinaryExpression
+			Operation: *
+			Left: 
+				Number: 1
+			Right: 
+				Number: 1
+		Right: 
+			Number: 3
+		BinaryExpression
+		Operation: =
+		Left: 
+			Identifier: a
+		Right: 
+			BinaryExpression
+			Operation: +
+			Left: 
+				Identifier: a
+			Right: 
+				Number: 10
+		BinaryExpression
+		Operation: =
+		Left: 
+			Identifier: a
+		Right: 
+			PostfixExpression
+			Operation: ++
+			Expression: 
+				Identifier: a
+		BinaryExpression
+		Operation: =
+		Left: 
+			Identifier: a
+		Right: 
+			String: "FOO"
+		SubscriptExpression
+		Expression: 
+			Identifier: a
+		Inner Expression: 
+			BinaryExpression
+			Operation: +
+			Left: 
+				Number: 10
+			Right: 
+				Number: 20
+		FunctionCall main
+		Arguments: 
+			Identifier: foo
+			Identifier: bar
+			Identifier: baz
+		BinaryExpression
+		Operation: =
+		Left: 
+			Identifier: a
+		Right: 
+			IfEvalStatement
+			Condition: 
+				BinaryExpression
+				Operation: ==
+				Left: 
+					Number: 1
+				Right: 
+					Number: 1
+			Then: 
+				Number: 2
+			Else: 
+				IfEvalStatement
+				Condition: 
+					BinaryExpression
+					Operation: ==
+					Left: 
+						Number: 2
+					Right: 
+						Number: 3
+				Then: 
+					Number: 4
+				Else: 
+					Number: 5

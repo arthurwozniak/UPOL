@@ -1,0 +1,49 @@
+Function print_string
+Arguments: 
+	Identifier: x
+	Identifier: len
+Body: 
+	Block
+		Variable
+			Identifier: i
+			Type: VariableType.LONG
+			Number: 0
+		ForExpression
+		Initial value: 
+			BinaryExpression
+			Operation: =
+			Left: 
+				Identifier: i
+			Right: 
+				Number: 0
+		Condition: 
+			BinaryExpression
+			Operation: <
+			Left: 
+				Identifier: i
+			Right: 
+				Identifier: len
+		Step: 
+			PostfixExpression
+			Operation: ++
+			Expression: 
+				Identifier: i
+		Statement: 
+			Block
+				FunctionCall print_char
+				Arguments: 
+					SubscriptExpression
+					Expression: 
+						Identifier: x
+					Inner Expression: 
+						Identifier: i
+		FunctionCall print_nl
+Function main
+Arguments: 
+Body: 
+	Block
+		FunctionCall print_string
+		Arguments: 
+			String: "Hello, World!", 13);
+    print_string ("Muhehe, Fubar"
+			Number: 13

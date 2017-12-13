@@ -1,0 +1,99 @@
+Function main
+Arguments: 
+Body: 
+	Block
+		Variable
+			Identifier: a
+			Type: VariableType.LONG
+			Number: 10
+		FunctionCall print_long
+		Arguments: 
+			IfEvalStatement
+			Condition: 
+				Identifier: a
+			Then: 
+				Number: 20
+			Else: 
+				Number: 30
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			IfEvalStatement
+			Condition: 
+				BinaryExpression
+				Operation: ==
+				Left: 
+					Identifier: a
+				Right: 
+					Number: 10
+			Then: 
+				Number: 20
+			Else: 
+				Number: 30
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			BinaryExpression
+			Operation: ==
+			Left: 
+				Identifier: a
+			Right: 
+				Identifier: (10?20:30)
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			IfEvalStatement
+			Condition: 
+				BinaryExpression
+				Operation: ==
+				Left: 
+					Identifier: a
+				Right: 
+					Identifier: (10?20:30)
+			Then: 
+				Number: 40
+			Else: 
+				Number: 50
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			IfEvalStatement
+			Condition: 
+				BinaryExpression
+				Operation: ==
+				Left: 
+					Identifier: a
+				Right: 
+					Number: 10
+			Then: 
+				Number: 20
+			Else: 
+				IfEvalStatement
+				Condition: 
+					Number: 30
+				Then: 
+					Number: 40
+				Else: 
+					Number: 50
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			IfEvalStatement
+			Condition: 
+				BinaryExpression
+				Operation: !=
+				Left: 
+					Identifier: a
+				Right: 
+					Number: 10
+			Then: 
+				Number: 20
+			Else: 
+				IfEvalStatement
+				Condition: 
+					Number: 30
+				Then: 
+					Number: 40
+				Else: 
+					Number: 50
+		FunctionCall print_nl

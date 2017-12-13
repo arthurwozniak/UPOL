@@ -1,0 +1,262 @@
+Function print_array
+Arguments: 
+	Identifier: array
+	Identifier: size
+Body: 
+	Block
+		Variable
+			Identifier: i
+			Type: VariableType.LONG
+			Number: 0
+		ForExpression
+		Initial value: 
+			BinaryExpression
+			Operation: =
+			Left: 
+				Identifier: i
+			Right: 
+				Number: 0
+		Condition: 
+			BinaryExpression
+			Operation: <
+			Left: 
+				Identifier: i
+			Right: 
+				Identifier: size
+		Step: 
+			PostfixExpression
+			Operation: ++
+			Expression: 
+				Identifier: i
+		Statement: 
+			Block
+				IfStatement
+				Condition: 
+					Identifier: i
+				Then: 
+					Block
+						FunctionCall print_char
+						FunctionCall print_char
+				FunctionCall print_long
+				Arguments: 
+					SubscriptExpression
+					Expression: 
+						Identifier: array
+					Inner Expression: 
+						Identifier: i
+		FunctionCall print_nl
+Function bubble_sort
+Arguments: 
+	Identifier: array
+	Identifier: n
+Body: 
+	Block
+		Variable
+			Identifier: i
+			Type: VariableType.LONG
+			Number: 0
+		Variable
+			Identifier: swapped
+			Type: VariableType.LONG
+			Number: 0
+		DoWhileExpression
+		Condition: 
+			Identifier: swapped
+		Statement: 
+			Block
+				BinaryExpression
+				Operation: =
+				Left: 
+					Identifier: swapped
+				Right: 
+					Number: 0
+				ForExpression
+				Initial value: 
+					BinaryExpression
+					Operation: =
+					Left: 
+						Identifier: i
+					Right: 
+						Number: 1
+				Condition: 
+					BinaryExpression
+					Operation: <
+					Left: 
+						Identifier: i
+					Right: 
+						Identifier: n
+				Step: 
+					PostfixExpression
+					Operation: ++
+					Expression: 
+						Identifier: i
+				Statement: 
+					Block
+						IfStatement
+						Condition: 
+							BinaryExpression
+							Operation: >
+							Left: 
+								SubscriptExpression
+								Expression: 
+									Identifier: array
+								Inner Expression: 
+									BinaryExpression
+									Operation: -
+									Left: 
+										Identifier: i
+									Right: 
+										Number: 1
+							Right: 
+								SubscriptExpression
+								Expression: 
+									Identifier: array
+								Inner Expression: 
+									Identifier: i
+						Then: 
+							Block
+								BinaryExpression
+								Operation: ^=
+								Left: 
+									SubscriptExpression
+									Expression: 
+										Identifier: array
+									Inner Expression: 
+										BinaryExpression
+										Operation: -
+										Left: 
+											Identifier: i
+										Right: 
+											Number: 1
+								Right: 
+									SubscriptExpression
+									Expression: 
+										Identifier: array
+									Inner Expression: 
+										Identifier: i
+								BinaryExpression
+								Operation: ^=
+								Left: 
+									SubscriptExpression
+									Expression: 
+										Identifier: array
+									Inner Expression: 
+										Identifier: i
+								Right: 
+									SubscriptExpression
+									Expression: 
+										Identifier: array
+									Inner Expression: 
+										BinaryExpression
+										Operation: -
+										Left: 
+											Identifier: i
+										Right: 
+											Number: 1
+								BinaryExpression
+								Operation: ^=
+								Left: 
+									SubscriptExpression
+									Expression: 
+										Identifier: array
+									Inner Expression: 
+										BinaryExpression
+										Operation: -
+										Left: 
+											Identifier: i
+										Right: 
+											Number: 1
+								Right: 
+									SubscriptExpression
+									Expression: 
+										Identifier: array
+									Inner Expression: 
+										Identifier: i
+								BinaryExpression
+								Operation: =
+								Left: 
+									Identifier: swapped
+								Right: 
+									Number: 1
+Function main
+Arguments: 
+Body: 
+	Block
+		Variable
+			Identifier: a
+			Type: VariableType.ARRAY
+			Number: 8
+			Number: 4
+			Number: 2
+			Number: 1
+			Number: 5
+			Number: 2
+			Number: 8
+			Number: 9
+			Number: 3
+			Number: 4
+			Number: 3
+			Number: 2
+			Number: 3
+			Number: 6
+			Number: 4
+			Number: 8
+			Number: 9
+			Number: 2
+			Number: 3
+			Number: 5
+		Variable
+			Identifier: b
+			Type: VariableType.ARRAY
+			Number: 4
+			Number: 3
+			Number: 4
+			Number: 2
+			Number: 3
+			Number: 3
+			Number: 1
+			Number: 2
+			Number: 4
+			Number: 0
+			Number: 3
+			Number: 4
+			Number: 1
+			Number: 2
+			Number: 4
+		Variable
+			Identifier: c
+			Type: VariableType.ARRAY
+			Number: 9
+			Number: 8
+			Number: 7
+			Number: 6
+			Number: 5
+			Number: 4
+			Number: 3
+			Number: 2
+			Number: 1
+			Number: 0
+		FunctionCall bubble_sort
+		Arguments: 
+			Identifier: a
+			Number: 20
+		FunctionCall print_array
+		Arguments: 
+			Identifier: a
+			Number: 20
+		FunctionCall bubble_sort
+		Arguments: 
+			Identifier: b
+			Number: 15
+		FunctionCall print_array
+		Arguments: 
+			Identifier: b
+			Number: 15
+		FunctionCall bubble_sort
+		Arguments: 
+			Identifier: c
+			Number: 10
+		FunctionCall print_array
+		Arguments: 
+			Identifier: c
+			Number: 10

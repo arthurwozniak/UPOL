@@ -1,0 +1,44 @@
+Function minus
+Arguments: 
+	Identifier: x
+Body: 
+	Block
+		JumpStatement
+		Type: JumpStatementType.RETURN
+		Return value: 
+			UnaryExpression
+			Operation: -
+			Expression: 
+				Identifier: x
+Function main
+Arguments: 
+Body: 
+	Block
+		Variable
+			Identifier: n
+			Type: VariableType.LONG
+			Number: 666
+		Variable
+			Identifier: x
+			Type: VariableType.LONG
+			Number: 777
+		FunctionCall print_long
+		Arguments: 
+			FunctionCall minus
+			Arguments: 
+				Identifier: n
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			Identifier: n
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			FunctionCall minus
+			Arguments: 
+				Identifier: x
+		FunctionCall print_nl
+		FunctionCall print_long
+		Arguments: 
+			Identifier: x
+		FunctionCall print_nl

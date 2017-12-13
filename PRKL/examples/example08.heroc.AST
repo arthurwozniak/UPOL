@@ -1,0 +1,61 @@
+Function line_of_stars
+Arguments: 
+	Identifier: n
+Body: 
+	Block
+		Variable
+			Identifier: i
+			Type: VariableType.LONG
+			Number: 0
+		ForExpression
+		Initial value: None
+		Condition: 
+			UnaryExpression
+			Operation: !
+			Expression: 
+				Identifier: (n<0)
+		Step: 
+			PostfixExpression
+			Operation: --
+			Expression: 
+				Identifier: n
+		Statement: 
+			Block
+				FunctionCall print_char
+				Arguments: 
+					Number: 42
+		FunctionCall print_nl
+Function main
+Arguments: 
+Body: 
+	Block
+		Variable
+			Identifier: n
+			Type: VariableType.LONG
+			Number: 9
+		WhileExpression
+		Condition: 
+			Number: 666
+		Statement: 
+			Block
+				IfStatement
+				Condition: 
+					BinaryExpression
+					Operation: >=
+					Left: 
+						Identifier: n
+					Right: 
+						Number: 0
+				Then: 
+					Block
+						FunctionCall line_of_stars
+						Arguments: 
+							Identifier: n
+						PostfixExpression
+						Operation: --
+						Expression: 
+							Identifier: n
+				Else: 
+					Block
+						JumpStatement
+						Type: JumpStatementType.BREAK

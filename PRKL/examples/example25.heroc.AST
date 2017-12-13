@@ -1,0 +1,445 @@
+Variable
+	Identifier: heap
+	Type: VariableType.ARRAY
+Variable
+	Identifier: front
+	Type: VariableType.LONG
+	UnaryExpression
+	Operation: &
+	Expression: 
+		Identifier: heap
+Function lalloc
+Arguments: 
+	Identifier: size
+Body: 
+	Block
+		Variable
+			Identifier: ptr
+			Type: VariableType.LONG
+			Identifier: front
+		BinaryExpression
+		Operation: +=
+		Left: 
+			Identifier: front
+		Right: 
+			BinaryExpression
+			Operation: *
+			Left: 
+				Identifier: size
+			Right: 
+				Number: 8
+		JumpStatement
+		Type: JumpStatementType.RETURN
+		Return value: 
+			Identifier: ptr
+Function cons
+Arguments: 
+	Identifier: a
+	Identifier: b
+Body: 
+	Block
+		Variable
+			Identifier: new
+			Type: VariableType.LONG
+			FunctionCall lalloc
+			Arguments: 
+				Number: 3
+		BinaryExpression
+		Operation: =
+		Left: 
+			SubscriptExpression
+			Expression: 
+				Identifier: new
+			Inner Expression: 
+				Number: 0
+		Right: 
+			Number: 1
+		BinaryExpression
+		Operation: =
+		Left: 
+			SubscriptExpression
+			Expression: 
+				Identifier: new
+			Inner Expression: 
+				Number: 1
+		Right: 
+			Identifier: a
+		BinaryExpression
+		Operation: =
+		Left: 
+			SubscriptExpression
+			Expression: 
+				Identifier: new
+			Inner Expression: 
+				Number: 2
+		Right: 
+			Identifier: b
+		JumpStatement
+		Type: JumpStatementType.RETURN
+		Return value: 
+			Identifier: new
+Function pairp
+Arguments: 
+	Identifier: x
+Body: 
+	Block
+		JumpStatement
+		Type: JumpStatementType.RETURN
+		Return value: 
+			BinaryExpression
+			Operation: ==
+			Left: 
+				SubscriptExpression
+				Expression: 
+					Identifier: x
+				Inner Expression: 
+					Number: 0
+			Right: 
+				Number: 1
+Function car
+Arguments: 
+	Identifier: p
+Body: 
+	Block
+		JumpStatement
+		Type: JumpStatementType.RETURN
+		Return value: 
+			SubscriptExpression
+			Expression: 
+				Identifier: p
+			Inner Expression: 
+				Number: 1
+Function cdr
+Arguments: 
+	Identifier: p
+Body: 
+	Block
+		JumpStatement
+		Type: JumpStatementType.RETURN
+		Return value: 
+			SubscriptExpression
+			Expression: 
+				Identifier: p
+			Inner Expression: 
+				Number: 2
+Function num
+Arguments: 
+	Identifier: x
+Body: 
+	Block
+		Variable
+			Identifier: new
+			Type: VariableType.LONG
+			FunctionCall lalloc
+			Arguments: 
+				Number: 2
+		BinaryExpression
+		Operation: =
+		Left: 
+			SubscriptExpression
+			Expression: 
+				Identifier: new
+			Inner Expression: 
+				Number: 0
+		Right: 
+			Number: 0
+		BinaryExpression
+		Operation: =
+		Left: 
+			SubscriptExpression
+			Expression: 
+				Identifier: new
+			Inner Expression: 
+				Number: 1
+		Right: 
+			Identifier: x
+		JumpStatement
+		Type: JumpStatementType.RETURN
+		Return value: 
+			Identifier: new
+Function value
+Arguments: 
+	Identifier: n
+Body: 
+	Block
+		JumpStatement
+		Type: JumpStatementType.RETURN
+		Return value: 
+			SubscriptExpression
+			Expression: 
+				Identifier: n
+			Inner Expression: 
+				Number: 1
+Function prt
+Arguments: 
+	Identifier: x
+	Identifier: p
+Body: 
+	Block
+		IfStatement
+		Condition: 
+			UnaryExpression
+			Operation: !
+			Expression: 
+				Identifier: x
+		Then: 
+			Block
+				FunctionCall print_char
+				Arguments: 
+					Number: 40
+				FunctionCall print_char
+				Arguments: 
+					Number: 41
+				JumpStatement
+				Type: JumpStatementType.RETURN
+		IfStatement
+		Condition: 
+			UnaryExpression
+			Operation: !
+			Expression: 
+				FunctionCall pairp
+				Arguments: 
+					Identifier: x
+		Then: 
+			Block
+				FunctionCall print_long
+				Arguments: 
+					FunctionCall value
+					Arguments: 
+						Identifier: x
+				JumpStatement
+				Type: JumpStatementType.RETURN
+		IfStatement
+		Condition: 
+			Identifier: p
+		Then: 
+			Block
+				FunctionCall print_char
+				Arguments: 
+					Number: 40
+		FunctionCall prt
+		Arguments: 
+			FunctionCall car
+			Arguments: 
+				Identifier: x
+			Number: 1
+		IfStatement
+		Condition: 
+			BinaryExpression
+			Operation: &&
+			Left: 
+				FunctionCall cdr
+				Arguments: 
+					Identifier: x
+			Right: 
+				FunctionCall pairp
+				Arguments: 
+					FunctionCall cdr
+					Arguments: 
+						Identifier: x
+		Then: 
+			Block
+				FunctionCall print_char
+				Arguments: 
+					Number: 32
+				FunctionCall prt
+				Arguments: 
+					FunctionCall cdr
+					Arguments: 
+						Identifier: x
+					Number: 0
+		Else: 
+			Block
+				IfStatement
+				Condition: 
+					FunctionCall cdr
+					Arguments: 
+						Identifier: x
+				Then: 
+					Block
+						FunctionCall print_char
+						Arguments: 
+							Number: 32
+						FunctionCall print_char
+						Arguments: 
+							Number: 46
+						FunctionCall print_char
+						Arguments: 
+							Number: 32
+						FunctionCall prt
+						Arguments: 
+							FunctionCall cdr
+							Arguments: 
+								Identifier: x
+							Number: 0
+		IfStatement
+		Condition: 
+			Identifier: p
+		Then: 
+			Block
+				FunctionCall print_char
+				Arguments: 
+					Number: 41
+Function print_elem
+Arguments: 
+	Identifier: elem
+Body: 
+	Block
+		FunctionCall prt
+		Arguments: 
+			Identifier: elem
+			Number: 1
+Function main
+Arguments: 
+Body: 
+	Block
+		FunctionCall print_elem
+		Arguments: 
+			FunctionCall num
+			Arguments: 
+				Number: 10
+		FunctionCall print_nl
+		FunctionCall print_elem
+		Arguments: 
+			FunctionCall cons
+			Arguments: 
+				FunctionCall num
+				Arguments: 
+					Number: 10
+				Number: 0
+		FunctionCall print_nl
+		FunctionCall print_elem
+		Arguments: 
+			FunctionCall cons
+			Arguments: 
+				FunctionCall num
+				Arguments: 
+					Number: 10
+				FunctionCall num
+				Arguments: 
+					Number: 20
+		FunctionCall print_nl
+		FunctionCall print_elem
+		Arguments: 
+			FunctionCall cons
+			Arguments: 
+				FunctionCall cons
+				Arguments: 
+					FunctionCall num
+					Arguments: 
+						Number: 10
+					Number: 0
+				FunctionCall num
+				Arguments: 
+					Number: 20
+		FunctionCall print_nl
+		FunctionCall print_elem
+		Arguments: 
+			FunctionCall cons
+			Arguments: 
+				FunctionCall cons
+				Arguments: 
+					FunctionCall num
+					Arguments: 
+						Number: 10
+					Number: 0
+				FunctionCall cons
+				Arguments: 
+					FunctionCall num
+					Arguments: 
+						Number: 20
+					Number: 0
+		FunctionCall print_nl
+		FunctionCall print_elem
+		Arguments: 
+			FunctionCall cons
+			Arguments: 
+				FunctionCall cons
+				Arguments: 
+					FunctionCall cons
+					Arguments: 
+						FunctionCall num
+						Arguments: 
+							Number: 10
+						Number: 0
+					FunctionCall cons
+					Arguments: 
+						FunctionCall num
+						Arguments: 
+							Number: 20
+						Number: 0
+				Number: 0
+		FunctionCall print_nl
+		FunctionCall print_elem
+		Arguments: 
+			FunctionCall cons
+			Arguments: 
+				FunctionCall num
+				Arguments: 
+					Number: 10
+				FunctionCall cons
+				Arguments: 
+					FunctionCall num
+					Arguments: 
+						Number: 20
+					FunctionCall num
+					Arguments: 
+						Number: 30
+		FunctionCall print_nl
+		FunctionCall print_elem
+		Arguments: 
+			FunctionCall cons
+			Arguments: 
+				FunctionCall num
+				Arguments: 
+					Number: 10
+				FunctionCall cons
+				Arguments: 
+					FunctionCall cons
+					Arguments: 
+						FunctionCall num
+						Arguments: 
+							Number: 20
+						Number: 0
+					FunctionCall num
+					Arguments: 
+						Number: 30
+		FunctionCall print_nl
+		FunctionCall print_elem
+		Arguments: 
+			FunctionCall cons
+			Arguments: 
+				Number: 0
+				Number: 0
+		FunctionCall print_nl
+		FunctionCall print_elem
+		Arguments: 
+			FunctionCall cons
+			Arguments: 
+				Number: 0
+				FunctionCall cons
+				Arguments: 
+					FunctionCall cons
+					Arguments: 
+						FunctionCall num
+						Arguments: 
+							Number: 20
+						Number: 0
+					FunctionCall num
+					Arguments: 
+						Number: 30
+		FunctionCall print_nl
+		FunctionCall print_elem
+		Arguments: 
+			FunctionCall cons
+			Arguments: 
+				FunctionCall num
+				Arguments: 
+					Number: 10
+				FunctionCall cons
+				Arguments: 
+					Number: 0
+					FunctionCall num
+					Arguments: 
+						Number: 30
+		FunctionCall print_nl

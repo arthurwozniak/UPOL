@@ -1,0 +1,194 @@
+Variable
+	Identifier: heap
+	Type: VariableType.ARRAY
+Variable
+	Identifier: front
+	Type: VariableType.LONG
+	UnaryExpression
+	Operation: &
+	Expression: 
+		Identifier: heap
+Function lalloc
+Arguments: 
+	Identifier: size
+Body: 
+	Block
+		Variable
+			Identifier: ptr
+			Type: VariableType.LONG
+			Identifier: front
+		BinaryExpression
+		Operation: +=
+		Left: 
+			Identifier: front
+		Right: 
+			BinaryExpression
+			Operation: *
+			Left: 
+				Identifier: size
+			Right: 
+				Number: 8
+		JumpStatement
+		Type: JumpStatementType.RETURN
+		Return value: 
+			Identifier: ptr
+Function fill_array
+Arguments: 
+	Identifier: array
+	Identifier: begin
+	Identifier: size
+Body: 
+	Block
+		Variable
+			Identifier: i
+			Type: VariableType.LONG
+			Number: 0
+		ForExpression
+		Initial value: 
+			BinaryExpression
+			Operation: =
+			Left: 
+				Identifier: i
+			Right: 
+				Number: 0
+		Condition: 
+			BinaryExpression
+			Operation: <
+			Left: 
+				Identifier: i
+			Right: 
+				Identifier: size
+		Step: 
+			PostfixExpression
+			Operation: ++
+			Expression: 
+				Identifier: i
+		Statement: 
+			Block
+				BinaryExpression
+				Operation: =
+				Left: 
+					SubscriptExpression
+					Expression: 
+						Identifier: array
+					Inner Expression: 
+						Identifier: i
+				Right: 
+					BinaryExpression
+					Operation: +
+					Left: 
+						Identifier: begin
+					Right: 
+						Identifier: i
+Function print_comma
+Arguments: 
+Body: 
+	Block
+		FunctionCall print_char
+		Arguments: 
+			Number: 44
+		FunctionCall print_char
+		Arguments: 
+			Number: 32
+Function print_array
+Arguments: 
+	Identifier: array
+	Identifier: size
+Body: 
+	Block
+		Variable
+			Identifier: i
+			Type: VariableType.LONG
+			Number: 0
+		ForExpression
+		Initial value: 
+			BinaryExpression
+			Operation: =
+			Left: 
+				Identifier: i
+			Right: 
+				Number: 0
+		Condition: 
+			BinaryExpression
+			Operation: <
+			Left: 
+				Identifier: i
+			Right: 
+				Identifier: size
+		Step: 
+			PostfixExpression
+			Operation: ++
+			Expression: 
+				Identifier: i
+		Statement: 
+			Block
+				IfStatement
+				Condition: 
+					Identifier: i
+				Then: 
+					Block
+						FunctionCall print_comma
+				FunctionCall print_long
+				Arguments: 
+					SubscriptExpression
+					Expression: 
+						Identifier: array
+					Inner Expression: 
+						Identifier: i
+		FunctionCall print_nl
+Function main
+Arguments: 
+Body: 
+	Block
+		Variable
+			Identifier: a
+			Type: VariableType.LONG
+			Number: 0
+		Variable
+			Identifier: b
+			Type: VariableType.LONG
+			Number: 0
+		BinaryExpression
+		Operation: =
+		Left: 
+			Identifier: a
+		Right: 
+			FunctionCall lalloc
+			Arguments: 
+				Number: 10
+		BinaryExpression
+		Operation: =
+		Left: 
+			Identifier: b
+		Right: 
+			FunctionCall lalloc
+			Arguments: 
+				Number: 20
+		FunctionCall fill_array
+		Arguments: 
+			Identifier: a
+			Number: 666
+			Number: 10
+		FunctionCall fill_array
+		Arguments: 
+			Identifier: b
+			Number: 10
+			Number: 10
+		FunctionCall fill_array
+		Arguments: 
+			BinaryExpression
+			Operation: +
+			Left: 
+				Identifier: b
+			Right: 
+				Number: 10
+			Number: 90
+			Number: 10
+		FunctionCall print_array
+		Arguments: 
+			Identifier: a
+			Number: 30
+		FunctionCall print_array
+		Arguments: 
+			Identifier: b
+			Number: 20
