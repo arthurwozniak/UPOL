@@ -1,0 +1,20 @@
+((() (v))
+ ((o) (t o v))
+ ((j) (j v))
+ ((v) (v))
+ ((t) (t o v))
+ ((j o) (t j o v))
+ ((o v) (t o v))
+ ((t v) (t o v))
+ ((j v) (j v))
+ ((t j) (t j o v))
+ ((t o) (t o v))
+ ((t j v) (t j o v))
+ ((t o v) (t o v))
+ ((j o v) (t j o v))
+ ((t j o) (t j o v))
+ ((t j o v) (t j o v)))
+
+
+
+
