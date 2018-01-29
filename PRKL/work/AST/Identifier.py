@@ -1,6 +1,5 @@
 from . import Node
 from .Function import Function
-from .Block import Block
 from ASM.ASM import ASM
 from ASM.Registers import Registers
 
@@ -15,6 +14,8 @@ class Identifier(Node):
         return self.depth * "\t" + self.__class__.__name__ + ": " + str(self.text)
 
     def get_offset(self):
+        from .Block import Block
+
         parent = self.parent
 
         while True:
@@ -25,9 +26,13 @@ class Identifier(Node):
                 if self.text in enviroment.keys():
                     return enviroment[self.text]
             parent = parent.parent
+        return 0
 
     def asm(self):
         code = ""
         offset = self.get_offset()
         code += ASM.instruction("movq", "-{0}({1})".format(offset, Registers.RBP), Registers.RAX)
         return code
+
+    def address(self):
+        return "-{0}({1})".format(self.get_offset(), Registers.RBP)

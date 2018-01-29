@@ -27,7 +27,6 @@ class FunctionCall(Node):
         code = ""
         # uložení registrů
         for register in ASM.UNSAFE_REGISTERS:
-            break
             code += ASM.instruction("pushq", register)
 
         # předání parametrů
@@ -35,7 +34,7 @@ class FunctionCall(Node):
             for i, argument in enumerate(self.arguments):
                 code += argument.asm()
 
-                if i <= 6:
+                if i < 6:
                     code += ASM.instruction("movq", Registers.RAX, ASM.UNSAFE_REGISTERS[i])
                 else:
                     code += ASM.instruction("pushq", Registers.RAX)
@@ -45,6 +44,5 @@ class FunctionCall(Node):
 
         # obnovení registrů
         for register in reversed(ASM.UNSAFE_REGISTERS):
-            break
             code += ASM.instruction("popq", register)
         return code

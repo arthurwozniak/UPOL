@@ -13,6 +13,12 @@ class Node:
         else:
             return 1 + self.parent.depth
 
+    def label_id(self):
+        return hex(id(self))[2:]
+
+    def label_name(self):
+        return self.__class__.__name__ + "_" +  self.label_id()
+
     def __repr__(self):
         return self.__str__().split("\n")[0]
 

@@ -40,30 +40,29 @@ class ForExpression(Node):
         tmp += "\n" + str(self.statements)
         return tmp
 
-    def label_name(self):
-        return hex(id(self))
 
     def asm(self):
         code = ""
-        code += "FORLOOP_{0}_INIT:\n".format(self.label_name())
-
+        code += "{0}_INIT:\n".format(self.label_name())
         if self.init is not None:
             code += self.init.asm()
 
-        code += "FORLOOP_{0}_COND:\n".format(self.label_name())
+        code += "{0}_COND:\n".format(self.label_name())
         if self.cond is not None:
             code += self.cond.asm()
-            ASM.instruction("cmp", Registers.RAX, "$1")
-            ASM.instruction("jne", "FORLOOP_{0}_END")
+            code += ASM.instruction("cmp", "$0", Registers.RAX)
+            code += ASM.instruction("je", "{0}_END".format(self.label_name()))
 
-        code += "FORLOOP_{0}_BODY:\n".format(self.label_name())
+        code += "{0}_BODY:\n".format(self.label_name())
+        #print(self.statements)
         code += self.statements.asm()
 
+        code += "{0}_STEP:\n".format(self.label_name())
         if self.step is not None:
             code += self.step.asm()
-        code += ASM.instruction("jmp", "FORLOOP_{0}_COND".format(self.label_name()))
+        code += ASM.instruction("jmp", "{0}_COND".format(self.label_name()))
 
-        code += "FORLOOP_{0}_END:\n".format(self.label_name())
+        code += "{0}_END:\n".format(self.label_name())
 
 
         return code

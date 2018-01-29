@@ -15,9 +15,10 @@ class ASM:
 
         return code
 
+
     def program_directive():
         code = """    .text
-            .globl main
+            .global main
 
             .type	main, @function\n"""
         return code

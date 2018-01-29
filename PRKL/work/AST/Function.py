@@ -10,6 +10,7 @@ class Function(Node):
         self.id = id
         self.arguments = arguments
         self.body = body
+        self.body.parent = self
         # if self.id is not None:
         #     #self.id.set_parent(self)
         if self.arguments is not None:
@@ -32,9 +33,10 @@ class Function(Node):
         code = "{0}:\n".format(self.id)
         code += ASM.instruction("pushq", Registers.RBP)
         code += ASM.instruction("movq", Registers.RSP, Registers.RBP)
-        code += self.body.asm()
+        code += self.body.asm(self.arguments)
         code += "\n"
 
         # obnovíme registry
+        code += ASM.instruction("leave")
         code += ASM.instruction("ret")
         return code

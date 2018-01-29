@@ -1,5 +1,6 @@
 from . import Node
-
+from ASM.ASM import ASM
+from ASM.Registers import Registers
 
 class UnaryExpression(Node):
 
@@ -15,3 +16,31 @@ class UnaryExpression(Node):
         tmp += "\n" + self.depth * "\t" + "Expression: "
         tmp += "\n" + str(self.expression)
         return tmp
+
+    def asm(self):
+        code = ""
+        if self.operation == "&":
+            code += ASM.instruction("leaq", self.expression.address(), Registers.RAX)
+        elif self.operation == "*":
+            code += ASM.instruction("movq", self.expression.address(), Registers.RBX)
+            code += ASM.instruction("movq", Registers.RBX.dereference(), Registers.RAX)
+        elif self.operation == "!":
+            code += self.expression.asm()
+            code += ASM.instruction("cmp", "$0", Registers.RAX)
+            code += ASM.instruction("je", "NOT_FALSE_{0}\n".format(self.label_name()))
+            code += "NOT_TRUE_{0}:\n".format(self.label_name())
+            code += ASM.instruction("movq", "$0", Registers.RAX)
+            code += ASM.instruction("jmp", "NOT_END_{0}\n".format(self.label_name()))
+
+            code += "NOT_FALSE_{0}:\n".format(self.label_name())
+            code += ASM.instruction("movq", "$1", Registers.RAX)
+            code += "NOT_END_{0}:\n".format(self.label_name())
+
+        elif self.operation == "-":
+            code += self.expression.asm()
+            code += ASM.instruction("negq", Registers.RAX);
+
+        return code
+
+    def address(self):
+        return self.asm()

@@ -22,3 +22,6 @@ class Registers(Enum):
 
     def __str__(self):
         return str(self.value)
+
+    def dereference(self):
+        return "({0})".format(self.value)
