@@ -1,0 +1,59 @@
+line 41:19 no viable alternative at input 'do{print_stack();last=prgm[pc];if(last==-1){pc+=3;prgm[pc-2]('
+line 37:15 missing '{' at ';'
+line 41:19 no viable alternative at input 'if(last==-1){pc+=3;prgm[pc-2]('
+line 39:10 mismatched input '==' expecting '('
+line 40:8 mismatched input '+=' expecting '('
+line 41:10 mismatched input '[' expecting '('
+line 41:14 mismatched input '-' expecting '('
+line 41:25 mismatched input '[' expecting '('
+line 41:29 mismatched input '-' expecting '('
+line 44:10 mismatched input '==' expecting '('
+line 45:13 mismatched input '=' expecting '('
+line 45:21 mismatched input '[' expecting '('
+line 45:25 mismatched input '-' expecting '('
+line 46:8 mismatched input '+=' expecting '('
+line 47:8 mismatched input '-=' expecting '('
+line 48:10 mismatched input '[' expecting '('
+line 48:14 mismatched input '-' expecting '('
+line 48:22 missing '(' at ')'
+line 48:23 missing '{' at ';'
+Traceback (most recent call last):
+  File "./work/lexer.py", line 24, in <module>
+    printTree()
+  File "./work/lexer.py", line 16, in printTree
+    AST = treeVisitor.visit(tree)
+  File "/usr/lib/python3.4/site-packages/antlr4/tree/Tree.py", line 34, in visit
+    return tree.accept(self)
+  File "/home/kamil/git/UPOL/PRKL/work/HeroCParser.py", line 446, in accept
+    return visitor.visitProg(self)
+  File "/home/kamil/git/UPOL/PRKL/work/HeroCCustomVisitor.py", line 18, in wrapper
+    return func(*func_args, **func_kwargs)
+  File "/home/kamil/git/UPOL/PRKL/work/HeroCCustomVisitor.py", line 38, in visitProg
+    return AST.Program(self.visit(ctx.getChild(0)))
+  File "/usr/lib/python3.4/site-packages/antlr4/tree/Tree.py", line 34, in visit
+    return tree.accept(self)
+  File "/home/kamil/git/UPOL/PRKL/work/HeroCParser.py", line 494, in accept
+    return visitor.visitProgram(self)
+  File "/home/kamil/git/UPOL/PRKL/work/HeroCCustomVisitor.py", line 18, in wrapper
+    return func(*func_args, **func_kwargs)
+  File "/home/kamil/git/UPOL/PRKL/work/HeroCCustomVisitor.py", line 46, in visitProgram
+    node = self.visit(i)
+  File "/usr/lib/python3.4/site-packages/antlr4/tree/Tree.py", line 34, in visit
+    return tree.accept(self)
+  File "/home/kamil/git/UPOL/PRKL/work/HeroCParser.py", line 1129, in accept
+    return visitor.visitFunctionDefinition(self)
+  File "/home/kamil/git/UPOL/PRKL/work/HeroCCustomVisitor.py", line 18, in wrapper
+    return func(*func_args, **func_kwargs)
+  File "/home/kamil/git/UPOL/PRKL/work/HeroCCustomVisitor.py", line 139, in visitFunctionDefinition
+    body = self.visit(i)
+  File "/usr/lib/python3.4/site-packages/antlr4/tree/Tree.py", line 34, in visit
+    return tree.accept(self)
+  File "/home/kamil/git/UPOL/PRKL/work/HeroCParser.py", line 1325, in accept
+    return visitor.visitCompoundStatement(self)
+  File "/home/kamil/git/UPOL/PRKL/work/HeroCCustomVisitor.py", line 18, in wrapper
+    return func(*func_args, **func_kwargs)
+  File "/home/kamil/git/UPOL/PRKL/work/HeroCCustomVisitor.py", line 163, in visitCompoundStatement
+    block_items = self.visit(block_body)
+  File "/usr/lib/python3.4/site-packages/antlr4/tree/Tree.py", line 34, in visit
+    return tree.accept(self)
+AttributeError: 'NoneType' object has no attribute 'accept'

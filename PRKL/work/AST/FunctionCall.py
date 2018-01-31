@@ -25,11 +25,11 @@ class FunctionCall(Node):
 
     def asm(self):
         code = ""
-        # uložení registrů
+        # backup unsafe registers
         for register in ASM.UNSAFE_REGISTERS:
             code += ASM.instruction("pushq", register)
 
-        # předání parametrů
+        # pass function arguments
         if self.arguments is not None:
             for i, argument in enumerate(self.arguments):
                 code += argument.asm()
@@ -42,7 +42,7 @@ class FunctionCall(Node):
         code += ASM.instruction("call", self.function)
 
 
-        # obnovení registrů
+        # restore unsafe registers
         for register in reversed(ASM.UNSAFE_REGISTERS):
             code += ASM.instruction("popq", register)
         return code

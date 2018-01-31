@@ -1,6 +1,6 @@
 from enum import Enum
 from . import Node
-
+from ASM.ASM import ASM
 
 class VariableType(Enum):
     LONG = "LONG"
@@ -40,4 +40,22 @@ class Variable(Node):
         if self.type == VariableType.POINTER:
             return 8
         else:
-            return self.size * 8
+            return self.size.value * 8 + 8 # + 8 due to pointer to array
+
+    def asm(self):
+        from .Program import Program
+        from .Number import Number
+        from .UnaryExpression import UnaryExpression
+        if not(isinstance(self.parent, Program)):
+            return ""
+        code = ""
+        code += "\t{0}:\n".format(self.id.text)
+        if self.value is None or self.value == []:
+            code += "\t\t.zero {0}\n".format(self.byte_size())
+        elif isinstance(self.value, Number):
+            code += "\t\t.quad ${0}\n".format(self.value.value)
+        elif isinstance(self.value, UnaryExpression):
+            code += "\t\t.quad {0}\n".format(self.value.expression.text)
+        return code
+
+

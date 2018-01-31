@@ -17,9 +17,11 @@ main ()
     print_long (b);
     print_nl ();
     print_nl ();
+
     swap (&a, c);
     print_long (a);
     print_nl ();
     print_long (b);
     print_nl ();
+
 }

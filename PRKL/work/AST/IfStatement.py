@@ -2,6 +2,7 @@ from . import Node
 from ASM.ASM import ASM
 from ASM.Registers import Registers
 
+
 class IfStatement(Node):
 
     def __init__(self, parent=None, cond=None, then=None, els=None):

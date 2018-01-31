@@ -10,5 +10,4 @@ main ()
 	print_long (a);
 	print_nl ();
     }
-    print_long (a);
 }

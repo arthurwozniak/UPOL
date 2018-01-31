@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "./work/lexer.py", line 24, in <module>
+    printTree()
+  File "./work/lexer.py", line 21, in printTree
+    sys.stdout.write(str(AST.asm()))
+  File "/home/kamil/git/UPOL/PRKL/work/AST/Program.py", line 21, in asm
+    code += i.asm()
+  File "/home/kamil/git/UPOL/PRKL/work/AST/Function.py", line 36, in asm
+    code += self.body.asm(self.arguments)
+  File "/home/kamil/git/UPOL/PRKL/work/AST/Block.py", line 87, in asm
+    code += i.asm()
+  File "/home/kamil/git/UPOL/PRKL/work/AST/ForExpression.py", line 58, in asm
+    code += self.statements.asm()
+  File "/home/kamil/git/UPOL/PRKL/work/AST/Block.py", line 87, in asm
+    code += i.asm()
+  File "/home/kamil/git/UPOL/PRKL/work/AST/FunctionCall.py", line 35, in asm
+    code += argument.asm()
+  File "/home/kamil/git/UPOL/PRKL/work/AST/UnaryExpression.py", line 25, in asm
+    code += ASM.instruction("movq", self.expression.address(), Registers.RBX)
+AttributeError: 'BinaryExpression' object has no attribute 'address'

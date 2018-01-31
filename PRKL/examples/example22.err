@@ -1,0 +1,234 @@
+Traceback (most recent call last):
+  File "./work/lexer.py", line 24, in <module>
+    printTree()
+  File "./work/lexer.py", line 14, in printTree
+    tree = parser.prog()
+  File "/home/kamil/git/UPOL/PRKL/work/HeroCParser.py", line 460, in prog
+    self.program()
+  File "/home/kamil/git/UPOL/PRKL/work/HeroCParser.py", line 529, in program
+    self.functionDefinition()
+  File "/home/kamil/git/UPOL/PRKL/work/HeroCParser.py", line 1158, in functionDefinition
+    self.compoundStatement()
+  File "/home/kamil/git/UPOL/PRKL/work/HeroCParser.py", line 1346, in compoundStatement
+    self.blockItemList()
+  File "/home/kamil/git/UPOL/PRKL/work/HeroCParser.py", line 1404, in blockItemList
+    self.blockItemList()
+  File "/home/kamil/git/UPOL/PRKL/work/HeroCParser.py", line 1396, in blockItemList
+    self.blockItem()
+  File "/home/kamil/git/UPOL/PRKL/work/HeroCParser.py", line 1458, in blockItem
+    self.statement()
+  File "/home/kamil/git/UPOL/PRKL/work/HeroCParser.py", line 1292, in statement
+    self.iterationStatement()
+  File "/home/kamil/git/UPOL/PRKL/work/HeroCParser.py", line 1692, in iterationStatement
+    self.statement()
+  File "/home/kamil/git/UPOL/PRKL/work/HeroCParser.py", line 1274, in statement
+    self.compoundStatement()
+  File "/home/kamil/git/UPOL/PRKL/work/HeroCParser.py", line 1346, in compoundStatement
+    self.blockItemList()
+  File "/home/kamil/git/UPOL/PRKL/work/HeroCParser.py", line 1392, in blockItemList
+    la_ = self._interp.adaptivePredict(self._input,22,self._ctx)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 342, in adaptivePredict
+    alt = self.execATN(dfa, s0, input, index, outerContext)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 398, in execATN
+    D = self.computeTargetState(dfa, previousD, t)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 499, in computeTargetState
+    reach = self.computeReachSet(previousD.configs, t, False)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 730, in computeReachSet
+    self.closure(c, reach, closureBusy, False, fullCtx, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1090, in closure
+    fullCtx, initialDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1121, in closureCheckingStopState
+    self.closureCheckingStopState(c, configs, closureBusy, collectPredicates, fullCtx, depth - 1, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1184, in closure_
+    self.closureCheckingStopState(c, configs, closureBusy, continueCollecting, fullCtx, newDepth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1132, in closureCheckingStopState
+    self.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon)
+  File "/usr/lib/python3.4/site-packages/antlr4/atn/ParserATNSimulator.py", line 1144, in closure_
+    for t in p.transitions:
+KeyboardInterrupt

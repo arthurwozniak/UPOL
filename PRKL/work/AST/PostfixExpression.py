@@ -23,8 +23,12 @@ class PostfixExpression(Node):
         code = ""
         code += self.expression.asm()
         #code += self._translate_operation()
+        code += ASM.instruction("pushq", Registers.RAX)
+        # perform postfix operation on variable
         code += ASM.instruction(self._translate_operation(), Registers.RAX)
         code += ASM.instruction("movq", Registers.RAX, self.expression.address())
+        # pop stacked value
+        code += ASM.instruction("popq", Registers.RAX)
         #code += ASM.instruction(self._translate_operation(), self.expression.address())
 
         return code
@@ -32,7 +36,6 @@ class PostfixExpression(Node):
     def _translate_operation(self):
         if self.operation == "++":
             return "incq"
-        if self.operation == "--":
+        elif self.operation == "--":
             return "decq"
-        else:
-            return "nop"
+        raise Exception("Unsupported postfix operation `{0}`".format(self.operation))

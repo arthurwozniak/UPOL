@@ -93,7 +93,7 @@ class HeroCCustomVisitor(HeroCVisitor):
     # Visit a parse tree produced by HeroCParser#initLongListDeclarator.
     @describe
     def visitInitLongListDeclarator(self, ctx: HeroCParser.InitLongListDeclaratorContext):
-        id = AST.Identifier(ctx.getChild(0))
+        id = AST.Identifier(ctx.getChild(0).getText())
         size_node = ctx.getTypedRuleContext(HeroCParser.ExpressionContext, 0)
         items_node = ctx.getTypedRuleContext(
             HeroCParser.InitializerListContext, 0)

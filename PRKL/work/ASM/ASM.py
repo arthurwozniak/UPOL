@@ -20,5 +20,6 @@ class ASM:
         code = """    .text
             .global main
 
-            .type	main, @function\n"""
+            .type	main, @function
+        .data \n"""
         return code

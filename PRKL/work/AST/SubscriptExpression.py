@@ -1,5 +1,6 @@
 from . import Node
-
+from ASM.ASM import ASM
+from ASM.Registers import Registers
 
 class SubscriptExpression(Node):
 
@@ -17,3 +18,23 @@ class SubscriptExpression(Node):
         tmp += "\n" + self.depth * "\t" + "Inner Expression: "
         tmp += "\n" + str(self.sub_expr)
         return tmp
+
+    def asm(self):
+        code = ""
+
+
+        # offset to stack
+        code += self.sub_expr.asm()
+        code += ASM.instruction("imulq", "$8", Registers.RAX)
+        code += ASM.instruction("pushq", Registers.RAX)
+
+        # get identifier address
+        code += self.expression.asm()
+        code += ASM.instruction("movq", Registers.RAX, Registers.RBX)
+        code += ASM.instruction("popq", Registers.RAX)
+        code += ASM.instruction("addq", Registers.RAX, Registers.RBX)
+        code += ASM.instruction("movq", Registers.RBX.dereference(), Registers.RAX)
+
+
+        return code
+
