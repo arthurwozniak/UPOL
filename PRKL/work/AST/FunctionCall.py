@@ -14,6 +14,8 @@ class FunctionCall(Node):
             for i in self.arguments:
                 i.set_parent(self)
         self.function = function
+        if not isinstance(self.function, str):
+            self.function.parent = self
 
     def __str__(self):
         tmp = self.depth * "\t" + self.__class__.__name__ + " " + str(self.function)
@@ -39,7 +41,11 @@ class FunctionCall(Node):
                 else:
                     code += ASM.instruction("pushq", Registers.RAX)
 
-        code += ASM.instruction("call", self.function)
+        if isinstance(self.function, str):
+            code += ASM.instruction("call", self.function)
+        else:
+            code += self.function.asm()
+            code += ASM.instruction("call", "*{0}".format(Registers.RAX))
 
 
         # restore unsafe registers

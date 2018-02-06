@@ -6,28 +6,138 @@
   <component name="ChangeListManager">
     <list default="true" id="59f98e62-6fe5-4564-b5ec-4bd6a0ab8cc3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/MD5SUM" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/asm" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/asm.asm" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/asm.s" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/examples/example02.heroc" afterPath="$PROJECT_DIR$/examples/example02.heroc" />
-      <change beforePath="$PROJECT_DIR$/examples/example03.heroc" afterPath="$PROJECT_DIR$/examples/example03.heroc" />
-      <change beforePath="$PROJECT_DIR$/examples/example21.heroc" afterPath="$PROJECT_DIR$/examples/example21.heroc" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" afterPath="$PROJECT_DIR$/Readme.md" />
+      <change beforePath="$PROJECT_DIR$/examples/example01" afterPath="$PROJECT_DIR$/examples/example01" />
+      <change beforePath="$PROJECT_DIR$/examples/example01.s" afterPath="$PROJECT_DIR$/examples/example01.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example02" afterPath="$PROJECT_DIR$/examples/example02" />
+      <change beforePath="$PROJECT_DIR$/examples/example02.s" afterPath="$PROJECT_DIR$/examples/example02.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example03" afterPath="$PROJECT_DIR$/examples/example03" />
+      <change beforePath="$PROJECT_DIR$/examples/example03.s" afterPath="$PROJECT_DIR$/examples/example03.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example04" afterPath="$PROJECT_DIR$/examples/example04" />
+      <change beforePath="$PROJECT_DIR$/examples/example04.s" afterPath="$PROJECT_DIR$/examples/example04.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example05" afterPath="$PROJECT_DIR$/examples/example05" />
+      <change beforePath="$PROJECT_DIR$/examples/example05.s" afterPath="$PROJECT_DIR$/examples/example05.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example06" afterPath="$PROJECT_DIR$/examples/example06" />
+      <change beforePath="$PROJECT_DIR$/examples/example06.s" afterPath="$PROJECT_DIR$/examples/example06.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example07" afterPath="$PROJECT_DIR$/examples/example07" />
+      <change beforePath="$PROJECT_DIR$/examples/example07.s" afterPath="$PROJECT_DIR$/examples/example07.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example08" afterPath="$PROJECT_DIR$/examples/example08" />
+      <change beforePath="$PROJECT_DIR$/examples/example08.s" afterPath="$PROJECT_DIR$/examples/example08.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example09" afterPath="$PROJECT_DIR$/examples/example09" />
+      <change beforePath="$PROJECT_DIR$/examples/example09.s" afterPath="$PROJECT_DIR$/examples/example09.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example10" afterPath="$PROJECT_DIR$/examples/example10" />
+      <change beforePath="$PROJECT_DIR$/examples/example10.s" afterPath="$PROJECT_DIR$/examples/example10.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example11" afterPath="$PROJECT_DIR$/examples/example11" />
+      <change beforePath="$PROJECT_DIR$/examples/example11.s" afterPath="$PROJECT_DIR$/examples/example11.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example12" afterPath="$PROJECT_DIR$/examples/example12" />
+      <change beforePath="$PROJECT_DIR$/examples/example12.s" afterPath="$PROJECT_DIR$/examples/example12.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example13" afterPath="$PROJECT_DIR$/examples/example13" />
+      <change beforePath="$PROJECT_DIR$/examples/example13.s" afterPath="$PROJECT_DIR$/examples/example13.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example14" afterPath="$PROJECT_DIR$/examples/example14" />
+      <change beforePath="$PROJECT_DIR$/examples/example14.s" afterPath="$PROJECT_DIR$/examples/example14.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example15" afterPath="$PROJECT_DIR$/examples/example15" />
+      <change beforePath="$PROJECT_DIR$/examples/example15.s" afterPath="$PROJECT_DIR$/examples/example15.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example16" afterPath="$PROJECT_DIR$/examples/example16" />
+      <change beforePath="$PROJECT_DIR$/examples/example16.s" afterPath="$PROJECT_DIR$/examples/example16.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example17" afterPath="$PROJECT_DIR$/examples/example17" />
+      <change beforePath="$PROJECT_DIR$/examples/example17.s" afterPath="$PROJECT_DIR$/examples/example17.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example18" afterPath="$PROJECT_DIR$/examples/example18" />
+      <change beforePath="$PROJECT_DIR$/examples/example18.s" afterPath="$PROJECT_DIR$/examples/example18.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example19" afterPath="$PROJECT_DIR$/examples/example19" />
+      <change beforePath="$PROJECT_DIR$/examples/example19.s" afterPath="$PROJECT_DIR$/examples/example19.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example20" afterPath="$PROJECT_DIR$/examples/example20" />
+      <change beforePath="$PROJECT_DIR$/examples/example20.s" afterPath="$PROJECT_DIR$/examples/example20.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example21.err" afterPath="$PROJECT_DIR$/examples/example21.err" />
+      <change beforePath="$PROJECT_DIR$/examples/example21.out" afterPath="$PROJECT_DIR$/examples/example21.out" />
+      <change beforePath="$PROJECT_DIR$/examples/example21.s" afterPath="$PROJECT_DIR$/examples/example21.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example22" afterPath="$PROJECT_DIR$/examples/example22" />
+      <change beforePath="$PROJECT_DIR$/examples/example22.err" afterPath="$PROJECT_DIR$/examples/example22.err" />
       <change beforePath="$PROJECT_DIR$/examples/example22.heroc" afterPath="$PROJECT_DIR$/examples/example22.heroc" />
-      <change beforePath="$PROJECT_DIR$/work/ASM/ASM.py" afterPath="$PROJECT_DIR$/work/ASM/ASM.py" />
+      <change beforePath="$PROJECT_DIR$/examples/example22.out" afterPath="$PROJECT_DIR$/examples/example22.out" />
+      <change beforePath="$PROJECT_DIR$/examples/example22.s" afterPath="$PROJECT_DIR$/examples/example22.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example23" afterPath="$PROJECT_DIR$/examples/example23" />
+      <change beforePath="$PROJECT_DIR$/examples/example23.heroc" afterPath="$PROJECT_DIR$/examples/example23.heroc" />
+      <change beforePath="$PROJECT_DIR$/examples/example23.out" afterPath="$PROJECT_DIR$/examples/example23.out" />
+      <change beforePath="$PROJECT_DIR$/examples/example23.s" afterPath="$PROJECT_DIR$/examples/example23.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example24" afterPath="$PROJECT_DIR$/examples/example24" />
+      <change beforePath="$PROJECT_DIR$/examples/example24.out" afterPath="$PROJECT_DIR$/examples/example24.out" />
+      <change beforePath="$PROJECT_DIR$/examples/example24.s" afterPath="$PROJECT_DIR$/examples/example24.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example25.err" afterPath="$PROJECT_DIR$/examples/example25.err" />
+      <change beforePath="$PROJECT_DIR$/examples/example25.heroc" afterPath="$PROJECT_DIR$/examples/example25.heroc" />
+      <change beforePath="$PROJECT_DIR$/examples/example25.out" afterPath="$PROJECT_DIR$/examples/example25.out" />
+      <change beforePath="$PROJECT_DIR$/examples/example25.s" afterPath="$PROJECT_DIR$/examples/example25.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example26" afterPath="$PROJECT_DIR$/examples/example26" />
+      <change beforePath="$PROJECT_DIR$/examples/example26.err" afterPath="$PROJECT_DIR$/examples/example26.err" />
+      <change beforePath="$PROJECT_DIR$/examples/example26.out" afterPath="$PROJECT_DIR$/examples/example26.out" />
+      <change beforePath="$PROJECT_DIR$/examples/example26.s" afterPath="$PROJECT_DIR$/examples/example26.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example27" afterPath="$PROJECT_DIR$/examples/example27" />
+      <change beforePath="$PROJECT_DIR$/examples/example27.s" afterPath="$PROJECT_DIR$/examples/example27.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example28" afterPath="$PROJECT_DIR$/examples/example28" />
+      <change beforePath="$PROJECT_DIR$/examples/example28.heroc" afterPath="$PROJECT_DIR$/examples/example28.heroc" />
+      <change beforePath="$PROJECT_DIR$/examples/example28.out" afterPath="$PROJECT_DIR$/examples/example28.out" />
+      <change beforePath="$PROJECT_DIR$/examples/example28.s" afterPath="$PROJECT_DIR$/examples/example28.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example29" afterPath="$PROJECT_DIR$/examples/example29" />
+      <change beforePath="$PROJECT_DIR$/examples/example29.out" afterPath="$PROJECT_DIR$/examples/example29.out" />
+      <change beforePath="$PROJECT_DIR$/examples/example29.s" afterPath="$PROJECT_DIR$/examples/example29.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example30.out" afterPath="$PROJECT_DIR$/examples/example30.out" />
+      <change beforePath="$PROJECT_DIR$/examples/example30.s" afterPath="$PROJECT_DIR$/examples/example30.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example31" afterPath="$PROJECT_DIR$/examples/example31" />
+      <change beforePath="$PROJECT_DIR$/examples/example31.out" afterPath="$PROJECT_DIR$/examples/example31.out" />
+      <change beforePath="$PROJECT_DIR$/examples/example31.s" afterPath="$PROJECT_DIR$/examples/example31.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example32" afterPath="$PROJECT_DIR$/examples/example32" />
+      <change beforePath="$PROJECT_DIR$/examples/example32.out" afterPath="$PROJECT_DIR$/examples/example32.out" />
+      <change beforePath="$PROJECT_DIR$/examples/example32.s" afterPath="$PROJECT_DIR$/examples/example32.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example33" afterPath="$PROJECT_DIR$/examples/example33" />
+      <change beforePath="$PROJECT_DIR$/examples/example33.heroc" afterPath="$PROJECT_DIR$/examples/example33.heroc" />
+      <change beforePath="$PROJECT_DIR$/examples/example33.out" afterPath="$PROJECT_DIR$/examples/example33.out" />
+      <change beforePath="$PROJECT_DIR$/examples/example33.s" afterPath="$PROJECT_DIR$/examples/example33.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example34.err" afterPath="$PROJECT_DIR$/examples/example34.err" />
+      <change beforePath="$PROJECT_DIR$/examples/example34.heroc" afterPath="$PROJECT_DIR$/examples/example34.heroc" />
+      <change beforePath="$PROJECT_DIR$/examples/example34.out" afterPath="$PROJECT_DIR$/examples/example34.out" />
+      <change beforePath="$PROJECT_DIR$/examples/example34.s" afterPath="$PROJECT_DIR$/examples/example34.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example35" afterPath="$PROJECT_DIR$/examples/example35" />
+      <change beforePath="$PROJECT_DIR$/examples/example35.out" afterPath="$PROJECT_DIR$/examples/example35.out" />
+      <change beforePath="$PROJECT_DIR$/examples/example35.s" afterPath="$PROJECT_DIR$/examples/example35.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example36" afterPath="$PROJECT_DIR$/examples/example36" />
+      <change beforePath="$PROJECT_DIR$/examples/example36.out" afterPath="$PROJECT_DIR$/examples/example36.out" />
+      <change beforePath="$PROJECT_DIR$/examples/example36.s" afterPath="$PROJECT_DIR$/examples/example36.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example37" afterPath="$PROJECT_DIR$/examples/example37" />
+      <change beforePath="$PROJECT_DIR$/examples/example37.heroc" afterPath="$PROJECT_DIR$/examples/example37.heroc" />
+      <change beforePath="$PROJECT_DIR$/examples/example37.out" afterPath="$PROJECT_DIR$/examples/example37.out" />
+      <change beforePath="$PROJECT_DIR$/examples/example37.s" afterPath="$PROJECT_DIR$/examples/example37.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example38.err" afterPath="$PROJECT_DIR$/examples/example38.err" />
+      <change beforePath="$PROJECT_DIR$/examples/example38.out" afterPath="$PROJECT_DIR$/examples/example38.out" />
+      <change beforePath="$PROJECT_DIR$/examples/example38.s" afterPath="$PROJECT_DIR$/examples/example38.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example39.err" afterPath="$PROJECT_DIR$/examples/example39.err" />
+      <change beforePath="$PROJECT_DIR$/examples/example39.heroc" afterPath="$PROJECT_DIR$/examples/example39.heroc" />
+      <change beforePath="$PROJECT_DIR$/examples/example39.out" afterPath="$PROJECT_DIR$/examples/example39.out" />
+      <change beforePath="$PROJECT_DIR$/examples/example39.s" afterPath="$PROJECT_DIR$/examples/example39.s" />
+      <change beforePath="$PROJECT_DIR$/examples/example40" afterPath="$PROJECT_DIR$/examples/example40" />
+      <change beforePath="$PROJECT_DIR$/examples/example40.heroc" afterPath="$PROJECT_DIR$/examples/example40.heroc" />
+      <change beforePath="$PROJECT_DIR$/examples/example40.out" afterPath="$PROJECT_DIR$/examples/example40.out" />
+      <change beforePath="$PROJECT_DIR$/examples/example40.s" afterPath="$PROJECT_DIR$/examples/example40.s" />
+      <change beforePath="$PROJECT_DIR$/pokus" afterPath="$PROJECT_DIR$/pokus" />
+      <change beforePath="$PROJECT_DIR$/test.s" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/work/ASM/Registers.py" afterPath="$PROJECT_DIR$/work/ASM/Registers.py" />
+      <change beforePath="$PROJECT_DIR$/work/AST/Array.py" afterPath="$PROJECT_DIR$/work/AST/Array.py" />
+      <change beforePath="$PROJECT_DIR$/work/AST/BinaryExpression.py" afterPath="$PROJECT_DIR$/work/AST/BinaryExpression.py" />
       <change beforePath="$PROJECT_DIR$/work/AST/Block.py" afterPath="$PROJECT_DIR$/work/AST/Block.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/Enviroment.py" afterPath="$PROJECT_DIR$/work/AST/Environment.py" />
+      <change beforePath="$PROJECT_DIR$/work/AST/Environment.py" afterPath="$PROJECT_DIR$/work/AST/Environment.py" />
+      <change beforePath="$PROJECT_DIR$/work/AST/Function.py" afterPath="$PROJECT_DIR$/work/AST/Function.py" />
       <change beforePath="$PROJECT_DIR$/work/AST/FunctionCall.py" afterPath="$PROJECT_DIR$/work/AST/FunctionCall.py" />
       <change beforePath="$PROJECT_DIR$/work/AST/Identifier.py" afterPath="$PROJECT_DIR$/work/AST/Identifier.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/IfEvalStatement.py" afterPath="$PROJECT_DIR$/work/AST/IfEvalStatement.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/IfStatement.py" afterPath="$PROJECT_DIR$/work/AST/IfStatement.py" />
+      <change beforePath="$PROJECT_DIR$/work/AST/JumpStatement.py" afterPath="$PROJECT_DIR$/work/AST/JumpStatement.py" />
       <change beforePath="$PROJECT_DIR$/work/AST/Node.py" afterPath="$PROJECT_DIR$/work/AST/Node.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/PostfixExpression.py" afterPath="$PROJECT_DIR$/work/AST/PostfixExpression.py" />
       <change beforePath="$PROJECT_DIR$/work/AST/Program.py" afterPath="$PROJECT_DIR$/work/AST/Program.py" />
+      <change beforePath="$PROJECT_DIR$/work/AST/String.py" afterPath="$PROJECT_DIR$/work/AST/String.py" />
       <change beforePath="$PROJECT_DIR$/work/AST/SubscriptExpression.py" afterPath="$PROJECT_DIR$/work/AST/SubscriptExpression.py" />
+      <change beforePath="$PROJECT_DIR$/work/AST/UnaryExpression.py" afterPath="$PROJECT_DIR$/work/AST/UnaryExpression.py" />
       <change beforePath="$PROJECT_DIR$/work/AST/Variable.py" afterPath="$PROJECT_DIR$/work/AST/Variable.py" />
+      <change beforePath="$PROJECT_DIR$/work/HeroC.g4" afterPath="$PROJECT_DIR$/work/HeroC.g4" />
       <change beforePath="$PROJECT_DIR$/work/HeroCCustomVisitor.py" afterPath="$PROJECT_DIR$/work/HeroCCustomVisitor.py" />
-      <change beforePath="$PROJECT_DIR$/work/foo.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/work/HeroCLexer.py" afterPath="$PROJECT_DIR$/work/HeroCLexer.py" />
+      <change beforePath="$PROJECT_DIR$/work/HeroCParser.py" afterPath="$PROJECT_DIR$/work/HeroCParser.py" />
+      <change beforePath="$PROJECT_DIR$/work/HeroCVisitor.py" afterPath="$PROJECT_DIR$/work/HeroCVisitor.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,43 +151,29 @@
       <file leaf-file-name="test.s" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.s">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-96">
-              <caret line="173" column="16" lean-forward="false" selection-start-line="173" selection-start-column="16" selection-end-line="173" selection-end-column="16" />
+            <state relative-caret-position="610">
+              <caret line="768" column="13" lean-forward="false" selection-start-line="768" selection-start-column="13" selection-end-line="768" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Program.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/work/AST/Program.py">
+      <file leaf-file-name="example39.heroc" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/examples/example39.heroc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="11" lean-forward="true" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+            <state relative-caret-position="85">
+              <caret line="5" column="5" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="String.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/work/AST/String.py">
+      <file leaf-file-name="example39.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/example39.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WhileExpression.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/work/AST/WhileExpression.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="544">
+              <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,48 +181,38 @@
       <file leaf-file-name="UnaryExpression.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/work/AST/UnaryExpression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+            <state relative-caret-position="190">
+              <caret line="22" column="54" lean-forward="false" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SubscriptExpression.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/work/AST/SubscriptExpression.py">
+      <file leaf-file-name="FunctionCall.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/work/AST/FunctionCall.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="34" column="37" lean-forward="false" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+            <state relative-caret-position="595">
+              <caret line="39" column="43" lean-forward="false" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Array.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/work/AST/Array.py">
+      <file leaf-file-name="Identifier.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/work/AST/Identifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="717">
+              <caret line="51" column="50" lean-forward="false" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PostfixExpression.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/work/AST/PostfixExpression.py">
+      <file leaf-file-name="Block.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/work/AST/Block.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="31" column="32" lean-forward="true" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HeroC.g4" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/work/HeroC.g4">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="124" column="54" lean-forward="false" selection-start-line="124" selection-start-column="52" selection-end-line="124" selection-end-column="54" />
+            <state relative-caret-position="363">
+              <caret line="70" column="28" lean-forward="false" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -143,36 +229,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>long</find>
-      <find>blockl</find>
-      <find>ff</find>
-      <find>f</find>
+      <find>functionCa</find>
+      <find>functioncall</find>
+      <find>prin</find>
+      <find>text</find>
+      <find>parti</find>
+      <find>func</find>
+      <find>functio</find>
+      <find>functi</find>
+      <find>compoundS</find>
+      <find>isins</find>
+      <find>subs</find>
+      <find>function</find>
+      <find>unarye</find>
+      <find>partiti</find>
+      <find>call</find>
+      <find>pc - 1</find>
+      <find>print(</find>
+      <find>-1</find>
+      <find>push</find>
+      <find>leq</find>
+      <find>pop</find>
+      <find>print_arr</find>
+      <find>add2</find>
+      <find>pop1</find>
+      <find>$3</find>
+      <find>addq</find>
+      <find>$-1</find>
       <find>subq</find>
-      <find>-0</find>
-      <find>Block(</find>
-      <find>###</find>
-      <find>address</find>
-      <find>visitCom</find>
-      <find>postf</find>
-      <find>Registers.RBP</find>
-      <find>movab</find>
-      <find>ast</find>
-      <find>jmp</find>
-      <find>COND</find>
-      <find>step</find>
-      <find>xor</find>
-      <find>eval</find>
-      <find>rbp</find>
-      <find>parent</find>
-      <find>print(en</find>
-      <find>Identifi</find>
-      <find>foo</find>
-      <find>Envirome</find>
-      <find>sizeof</find>
-      <find>8589934595</find>
-      <find>enviroment</find>
-      <find>prefix</find>
-      <find>++</find>
+      <find>sp</find>
+      <find>print</find>
     </findStrings>
     <replaceStrings>
       <replace>-8</replace>
@@ -185,11 +271,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/work/HeroC.g4" />
-        <option value="$PROJECT_DIR$/work/print_tree.py" />
-        <option value="$PROJECT_DIR$/examples/example02.heroc" />
-        <option value="$PROJECT_DIR$/work/ASM/Registers.py" />
-        <option value="$PROJECT_DIR$/work/AST/Function.py" />
         <option value="$PROJECT_DIR$/examples/example03.heroc" />
         <option value="$PROJECT_DIR$/examples/example05.heroc" />
         <option value="$PROJECT_DIR$/work/AST/WhileExpression.py" />
@@ -197,28 +278,50 @@
         <option value="$PROJECT_DIR$/work/AST/DoWhileExpression.py" />
         <option value="$PROJECT_DIR$/work/AST/ForExpression.py" />
         <option value="$PROJECT_DIR$/examples/example10.heroc" />
-        <option value="$PROJECT_DIR$/work/AST/UnaryExpression.py" />
-        <option value="$PROJECT_DIR$/work/AST/JumpStatement.py" />
         <option value="$PROJECT_DIR$/examples/example12.heroc" />
-        <option value="$PROJECT_DIR$/work/HeroCCustomVisitor.py" />
         <option value="$PROJECT_DIR$/work/lexer.py" />
-        <option value="$PROJECT_DIR$/work/AST/BinaryExpression.py" />
         <option value="$PROJECT_DIR$/work/AST/Enviroment.py" />
-        <option value="$PROJECT_DIR$/work/AST/SubscriptExpression.py" />
         <option value="$PROJECT_DIR$/examples/example21.heroc" />
-        <option value="$PROJECT_DIR$/work/ASM/ASM.py" />
-        <option value="$PROJECT_DIR$/test.s" />
-        <option value="$PROJECT_DIR$/work/AST/Variable.py" />
-        <option value="$PROJECT_DIR$/examples/example22.heroc" />
-        <option value="$PROJECT_DIR$/work/AST/Program.py" />
-        <option value="$PROJECT_DIR$/work/AST/Environment.py" />
-        <option value="$PROJECT_DIR$/work/AST/Node.py" />
-        <option value="$PROJECT_DIR$/work/AST/Block.py" />
-        <option value="$PROJECT_DIR$/work/AST/Identifier.py" />
-        <option value="$PROJECT_DIR$/work/AST/FunctionCall.py" />
         <option value="$PROJECT_DIR$/work/AST/IfStatement.py" />
         <option value="$PROJECT_DIR$/work/AST/IfEvalStatement.py" />
         <option value="$PROJECT_DIR$/work/AST/PostfixExpression.py" />
+        <option value="$PROJECT_DIR$/examples/example22.heroc" />
+        <option value="$PROJECT_DIR$/examples/example23.heroc" />
+        <option value="$PROJECT_DIR$/examples/example24.heroc" />
+        <option value="$PROJECT_DIR$/examples/example25.heroc" />
+        <option value="$PROJECT_DIR$/work/AST/Environment.py" />
+        <option value="$PROJECT_DIR$/work/ASM/ASM.py" />
+        <option value="$PROJECT_DIR$/work/ASM/Registers.py" />
+        <option value="$PROJECT_DIR$/examples/example30.heroc" />
+        <option value="$PROJECT_DIR$/examples/example29.heroc" />
+        <option value="$PROJECT_DIR$/examples/example31.heroc" />
+        <option value="$PROJECT_DIR$/work/AST/Variable.py" />
+        <option value="$PROJECT_DIR$/examples/example33.heroc" />
+        <option value="$PROJECT_DIR$/work/AST/UnaryExpression.py" />
+        <option value="$PROJECT_DIR$/examples/example34.heroc" />
+        <option value="$PROJECT_DIR$/work/AST/BinaryExpression.py" />
+        <option value="$PROJECT_DIR$/examples/example27.heroc" />
+        <option value="$PROJECT_DIR$/examples/example40.heroc" />
+        <option value="$PROJECT_DIR$/examples/example37.heroc" />
+        <option value="$PROJECT_DIR$/work/print_tree.py" />
+        <option value="$PROJECT_DIR$/examples/example01.heroc" />
+        <option value="$PROJECT_DIR$/work/AST/Node.py" />
+        <option value="$PROJECT_DIR$/work/AST/SubscriptExpression.py" />
+        <option value="$PROJECT_DIR$/work/AST/String.py" />
+        <option value="$PROJECT_DIR$/examples/example38.heroc" />
+        <option value="$PROJECT_DIR$/work/AST/Array.py" />
+        <option value="$PROJECT_DIR$/examples/example28.heroc" />
+        <option value="$PROJECT_DIR$/work/HeroC.g4" />
+        <option value="$PROJECT_DIR$/work/AST/JumpStatement.py" />
+        <option value="$PROJECT_DIR$/work/HeroCCustomVisitor.py" />
+        <option value="$PROJECT_DIR$/Readme.md" />
+        <option value="$PROJECT_DIR$/work/AST/Program.py" />
+        <option value="$PROJECT_DIR$/work/AST/FunctionCall.py" />
+        <option value="$PROJECT_DIR$/work/AST/Identifier.py" />
+        <option value="$PROJECT_DIR$/work/AST/Function.py" />
+        <option value="$PROJECT_DIR$/test.s" />
+        <option value="$PROJECT_DIR$/work/AST/Block.py" />
+        <option value="$PROJECT_DIR$/examples/example39.heroc" />
       </list>
     </option>
   </component>
@@ -243,6 +346,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -253,20 +357,40 @@
             <path>
               <item name="PRKL" type="b2602c69:ProjectViewProjectNode" />
               <item name="PRKL" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PRKL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PRKL" type="462c0819:PsiDirectoryNode" />
               <item name="work" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PRKL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PRKL" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="ASM" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PRKL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PRKL" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="AST" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/kamil/git/UPOL/PRKL/work/AST/WhileExpression.py" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/kamil/git/UPOL/PRKL/work/AST/FunctionCall.py&#10;block&#9;FILE&#9;file:///home/kamil/git/UPOL/PRKL/work/AST/Block.py&#10;bin&#9;FILE&#9;file:///home/kamil/git/UPOL/PRKL/work/AST/BinaryExpression.py" />
+    <property name="$PROJECT_DIR$/work/HeroC.g4::/auto-gen" value="false" />
+    <property name="$PROJECT_DIR$/work/HeroC.g4::/output-dir" value="$PROJECT_DIR$/work" />
+    <property name="$PROJECT_DIR$/work/HeroC.g4::/gen-listener" value="true" />
+    <property name="$PROJECT_DIR$/work/HeroC.g4::/gen-visitor" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -366,23 +490,31 @@
       <option name="project" value="LOCAL" />
       <updated>1517226543599</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Working example 21, code clean-up">
+      <created>1517429312485</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1517429312485</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1926" height="1083" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295688" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24895833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32921812" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295688" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24855188" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921812" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38702703" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960506" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -393,43 +525,18 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295688" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24986959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295688" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Working examples 01-20" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working examples 01-20" />
+    <MESSAGE value="Working example 21, code clean-up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working example 21, code clean-up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/work/AST/Block.py</url>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/work/lexer.py</url>
           <line>2</line>
@@ -445,98 +552,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/examples/example21.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/example22.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/example21.heroc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/ASM/ASM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/example23.heroc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/example23.err">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/example40.heroc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/example37.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/example37.heroc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/example38.heroc.AST">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/example35.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/example35.heroc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="17" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/example38.heroc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/example31.heroc">
+    <entry file="file://$PROJECT_DIR$/examples/example33.heroc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -545,157 +561,191 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/work/AST/Variable.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="834">
-          <caret line="57" column="31" lean-forward="false" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#21#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="612">
+          <caret line="50" column="21" lean-forward="true" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/example22.heroc">
+    <entry file="file://$PROJECT_DIR$/examples/example34.heroc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        <state relative-caret-position="527">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/example24.heroc.AST">
+    <entry file="file://$PROJECT_DIR$/examples/example34.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/example24.heroc">
+    <entry file="file://$PROJECT_DIR$/examples/example36.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/example26.heroc">
+    <entry file="file://$PROJECT_DIR$/examples/example36.heroc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/example35.heroc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.ss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="46" lean-forward="true" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/example03.heroc.AST">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/example03.heroc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/example04.heroc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/example27.heroc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/example32.heroc.AST">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/lexer.py">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-          <folding>
-            <element signature="e#24#34#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/AST/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#22#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asm.s">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asm.asm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MD5SUM">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/herocio.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/foo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/work/AST/BinaryExpression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="856">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state relative-caret-position="496">
+          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/HeroCVisitor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/HeroCLexer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work/AST/DoWhileExpression.py">
+    <entry file="file://$PROJECT_DIR$/work/HeroCListener.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work/AST/ForExpression.py">
+    <entry file="file://$PROJECT_DIR$/work/print_tree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work/HeroCCustomVisitor.py">
+    <entry file="file://$PROJECT_DIR$/examples/example37.heroc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="441" column="13" lean-forward="false" selection-start-line="441" selection-start-column="13" selection-end-line="441" selection-end-column="13" />
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/example01.heroc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/lexer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/work/AST/Node.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="544">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/example38.heroc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/example38.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/example40.heroc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/AST/Environment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/AST/String.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/example33.s">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-41402">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -703,157 +753,199 @@
     <entry file="file://$PROJECT_DIR$/work/AST/JumpStatement.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
+          <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.s">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-96">
-          <caret line="173" column="16" lean-forward="false" selection-start-line="173" selection-start-column="16" selection-end-line="173" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/AST/Identifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="39" column="8" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/AST/Environment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/AST/FunctionCall.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/AST/Block.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="52" column="36" lean-forward="false" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/AST/Function.py">
+    <entry file="file://$PROJECT_DIR$/examples/example40.out">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work/AST/IfStatement.py">
+    <entry file="file://$PROJECT_DIR$/examples/example40.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work/AST/IfEvalStatement.py">
+    <entry file="file://$PROJECT_DIR$/examples/example21.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#25#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work/AST/Array.py">
+    <entry file="file://$PROJECT_DIR$/examples/example21.out">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="85">
+            <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work/AST/Number.py">
+    <entry file="file://$PROJECT_DIR$/examples/example21.s">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/HeroC.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="124" column="54" lean-forward="false" selection-start-line="124" selection-start-column="52" selection-end-line="124" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/AST/PostfixExpression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="31" column="32" lean-forward="true" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/work/AST/Program.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="11" lean-forward="true" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+        <state relative-caret-position="544">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/HeroCCustomVisitor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work/AST/String.py">
+    <entry file="file://$PROJECT_DIR$/work/HeroC.g4">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="223" column="40" lean-forward="false" selection-start-line="223" selection-start-column="30" selection-end-line="223" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work/AST/WhileExpression.py">
+    <entry file="file://$PROJECT_DIR$/work/AST/Array.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/AST/UnaryExpression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        <state relative-caret-position="289">
+          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/work/AST/SubscriptExpression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="34" column="37" lean-forward="false" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+        <state relative-caret-position="85">
+          <caret line="8" column="61" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/example28.heroc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="52" column="53" lean-forward="false" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/example25.heroc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/example30.heroc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/example22.heroc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="24" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/AST/Function.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="59" lean-forward="false" selection-start-line="39" selection-start-column="59" selection-end-line="39" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#18#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/AST/FunctionCall.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="39" column="43" lean-forward="false" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/AST/Identifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="717">
+          <caret line="51" column="50" lean-forward="false" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.s">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="610">
+          <caret line="768" column="13" lean-forward="false" selection-start-line="768" selection-start-column="13" selection-end-line="768" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/AST/UnaryExpression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="22" column="54" lean-forward="false" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/AST/Block.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="70" column="28" lean-forward="false" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/example39.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/example39.heroc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="5" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="5" />
           <folding />
         </state>
       </provider>

@@ -34,6 +34,7 @@ partition (array, p, r)
 
 quick_sort_rec (array, p, r)
 {
+
     if (p < r) {
 	long q = partition (array, p, r);
 	quick_sort_rec (array, p, q - 1);

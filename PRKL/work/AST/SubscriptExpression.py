@@ -1,6 +1,8 @@
-from . import Node
 from ASM.ASM import ASM
 from ASM.Registers import Registers
+
+from . import Node
+
 
 class SubscriptExpression(Node):
 
@@ -19,22 +21,35 @@ class SubscriptExpression(Node):
         tmp += "\n" + str(self.sub_expr)
         return tmp
 
-    def asm(self):
+    def asm2(self):
         code = ""
-
-
         # offset to stack
         code += self.sub_expr.asm()
         code += ASM.instruction("imulq", "$8", Registers.RAX)
         code += ASM.instruction("pushq", Registers.RAX)
-
         # get identifier address
         code += self.expression.asm()
         code += ASM.instruction("movq", Registers.RAX, Registers.RBX)
         code += ASM.instruction("popq", Registers.RAX)
+        # add address and fetch value
         code += ASM.instruction("addq", Registers.RAX, Registers.RBX)
         code += ASM.instruction("movq", Registers.RBX.dereference(), Registers.RAX)
 
-
         return code
 
+    def asm(self):
+        code = ""
+        # get identifier address and save to stack
+        code += self.expression.asm()
+        code += ASM.instruction("pushq", Registers.RAX)
+        # offset to RBX
+        code += self.sub_expr.asm()
+        code += ASM.instruction("imulq", "$8", Registers.RAX)
+        code += ASM.instruction("movq", Registers.RAX, Registers.RBX)
+
+        # add address and fetch value
+        code += ASM.instruction("popq", Registers.RAX)
+        code += ASM.instruction("addq", Registers.RAX, Registers.RBX)
+        code += ASM.instruction("movq", Registers.RBX.dereference(), Registers.RAX)
+
+        return code

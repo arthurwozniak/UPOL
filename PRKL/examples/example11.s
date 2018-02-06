@@ -13,17 +13,19 @@ minus:
 	leave	
 	ret	
 
+	addq	$0, %rsp
 
+	movq	$0, %rax
 	leave	
 	ret	
 main:
 	pushq	%rbp
 	movq	%rsp, %rbp
-	movq	$666, -8(%rbp)
 
-	movq	$777, -16(%rbp)
 
 	subq	$16, %rsp
+	movq	$666, -8(%rbp)
+	movq	$777, -16(%rbp)
 	pushq	%rdi
 	pushq	%rsi
 	pushq	%rdx
@@ -172,6 +174,8 @@ main:
 	popq	%rsi
 	popq	%rdi
 
+	addq	$16, %rsp
 
+	movq	$0, %rax
 	leave	
 	ret	

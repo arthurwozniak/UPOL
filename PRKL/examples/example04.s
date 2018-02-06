@@ -9,47 +9,61 @@ swap:
 	movq	%rdi, -8(%rbp)
 	movq	%rsi, -16(%rbp)
 	subq	$16, %rsp
-	movq	-16(%rbp), %rbx
-	movq	(%rbx), %rax
+	movq	-16(%rbp), %rax
+	movq	(%rax), %rax
 
-	movq	%rax, %r11
-	movq	-8(%rbp), %rbx
-	movq	(%rbx), %rax
+	pushq	%rax
+	movq	-8(%rbp), %rax
+	movq	(%rax), %rax
+	popq	%r11
 	xorq	%r11, %rax
-	movq	%rax, (%rbx)
+	pushq	%rax
+	movq	-8(%rbp), %rax
+	popq	%rbx
+	movq	%rbx, (%rax)
 
-	movq	-8(%rbp), %rbx
-	movq	(%rbx), %rax
+	movq	-8(%rbp), %rax
+	movq	(%rax), %rax
 
-	movq	%rax, %r11
-	movq	-16(%rbp), %rbx
-	movq	(%rbx), %rax
+	pushq	%rax
+	movq	-16(%rbp), %rax
+	movq	(%rax), %rax
+	popq	%r11
 	xorq	%r11, %rax
-	movq	%rax, (%rbx)
+	pushq	%rax
+	movq	-16(%rbp), %rax
+	popq	%rbx
+	movq	%rbx, (%rax)
 
-	movq	-16(%rbp), %rbx
-	movq	(%rbx), %rax
+	movq	-16(%rbp), %rax
+	movq	(%rax), %rax
 
-	movq	%rax, %r11
-	movq	-8(%rbp), %rbx
-	movq	(%rbx), %rax
+	pushq	%rax
+	movq	-8(%rbp), %rax
+	movq	(%rax), %rax
+	popq	%r11
 	xorq	%r11, %rax
-	movq	%rax, (%rbx)
+	pushq	%rax
+	movq	-8(%rbp), %rax
+	popq	%rbx
+	movq	%rbx, (%rax)
 
+	addq	$0, %rsp
 
+	movq	$0, %rax
 	leave	
 	ret	
 main:
 	pushq	%rbp
 	movq	%rsp, %rbp
-	movq	$666, -8(%rbp)
 
-	movq	$999, -16(%rbp)
 
-	leaq	-16(%rbp), %rax
-	movq	%rax, -24(%rbp)
 
 	subq	$24, %rsp
+	movq	$666, -8(%rbp)
+	movq	$999, -16(%rbp)
+	leaq	-16(%rbp), %rax
+	movq	%rax, -24(%rbp)
 	pushq	%rdi
 	pushq	%rsi
 	pushq	%rdx
@@ -202,6 +216,8 @@ main:
 	popq	%rsi
 	popq	%rdi
 
+	addq	$24, %rsp
 
+	movq	$0, %rax
 	leave	
 	ret	

@@ -1,7 +1,12 @@
 from ASM.ASM import ASM
 from .Variable import Variable, VariableType
+from .Function import Function
 
 class Program:
+
+    propagation = set()
+    parent_block = None
+    functions = []
 
     def __init__(self, statements=[]):
         from .Block import Block
@@ -9,6 +14,7 @@ class Program:
         self.statements = statements
         self.depth = 0
         self.environment = Environment(None)
+
         for stmt in statements:
             if isinstance(stmt, Block):
                 stmt.parent = self
@@ -22,7 +28,8 @@ class Program:
         for i in self.statements:
             i.parent = self
             if isinstance(i, Variable):
-                self.environment.add(i.id.text, i.byte_size())
-
+                self.environment.add(i.id.text, i.byte_size(), i.type)
+            if isinstance(i, Function):
+                self.functions.append(str(i.id))
             code += i.asm()
         return code

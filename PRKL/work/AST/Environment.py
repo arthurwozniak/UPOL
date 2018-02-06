@@ -7,13 +7,29 @@ class Environment(OrderedDict):
         super(Environment, self).__init__()
         self.parent = parent
         self.offset = offset
+        self.start = offset
 
-    def add(self, variable, size):
+    def add(self, variable, size, type):
         if variable not in self.keys():
             #self[variable] = self.offset
             self.offset += size
-            self[variable] = self.offset
+            self[variable] = (self.offset, type)
             return self.offset
         else:
             raise Exception(
                 "{0} already defined in this scope".format(variable))
+
+    def get_offset(self, id):
+        if id in self.keys():
+            return self[id][0]
+        else:
+            raise Exception("Variable `{0}` is not in this scope".format(id))
+
+    def get_type(self, id):
+        if id in self.keys():
+            return self[id][1]
+        else:
+            raise Exception("Variable `{0}` is not in this scope".format(id))
+
+    def get_sub(self):
+        return self.offset - self.start

@@ -1,4 +1,4 @@
-# Generated from HeroC.g4 by ANTLR 4.7
+# Generated from /home/kamil/git/UPOL/PRKL/work/HeroC.g4 by ANTLR 4.7
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -8,7 +8,7 @@ import sys
 def serializedATN():
     with StringIO() as buf:
         buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3A")
-        buf.write("\u0216\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
+        buf.write("\u0220\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
         buf.write("\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t\r\4\16")
         buf.write("\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22\4\23\t\23")
         buf.write("\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\4\30\t\30\4\31")
@@ -57,211 +57,216 @@ def serializedATN():
         buf.write("\13\"\3#\3#\3#\3#\3#\3#\7#\u01e0\n#\f#\16#\u01e3\13#\3")
         buf.write("$\3$\3$\3$\3$\3$\7$\u01eb\n$\f$\16$\u01ee\13$\3%\3%\3")
         buf.write("%\3%\3%\3%\5%\u01f6\n%\3&\3&\3&\3&\3&\5&\u01fd\n&\3\'")
-        buf.write("\3\'\3(\3(\3(\5(\u0204\n(\3(\3(\3(\3(\3(\5(\u020b\n(\3")
-        buf.write(")\3)\3)\3)\3)\5)\u0212\n)\3*\3*\3*\2\16\60\62\64\668:")
-        buf.write("<>@BDF+\2\4\6\b\n\f\16\20\22\24\26\30\32\34\36 \"$&(*")
-        buf.write(",.\60\62\64\668:<>@BDFHJLNPR\2\4\b\2\r\r\21\21\24\24\26")
-        buf.write("\27\31\32//\r\2\20\20\23\23\25\25\30\30\33\33\35\35!!")
-        buf.write("##((++--\2\u023a\2T\3\2\2\2\4e\3\2\2\2\6g\3\2\2\2\br\3")
-        buf.write("\2\2\2\n|\3\2\2\2\f\u0082\3\2\2\2\16\u00a4\3\2\2\2\20")
-        buf.write("\u00b0\3\2\2\2\22\u00b2\3\2\2\2\24\u00bb\3\2\2\2\26\u00bf")
-        buf.write("\3\2\2\2\30\u00cb\3\2\2\2\32\u00d2\3\2\2\2\34\u00d4\3")
-        buf.write("\2\2\2\36\u00de\3\2\2\2 \u00e2\3\2\2\2\"\u00e5\3\2\2\2")
-        buf.write("$\u00e9\3\2\2\2&\u011c\3\2\2\2(\u0127\3\2\2\2*\u0134\3")
-        buf.write("\2\2\2,\u0136\3\2\2\2.\u0141\3\2\2\2\60\u014e\3\2\2\2")
-        buf.write("\62\u015e\3\2\2\2\64\u0169\3\2\2\2\66\u017a\3\2\2\28\u0188")
-        buf.write("\3\2\2\2:\u0196\3\2\2\2<\u01aa\3\2\2\2>\u01b8\3\2\2\2")
-        buf.write("@\u01c3\3\2\2\2B\u01ce\3\2\2\2D\u01d9\3\2\2\2F\u01e4\3")
-        buf.write("\2\2\2H\u01ef\3\2\2\2J\u01fc\3\2\2\2L\u01fe\3\2\2\2N\u020a")
-        buf.write("\3\2\2\2P\u0211\3\2\2\2R\u0213\3\2\2\2TU\5\4\3\2U\3\3")
-        buf.write("\2\2\2VX\5\6\4\2WV\3\2\2\2XY\3\2\2\2YW\3\2\2\2YZ\3\2\2")
-        buf.write("\2Z\\\3\2\2\2[]\5\26\f\2\\[\3\2\2\2]^\3\2\2\2^\\\3\2\2")
-        buf.write("\2^_\3\2\2\2_f\3\2\2\2`b\5\26\f\2a`\3\2\2\2bc\3\2\2\2")
-        buf.write("ca\3\2\2\2cd\3\2\2\2df\3\2\2\2eW\3\2\2\2ea\3\2\2\2f\5")
-        buf.write("\3\2\2\2gi\7\t\2\2hj\5\b\5\2ih\3\2\2\2ij\3\2\2\2jk\3\2")
-        buf.write("\2\2kl\7\66\2\2l\7\3\2\2\2ms\5\n\6\2no\5\n\6\2op\7\67")
-        buf.write("\2\2pq\5\b\5\2qs\3\2\2\2rm\3\2\2\2rn\3\2\2\2s\t\3\2\2")
-        buf.write("\2tv\5\24\13\2ut\3\2\2\2uv\3\2\2\2vw\3\2\2\2w}\5\16\b")
-        buf.write("\2xz\5\24\13\2yx\3\2\2\2yz\3\2\2\2z{\3\2\2\2{}\5\f\7\2")
-        buf.write("|u\3\2\2\2|y\3\2\2\2}\13\3\2\2\2~\177\78\2\2\177\u0080")
-        buf.write("\7#\2\2\u0080\u0083\5R*\2\u0081\u0083\78\2\2\u0082~\3")
-        buf.write("\2\2\2\u0082\u0081\3\2\2\2\u0083\r\3\2\2\2\u0084\u0089")
-        buf.write("\78\2\2\u0085\u0086\7\62\2\2\u0086\u0087\5R*\2\u0087\u0088")
-        buf.write("\7\63\2\2\u0088\u008a\3\2\2\2\u0089\u0085\3\2\2\2\u008a")
-        buf.write("\u008b\3\2\2\2\u008b\u0089\3\2\2\2\u008b\u008c\3\2\2\2")
-        buf.write("\u008c\u00a5\3\2\2\2\u008d\u008e\78\2\2\u008e\u008f\7")
-        buf.write("#\2\2\u008f\u0091\7\64\2\2\u0090\u0092\5\22\n\2\u0091")
-        buf.write("\u0090\3\2\2\2\u0091\u0092\3\2\2\2\u0092\u0093\3\2\2\2")
-        buf.write("\u0093\u00a5\7\65\2\2\u0094\u0099\78\2\2\u0095\u0096\7")
-        buf.write("\62\2\2\u0096\u0097\5R*\2\u0097\u0098\7\63\2\2\u0098\u009a")
-        buf.write("\3\2\2\2\u0099\u0095\3\2\2\2\u009a\u009b\3\2\2\2\u009b")
-        buf.write("\u0099\3\2\2\2\u009b\u009c\3\2\2\2\u009c\u009d\3\2\2\2")
-        buf.write("\u009d\u009e\7#\2\2\u009e\u00a0\7\64\2\2\u009f\u00a1\5")
-        buf.write("\22\n\2\u00a0\u009f\3\2\2\2\u00a0\u00a1\3\2\2\2\u00a1")
-        buf.write("\u00a2\3\2\2\2\u00a2\u00a3\7\65\2\2\u00a3\u00a5\3\2\2")
-        buf.write("\2\u00a4\u0084\3\2\2\2\u00a4\u008d\3\2\2\2\u00a4\u0094")
-        buf.write("\3\2\2\2\u00a5\17\3\2\2\2\u00a6\u00b1\5R*\2\u00a7\u00a8")
-        buf.write("\7\64\2\2\u00a8\u00a9\5\22\n\2\u00a9\u00aa\7\65\2\2\u00aa")
-        buf.write("\u00b1\3\2\2\2\u00ab\u00ac\7\64\2\2\u00ac\u00ad\5\22\n")
-        buf.write("\2\u00ad\u00ae\7\67\2\2\u00ae\u00af\7\65\2\2\u00af\u00b1")
-        buf.write("\3\2\2\2\u00b0\u00a6\3\2\2\2\u00b0\u00a7\3\2\2\2\u00b0")
-        buf.write("\u00ab\3\2\2\2\u00b1\21\3\2\2\2\u00b2\u00b7\5\20\t\2\u00b3")
-        buf.write("\u00b4\7\67\2\2\u00b4\u00b6\5\20\t\2\u00b5\u00b3\3\2\2")
-        buf.write("\2\u00b6\u00b9\3\2\2\2\u00b7\u00b5\3\2\2\2\u00b7\u00b8")
-        buf.write("\3\2\2\2\u00b8\23\3\2\2\2\u00b9\u00b7\3\2\2\2\u00ba\u00bc")
-        buf.write("\7\24\2\2\u00bb\u00ba\3\2\2\2\u00bc\u00bd\3\2\2\2\u00bd")
-        buf.write("\u00bb\3\2\2\2\u00bd\u00be\3\2\2\2\u00be\25\3\2\2\2\u00bf")
-        buf.write("\u00c0\78\2\2\u00c0\u00c2\7\60\2\2\u00c1\u00c3\5\30\r")
-        buf.write("\2\u00c2\u00c1\3\2\2\2\u00c2\u00c3\3\2\2\2\u00c3\u00c4")
-        buf.write("\3\2\2\2\u00c4\u00c5\7\61\2\2\u00c5\u00c6\5\34\17\2\u00c6")
-        buf.write("\27\3\2\2\2\u00c7\u00cc\78\2\2\u00c8\u00c9\78\2\2\u00c9")
-        buf.write("\u00ca\7\67\2\2\u00ca\u00cc\5\30\r\2\u00cb\u00c7\3\2\2")
-        buf.write("\2\u00cb\u00c8\3\2\2\2\u00cc\31\3\2\2\2\u00cd\u00d3\5")
-        buf.write("\34\17\2\u00ce\u00d3\5\"\22\2\u00cf\u00d3\5$\23\2\u00d0")
-        buf.write("\u00d3\5&\24\2\u00d1\u00d3\5(\25\2\u00d2\u00cd\3\2\2\2")
-        buf.write("\u00d2\u00ce\3\2\2\2\u00d2\u00cf\3\2\2\2\u00d2\u00d0\3")
-        buf.write("\2\2\2\u00d2\u00d1\3\2\2\2\u00d3\33\3\2\2\2\u00d4\u00d6")
-        buf.write("\7\64\2\2\u00d5\u00d7\5\36\20\2\u00d6\u00d5\3\2\2\2\u00d6")
-        buf.write("\u00d7\3\2\2\2\u00d7\u00d8\3\2\2\2\u00d8\u00d9\7\65\2")
-        buf.write("\2\u00d9\35\3\2\2\2\u00da\u00df\5 \21\2\u00db\u00dc\5")
-        buf.write(" \21\2\u00dc\u00dd\5\36\20\2\u00dd\u00df\3\2\2\2\u00de")
-        buf.write("\u00da\3\2\2\2\u00de\u00db\3\2\2\2\u00df\37\3\2\2\2\u00e0")
-        buf.write("\u00e3\5\6\4\2\u00e1\u00e3\5\32\16\2\u00e2\u00e0\3\2\2")
-        buf.write("\2\u00e2\u00e1\3\2\2\2\u00e3!\3\2\2\2\u00e4\u00e6\5R*")
-        buf.write("\2\u00e5\u00e4\3\2\2\2\u00e5\u00e6\3\2\2\2\u00e6\u00e7")
-        buf.write("\3\2\2\2\u00e7\u00e8\7\66\2\2\u00e8#\3\2\2\2\u00e9\u00ea")
-        buf.write("\7\b\2\2\u00ea\u00eb\7\60\2\2\u00eb\u00ec\5R*\2\u00ec")
-        buf.write("\u00ed\7\61\2\2\u00ed\u00f0\5\32\16\2\u00ee\u00ef\7\6")
-        buf.write("\2\2\u00ef\u00f1\5\32\16\2\u00f0\u00ee\3\2\2\2\u00f0\u00f1")
-        buf.write("\3\2\2\2\u00f1%\3\2\2\2\u00f2\u00f3\7\f\2\2\u00f3\u00f4")
-        buf.write("\7\60\2\2\u00f4\u00f5\5R*\2\u00f5\u00f6\7\61\2\2\u00f6")
-        buf.write("\u00f7\5\32\16\2\u00f7\u011d\3\2\2\2\u00f8\u00f9\7\5\2")
-        buf.write("\2\u00f9\u00fa\5\32\16\2\u00fa\u00fb\7\f\2\2\u00fb\u00fc")
-        buf.write("\7\60\2\2\u00fc\u00fd\5R*\2\u00fd\u00fe\7\61\2\2\u00fe")
-        buf.write("\u00ff\7\66\2\2\u00ff\u011d\3\2\2\2\u0100\u0101\7\7\2")
-        buf.write("\2\u0101\u0103\7\60\2\2\u0102\u0104\5R*\2\u0103\u0102")
-        buf.write("\3\2\2\2\u0103\u0104\3\2\2\2\u0104\u0105\3\2\2\2\u0105")
-        buf.write("\u0107\7\66\2\2\u0106\u0108\5R*\2\u0107\u0106\3\2\2\2")
-        buf.write("\u0107\u0108\3\2\2\2\u0108\u0109\3\2\2\2\u0109\u010b\7")
-        buf.write("\66\2\2\u010a\u010c\5R*\2\u010b\u010a\3\2\2\2\u010b\u010c")
-        buf.write("\3\2\2\2\u010c\u010d\3\2\2\2\u010d\u010e\7\61\2\2\u010e")
-        buf.write("\u011d\5\32\16\2\u010f\u0110\7\7\2\2\u0110\u0111\7\60")
-        buf.write("\2\2\u0111\u0113\5\6\4\2\u0112\u0114\5R*\2\u0113\u0112")
-        buf.write("\3\2\2\2\u0113\u0114\3\2\2\2\u0114\u0115\3\2\2\2\u0115")
-        buf.write("\u0117\7\66\2\2\u0116\u0118\5R*\2\u0117\u0116\3\2\2\2")
-        buf.write("\u0117\u0118\3\2\2\2\u0118\u0119\3\2\2\2\u0119\u011a\7")
-        buf.write("\61\2\2\u011a\u011b\5\32\16\2\u011b\u011d\3\2\2\2\u011c")
-        buf.write("\u00f2\3\2\2\2\u011c\u00f8\3\2\2\2\u011c\u0100\3\2\2\2")
-        buf.write("\u011c\u010f\3\2\2\2\u011d\'\3\2\2\2\u011e\u011f\7\4\2")
-        buf.write("\2\u011f\u0128\7\66\2\2\u0120\u0121\7\3\2\2\u0121\u0128")
-        buf.write("\7\66\2\2\u0122\u0124\7\n\2\2\u0123\u0125\5R*\2\u0124")
-        buf.write("\u0123\3\2\2\2\u0124\u0125\3\2\2\2\u0125\u0126\3\2\2\2")
-        buf.write("\u0126\u0128\7\66\2\2\u0127\u011e\3\2\2\2\u0127\u0120")
-        buf.write("\3\2\2\2\u0127\u0122\3\2\2\2\u0128)\3\2\2\2\u0129\u0135")
-        buf.write("\78\2\2\u012a\u0135\79\2\2\u012b\u012d\7>\2\2\u012c\u012b")
-        buf.write("\3\2\2\2\u012d\u012e\3\2\2\2\u012e\u012c\3\2\2\2\u012e")
-        buf.write("\u012f\3\2\2\2\u012f\u0135\3\2\2\2\u0130\u0131\7\60\2")
-        buf.write("\2\u0131\u0132\5R*\2\u0132\u0133\7\61\2\2\u0133\u0135")
-        buf.write("\3\2\2\2\u0134\u0129\3\2\2\2\u0134\u012a\3\2\2\2\u0134")
-        buf.write("\u012c\3\2\2\2\u0134\u0130\3\2\2\2\u0135+\3\2\2\2\u0136")
-        buf.write("\u0137\t\2\2\2\u0137-\3\2\2\2\u0138\u0142\5\60\31\2\u0139")
-        buf.write("\u0142\5N(\2\u013a\u013b\5,\27\2\u013b\u013c\5.\30\2\u013c")
-        buf.write("\u0142\3\2\2\2\u013d\u013e\7\13\2\2\u013e\u013f\7\60\2")
-        buf.write("\2\u013f\u0140\7\t\2\2\u0140\u0142\7\61\2\2\u0141\u0138")
-        buf.write("\3\2\2\2\u0141\u0139\3\2\2\2\u0141\u013a\3\2\2\2\u0141")
-        buf.write("\u013d\3\2\2\2\u0142/\3\2\2\2\u0143\u0144\b\31\1\2\u0144")
-        buf.write("\u014f\5*\26\2\u0145\u0146\7\64\2\2\u0146\u0147\5\22\n")
-        buf.write("\2\u0147\u0148\7\65\2\2\u0148\u014f\3\2\2\2\u0149\u014a")
-        buf.write("\7\64\2\2\u014a\u014b\5\22\n\2\u014b\u014c\7\67\2\2\u014c")
-        buf.write("\u014d\7\65\2\2\u014d\u014f\3\2\2\2\u014e\u0143\3\2\2")
-        buf.write("\2\u014e\u0145\3\2\2\2\u014e\u0149\3\2\2\2\u014f\u015b")
-        buf.write("\3\2\2\2\u0150\u0151\f\7\2\2\u0151\u0152\7\62\2\2\u0152")
-        buf.write("\u0153\5R*\2\u0153\u0154\7\63\2\2\u0154\u015a\3\2\2\2")
-        buf.write("\u0155\u0156\f\6\2\2\u0156\u015a\7\27\2\2\u0157\u0158")
-        buf.write("\f\5\2\2\u0158\u015a\7\32\2\2\u0159\u0150\3\2\2\2\u0159")
-        buf.write("\u0155\3\2\2\2\u0159\u0157\3\2\2\2\u015a\u015d\3\2\2\2")
-        buf.write("\u015b\u0159\3\2\2\2\u015b\u015c\3\2\2\2\u015c\61\3\2")
-        buf.write("\2\2\u015d\u015b\3\2\2\2\u015e\u015f\b\32\1\2\u015f\u0160")
-        buf.write("\5J&\2\u0160\u0166\3\2\2\2\u0161\u0162\f\3\2\2\u0162\u0163")
-        buf.write("\7\67\2\2\u0163\u0165\5J&\2\u0164\u0161\3\2\2\2\u0165")
-        buf.write("\u0168\3\2\2\2\u0166\u0164\3\2\2\2\u0166\u0167\3\2\2\2")
-        buf.write("\u0167\63\3\2\2\2\u0168\u0166\3\2\2\2\u0169\u016a\b\33")
-        buf.write("\1\2\u016a\u016b\5.\30\2\u016b\u0177\3\2\2\2\u016c\u016d")
-        buf.write("\f\5\2\2\u016d\u016e\7\24\2\2\u016e\u0176\5.\30\2\u016f")
-        buf.write("\u0170\f\4\2\2\u0170\u0171\7\34\2\2\u0171\u0176\5.\30")
-        buf.write("\2\u0172\u0173\f\3\2\2\u0173\u0174\7\17\2\2\u0174\u0176")
-        buf.write("\5.\30\2\u0175\u016c\3\2\2\2\u0175\u016f\3\2\2\2\u0175")
-        buf.write("\u0172\3\2\2\2\u0176\u0179\3\2\2\2\u0177\u0175\3\2\2\2")
-        buf.write("\u0177\u0178\3\2\2\2\u0178\65\3\2\2\2\u0179\u0177\3\2")
-        buf.write("\2\2\u017a\u017b\b\34\1\2\u017b\u017c\5\64\33\2\u017c")
-        buf.write("\u0185\3\2\2\2\u017d\u017e\f\4\2\2\u017e\u017f\7\26\2")
-        buf.write("\2\u017f\u0184\5\64\33\2\u0180\u0181\f\3\2\2\u0181\u0182")
-        buf.write("\7\31\2\2\u0182\u0184\5\64\33\2\u0183\u017d\3\2\2\2\u0183")
-        buf.write("\u0180\3\2\2\2\u0184\u0187\3\2\2\2\u0185\u0183\3\2\2\2")
-        buf.write("\u0185\u0186\3\2\2\2\u0186\67\3\2\2\2\u0187\u0185\3\2")
-        buf.write("\2\2\u0188\u0189\b\35\1\2\u0189\u018a\5\66\34\2\u018a")
-        buf.write("\u0193\3\2\2\2\u018b\u018c\f\4\2\2\u018c\u018d\7 \2\2")
-        buf.write("\u018d\u0192\5\66\34\2\u018e\u018f\f\3\2\2\u018f\u0190")
-        buf.write("\7\'\2\2\u0190\u0192\5\66\34\2\u0191\u018b\3\2\2\2\u0191")
-        buf.write("\u018e\3\2\2\2\u0192\u0195\3\2\2\2\u0193\u0191\3\2\2\2")
-        buf.write("\u0193\u0194\3\2\2\2\u01949\3\2\2\2\u0195\u0193\3\2\2")
-        buf.write("\2\u0196\u0197\b\36\1\2\u0197\u0198\58\35\2\u0198\u01a7")
-        buf.write("\3\2\2\2\u0199\u019a\f\6\2\2\u019a\u019b\7\37\2\2\u019b")
-        buf.write("\u01a6\58\35\2\u019c\u019d\f\5\2\2\u019d\u019e\7%\2\2")
-        buf.write("\u019e\u01a6\58\35\2\u019f\u01a0\f\4\2\2\u01a0\u01a1\7")
-        buf.write("\"\2\2\u01a1\u01a6\58\35\2\u01a2\u01a3\f\3\2\2\u01a3\u01a4")
-        buf.write("\7&\2\2\u01a4\u01a6\58\35\2\u01a5\u0199\3\2\2\2\u01a5")
-        buf.write("\u019c\3\2\2\2\u01a5\u019f\3\2\2\2\u01a5\u01a2\3\2\2\2")
-        buf.write("\u01a6\u01a9\3\2\2\2\u01a7\u01a5\3\2\2\2\u01a7\u01a8\3")
-        buf.write("\2\2\2\u01a8;\3\2\2\2\u01a9\u01a7\3\2\2\2\u01aa\u01ab")
-        buf.write("\b\37\1\2\u01ab\u01ac\5:\36\2\u01ac\u01b5\3\2\2\2\u01ad")
-        buf.write("\u01ae\f\4\2\2\u01ae\u01af\7$\2\2\u01af\u01b4\5:\36\2")
-        buf.write("\u01b0\u01b1\f\3\2\2\u01b1\u01b2\7\16\2\2\u01b2\u01b4")
-        buf.write("\5:\36\2\u01b3\u01ad\3\2\2\2\u01b3\u01b0\3\2\2\2\u01b4")
-        buf.write("\u01b7\3\2\2\2\u01b5\u01b3\3\2\2\2\u01b5\u01b6\3\2\2\2")
-        buf.write("\u01b6=\3\2\2\2\u01b7\u01b5\3\2\2\2\u01b8\u01b9\b \1\2")
-        buf.write("\u01b9\u01ba\5<\37\2\u01ba\u01c0\3\2\2\2\u01bb\u01bc\f")
-        buf.write("\3\2\2\u01bc\u01bd\7\21\2\2\u01bd\u01bf\5<\37\2\u01be")
-        buf.write("\u01bb\3\2\2\2\u01bf\u01c2\3\2\2\2\u01c0\u01be\3\2\2\2")
-        buf.write("\u01c0\u01c1\3\2\2\2\u01c1?\3\2\2\2\u01c2\u01c0\3\2\2")
-        buf.write("\2\u01c3\u01c4\b!\1\2\u01c4\u01c5\5> \2\u01c5\u01cb\3")
-        buf.write("\2\2\2\u01c6\u01c7\f\3\2\2\u01c7\u01c8\7*\2\2\u01c8\u01ca")
-        buf.write("\5> \2\u01c9\u01c6\3\2\2\2\u01ca\u01cd\3\2\2\2\u01cb\u01c9")
-        buf.write("\3\2\2\2\u01cb\u01cc\3\2\2\2\u01ccA\3\2\2\2\u01cd\u01cb")
-        buf.write("\3\2\2\2\u01ce\u01cf\b\"\1\2\u01cf\u01d0\5@!\2\u01d0\u01d6")
-        buf.write("\3\2\2\2\u01d1\u01d2\f\3\2\2\u01d2\u01d3\7,\2\2\u01d3")
-        buf.write("\u01d5\5@!\2\u01d4\u01d1\3\2\2\2\u01d5\u01d8\3\2\2\2\u01d6")
-        buf.write("\u01d4\3\2\2\2\u01d6\u01d7\3\2\2\2\u01d7C\3\2\2\2\u01d8")
-        buf.write("\u01d6\3\2\2\2\u01d9\u01da\b#\1\2\u01da\u01db\5B\"\2\u01db")
-        buf.write("\u01e1\3\2\2\2\u01dc\u01dd\f\3\2\2\u01dd\u01de\7\22\2")
-        buf.write("\2\u01de\u01e0\5B\"\2\u01df\u01dc\3\2\2\2\u01e0\u01e3")
-        buf.write("\3\2\2\2\u01e1\u01df\3\2\2\2\u01e1\u01e2\3\2\2\2\u01e2")
-        buf.write("E\3\2\2\2\u01e3\u01e1\3\2\2\2\u01e4\u01e5\b$\1\2\u01e5")
-        buf.write("\u01e6\5D#\2\u01e6\u01ec\3\2\2\2\u01e7\u01e8\f\3\2\2\u01e8")
-        buf.write("\u01e9\7.\2\2\u01e9\u01eb\5D#\2\u01ea\u01e7\3\2\2\2\u01eb")
-        buf.write("\u01ee\3\2\2\2\u01ec\u01ea\3\2\2\2\u01ec\u01ed\3\2\2\2")
-        buf.write("\u01edG\3\2\2\2\u01ee\u01ec\3\2\2\2\u01ef\u01f5\5F$\2")
-        buf.write("\u01f0\u01f1\7)\2\2\u01f1\u01f2\5R*\2\u01f2\u01f3\7\36")
-        buf.write("\2\2\u01f3\u01f4\5H%\2\u01f4\u01f6\3\2\2\2\u01f5\u01f0")
-        buf.write("\3\2\2\2\u01f5\u01f6\3\2\2\2\u01f6I\3\2\2\2\u01f7\u01fd")
-        buf.write("\5H%\2\u01f8\u01f9\5.\30\2\u01f9\u01fa\5L\'\2\u01fa\u01fb")
-        buf.write("\5J&\2\u01fb\u01fd\3\2\2\2\u01fc\u01f7\3\2\2\2\u01fc\u01f8")
-        buf.write("\3\2\2\2\u01fdK\3\2\2\2\u01fe\u01ff\t\3\2\2\u01ffM\3\2")
-        buf.write("\2\2\u0200\u0201\78\2\2\u0201\u0203\7\60\2\2\u0202\u0204")
-        buf.write("\5P)\2\u0203\u0202\3\2\2\2\u0203\u0204\3\2\2\2\u0204\u0205")
-        buf.write("\3\2\2\2\u0205\u020b\7\61\2\2\u0206\u0207\78\2\2\u0207")
-        buf.write("\u0208\7\60\2\2\u0208\u0209\7=\2\2\u0209\u020b\7\61\2")
-        buf.write("\2\u020a\u0200\3\2\2\2\u020a\u0206\3\2\2\2\u020bO\3\2")
-        buf.write("\2\2\u020c\u0212\5R*\2\u020d\u020e\5R*\2\u020e\u020f\7")
-        buf.write("\67\2\2\u020f\u0210\5P)\2\u0210\u0212\3\2\2\2\u0211\u020c")
-        buf.write("\3\2\2\2\u0211\u020d\3\2\2\2\u0212Q\3\2\2\2\u0213\u0214")
-        buf.write("\5J&\2\u0214S\3\2\2\2?Y^ceiruy|\u0082\u008b\u0091\u009b")
-        buf.write("\u00a0\u00a4\u00b0\u00b7\u00bd\u00c2\u00cb\u00d2\u00d6")
-        buf.write("\u00de\u00e2\u00e5\u00f0\u0103\u0107\u010b\u0113\u0117")
-        buf.write("\u011c\u0124\u0127\u012e\u0134\u0141\u014e\u0159\u015b")
-        buf.write("\u0166\u0175\u0177\u0183\u0185\u0191\u0193\u01a5\u01a7")
-        buf.write("\u01b3\u01b5\u01c0\u01cb\u01d6\u01e1\u01ec\u01f5\u01fc")
-        buf.write("\u0203\u020a\u0211")
+        buf.write("\3\'\3(\3(\3(\5(\u0204\n(\3(\3(\3(\3(\3(\3(\3(\3(\3(\3")
+        buf.write("(\3(\5(\u0211\n(\3(\3(\5(\u0215\n(\3)\3)\3)\3)\3)\5)\u021c")
+        buf.write("\n)\3*\3*\3*\2\16\60\62\64\668:<>@BDF+\2\4\6\b\n\f\16")
+        buf.write("\20\22\24\26\30\32\34\36 \"$&(*,.\60\62\64\668:<>@BDF")
+        buf.write("HJLNPR\2\4\b\2\r\r\21\21\24\24\26\27\31\32//\r\2\20\20")
+        buf.write("\23\23\25\25\30\30\33\33\35\35!!##((++--\2\u0246\2T\3")
+        buf.write("\2\2\2\4e\3\2\2\2\6g\3\2\2\2\br\3\2\2\2\n|\3\2\2\2\f\u0082")
+        buf.write("\3\2\2\2\16\u00a4\3\2\2\2\20\u00b0\3\2\2\2\22\u00b2\3")
+        buf.write("\2\2\2\24\u00bb\3\2\2\2\26\u00bf\3\2\2\2\30\u00cb\3\2")
+        buf.write("\2\2\32\u00d2\3\2\2\2\34\u00d4\3\2\2\2\36\u00de\3\2\2")
+        buf.write("\2 \u00e2\3\2\2\2\"\u00e5\3\2\2\2$\u00e9\3\2\2\2&\u011c")
+        buf.write("\3\2\2\2(\u0127\3\2\2\2*\u0134\3\2\2\2,\u0136\3\2\2\2")
+        buf.write(".\u0141\3\2\2\2\60\u014e\3\2\2\2\62\u015e\3\2\2\2\64\u0169")
+        buf.write("\3\2\2\2\66\u017a\3\2\2\28\u0188\3\2\2\2:\u0196\3\2\2")
+        buf.write("\2<\u01aa\3\2\2\2>\u01b8\3\2\2\2@\u01c3\3\2\2\2B\u01ce")
+        buf.write("\3\2\2\2D\u01d9\3\2\2\2F\u01e4\3\2\2\2H\u01ef\3\2\2\2")
+        buf.write("J\u01fc\3\2\2\2L\u01fe\3\2\2\2N\u0214\3\2\2\2P\u021b\3")
+        buf.write("\2\2\2R\u021d\3\2\2\2TU\5\4\3\2U\3\3\2\2\2VX\5\6\4\2W")
+        buf.write("V\3\2\2\2XY\3\2\2\2YW\3\2\2\2YZ\3\2\2\2Z\\\3\2\2\2[]\5")
+        buf.write("\26\f\2\\[\3\2\2\2]^\3\2\2\2^\\\3\2\2\2^_\3\2\2\2_f\3")
+        buf.write("\2\2\2`b\5\26\f\2a`\3\2\2\2bc\3\2\2\2ca\3\2\2\2cd\3\2")
+        buf.write("\2\2df\3\2\2\2eW\3\2\2\2ea\3\2\2\2f\5\3\2\2\2gi\7\t\2")
+        buf.write("\2hj\5\b\5\2ih\3\2\2\2ij\3\2\2\2jk\3\2\2\2kl\7\66\2\2")
+        buf.write("l\7\3\2\2\2ms\5\n\6\2no\5\n\6\2op\7\67\2\2pq\5\b\5\2q")
+        buf.write("s\3\2\2\2rm\3\2\2\2rn\3\2\2\2s\t\3\2\2\2tv\5\24\13\2u")
+        buf.write("t\3\2\2\2uv\3\2\2\2vw\3\2\2\2w}\5\16\b\2xz\5\24\13\2y")
+        buf.write("x\3\2\2\2yz\3\2\2\2z{\3\2\2\2{}\5\f\7\2|u\3\2\2\2|y\3")
+        buf.write("\2\2\2}\13\3\2\2\2~\177\78\2\2\177\u0080\7#\2\2\u0080")
+        buf.write("\u0083\5R*\2\u0081\u0083\78\2\2\u0082~\3\2\2\2\u0082\u0081")
+        buf.write("\3\2\2\2\u0083\r\3\2\2\2\u0084\u0089\78\2\2\u0085\u0086")
+        buf.write("\7\62\2\2\u0086\u0087\5R*\2\u0087\u0088\7\63\2\2\u0088")
+        buf.write("\u008a\3\2\2\2\u0089\u0085\3\2\2\2\u008a\u008b\3\2\2\2")
+        buf.write("\u008b\u0089\3\2\2\2\u008b\u008c\3\2\2\2\u008c\u00a5\3")
+        buf.write("\2\2\2\u008d\u008e\78\2\2\u008e\u008f\7#\2\2\u008f\u0091")
+        buf.write("\7\64\2\2\u0090\u0092\5\22\n\2\u0091\u0090\3\2\2\2\u0091")
+        buf.write("\u0092\3\2\2\2\u0092\u0093\3\2\2\2\u0093\u00a5\7\65\2")
+        buf.write("\2\u0094\u0099\78\2\2\u0095\u0096\7\62\2\2\u0096\u0097")
+        buf.write("\5R*\2\u0097\u0098\7\63\2\2\u0098\u009a\3\2\2\2\u0099")
+        buf.write("\u0095\3\2\2\2\u009a\u009b\3\2\2\2\u009b\u0099\3\2\2\2")
+        buf.write("\u009b\u009c\3\2\2\2\u009c\u009d\3\2\2\2\u009d\u009e\7")
+        buf.write("#\2\2\u009e\u00a0\7\64\2\2\u009f\u00a1\5\22\n\2\u00a0")
+        buf.write("\u009f\3\2\2\2\u00a0\u00a1\3\2\2\2\u00a1\u00a2\3\2\2\2")
+        buf.write("\u00a2\u00a3\7\65\2\2\u00a3\u00a5\3\2\2\2\u00a4\u0084")
+        buf.write("\3\2\2\2\u00a4\u008d\3\2\2\2\u00a4\u0094\3\2\2\2\u00a5")
+        buf.write("\17\3\2\2\2\u00a6\u00b1\5R*\2\u00a7\u00a8\7\64\2\2\u00a8")
+        buf.write("\u00a9\5\22\n\2\u00a9\u00aa\7\65\2\2\u00aa\u00b1\3\2\2")
+        buf.write("\2\u00ab\u00ac\7\64\2\2\u00ac\u00ad\5\22\n\2\u00ad\u00ae")
+        buf.write("\7\67\2\2\u00ae\u00af\7\65\2\2\u00af\u00b1\3\2\2\2\u00b0")
+        buf.write("\u00a6\3\2\2\2\u00b0\u00a7\3\2\2\2\u00b0\u00ab\3\2\2\2")
+        buf.write("\u00b1\21\3\2\2\2\u00b2\u00b7\5\20\t\2\u00b3\u00b4\7\67")
+        buf.write("\2\2\u00b4\u00b6\5\20\t\2\u00b5\u00b3\3\2\2\2\u00b6\u00b9")
+        buf.write("\3\2\2\2\u00b7\u00b5\3\2\2\2\u00b7\u00b8\3\2\2\2\u00b8")
+        buf.write("\23\3\2\2\2\u00b9\u00b7\3\2\2\2\u00ba\u00bc\7\24\2\2\u00bb")
+        buf.write("\u00ba\3\2\2\2\u00bc\u00bd\3\2\2\2\u00bd\u00bb\3\2\2\2")
+        buf.write("\u00bd\u00be\3\2\2\2\u00be\25\3\2\2\2\u00bf\u00c0\78\2")
+        buf.write("\2\u00c0\u00c2\7\60\2\2\u00c1\u00c3\5\30\r\2\u00c2\u00c1")
+        buf.write("\3\2\2\2\u00c2\u00c3\3\2\2\2\u00c3\u00c4\3\2\2\2\u00c4")
+        buf.write("\u00c5\7\61\2\2\u00c5\u00c6\5\34\17\2\u00c6\27\3\2\2\2")
+        buf.write("\u00c7\u00cc\78\2\2\u00c8\u00c9\78\2\2\u00c9\u00ca\7\67")
+        buf.write("\2\2\u00ca\u00cc\5\30\r\2\u00cb\u00c7\3\2\2\2\u00cb\u00c8")
+        buf.write("\3\2\2\2\u00cc\31\3\2\2\2\u00cd\u00d3\5\34\17\2\u00ce")
+        buf.write("\u00d3\5\"\22\2\u00cf\u00d3\5$\23\2\u00d0\u00d3\5&\24")
+        buf.write("\2\u00d1\u00d3\5(\25\2\u00d2\u00cd\3\2\2\2\u00d2\u00ce")
+        buf.write("\3\2\2\2\u00d2\u00cf\3\2\2\2\u00d2\u00d0\3\2\2\2\u00d2")
+        buf.write("\u00d1\3\2\2\2\u00d3\33\3\2\2\2\u00d4\u00d6\7\64\2\2\u00d5")
+        buf.write("\u00d7\5\36\20\2\u00d6\u00d5\3\2\2\2\u00d6\u00d7\3\2\2")
+        buf.write("\2\u00d7\u00d8\3\2\2\2\u00d8\u00d9\7\65\2\2\u00d9\35\3")
+        buf.write("\2\2\2\u00da\u00df\5 \21\2\u00db\u00dc\5 \21\2\u00dc\u00dd")
+        buf.write("\5\36\20\2\u00dd\u00df\3\2\2\2\u00de\u00da\3\2\2\2\u00de")
+        buf.write("\u00db\3\2\2\2\u00df\37\3\2\2\2\u00e0\u00e3\5\6\4\2\u00e1")
+        buf.write("\u00e3\5\32\16\2\u00e2\u00e0\3\2\2\2\u00e2\u00e1\3\2\2")
+        buf.write("\2\u00e3!\3\2\2\2\u00e4\u00e6\5R*\2\u00e5\u00e4\3\2\2")
+        buf.write("\2\u00e5\u00e6\3\2\2\2\u00e6\u00e7\3\2\2\2\u00e7\u00e8")
+        buf.write("\7\66\2\2\u00e8#\3\2\2\2\u00e9\u00ea\7\b\2\2\u00ea\u00eb")
+        buf.write("\7\60\2\2\u00eb\u00ec\5R*\2\u00ec\u00ed\7\61\2\2\u00ed")
+        buf.write("\u00f0\5\32\16\2\u00ee\u00ef\7\6\2\2\u00ef\u00f1\5\32")
+        buf.write("\16\2\u00f0\u00ee\3\2\2\2\u00f0\u00f1\3\2\2\2\u00f1%\3")
+        buf.write("\2\2\2\u00f2\u00f3\7\f\2\2\u00f3\u00f4\7\60\2\2\u00f4")
+        buf.write("\u00f5\5R*\2\u00f5\u00f6\7\61\2\2\u00f6\u00f7\5\32\16")
+        buf.write("\2\u00f7\u011d\3\2\2\2\u00f8\u00f9\7\5\2\2\u00f9\u00fa")
+        buf.write("\5\32\16\2\u00fa\u00fb\7\f\2\2\u00fb\u00fc\7\60\2\2\u00fc")
+        buf.write("\u00fd\5R*\2\u00fd\u00fe\7\61\2\2\u00fe\u00ff\7\66\2\2")
+        buf.write("\u00ff\u011d\3\2\2\2\u0100\u0101\7\7\2\2\u0101\u0103\7")
+        buf.write("\60\2\2\u0102\u0104\5R*\2\u0103\u0102\3\2\2\2\u0103\u0104")
+        buf.write("\3\2\2\2\u0104\u0105\3\2\2\2\u0105\u0107\7\66\2\2\u0106")
+        buf.write("\u0108\5R*\2\u0107\u0106\3\2\2\2\u0107\u0108\3\2\2\2\u0108")
+        buf.write("\u0109\3\2\2\2\u0109\u010b\7\66\2\2\u010a\u010c\5R*\2")
+        buf.write("\u010b\u010a\3\2\2\2\u010b\u010c\3\2\2\2\u010c\u010d\3")
+        buf.write("\2\2\2\u010d\u010e\7\61\2\2\u010e\u011d\5\32\16\2\u010f")
+        buf.write("\u0110\7\7\2\2\u0110\u0111\7\60\2\2\u0111\u0113\5\6\4")
+        buf.write("\2\u0112\u0114\5R*\2\u0113\u0112\3\2\2\2\u0113\u0114\3")
+        buf.write("\2\2\2\u0114\u0115\3\2\2\2\u0115\u0117\7\66\2\2\u0116")
+        buf.write("\u0118\5R*\2\u0117\u0116\3\2\2\2\u0117\u0118\3\2\2\2\u0118")
+        buf.write("\u0119\3\2\2\2\u0119\u011a\7\61\2\2\u011a\u011b\5\32\16")
+        buf.write("\2\u011b\u011d\3\2\2\2\u011c\u00f2\3\2\2\2\u011c\u00f8")
+        buf.write("\3\2\2\2\u011c\u0100\3\2\2\2\u011c\u010f\3\2\2\2\u011d")
+        buf.write("\'\3\2\2\2\u011e\u011f\7\4\2\2\u011f\u0128\7\66\2\2\u0120")
+        buf.write("\u0121\7\3\2\2\u0121\u0128\7\66\2\2\u0122\u0124\7\n\2")
+        buf.write("\2\u0123\u0125\5R*\2\u0124\u0123\3\2\2\2\u0124\u0125\3")
+        buf.write("\2\2\2\u0125\u0126\3\2\2\2\u0126\u0128\7\66\2\2\u0127")
+        buf.write("\u011e\3\2\2\2\u0127\u0120\3\2\2\2\u0127\u0122\3\2\2\2")
+        buf.write("\u0128)\3\2\2\2\u0129\u0135\78\2\2\u012a\u0135\79\2\2")
+        buf.write("\u012b\u012d\7>\2\2\u012c\u012b\3\2\2\2\u012d\u012e\3")
+        buf.write("\2\2\2\u012e\u012c\3\2\2\2\u012e\u012f\3\2\2\2\u012f\u0135")
+        buf.write("\3\2\2\2\u0130\u0131\7\60\2\2\u0131\u0132\5R*\2\u0132")
+        buf.write("\u0133\7\61\2\2\u0133\u0135\3\2\2\2\u0134\u0129\3\2\2")
+        buf.write("\2\u0134\u012a\3\2\2\2\u0134\u012c\3\2\2\2\u0134\u0130")
+        buf.write("\3\2\2\2\u0135+\3\2\2\2\u0136\u0137\t\2\2\2\u0137-\3\2")
+        buf.write("\2\2\u0138\u0142\5N(\2\u0139\u0142\5\60\31\2\u013a\u013b")
+        buf.write("\5,\27\2\u013b\u013c\5.\30\2\u013c\u0142\3\2\2\2\u013d")
+        buf.write("\u013e\7\13\2\2\u013e\u013f\7\60\2\2\u013f\u0140\7\t\2")
+        buf.write("\2\u0140\u0142\7\61\2\2\u0141\u0138\3\2\2\2\u0141\u0139")
+        buf.write("\3\2\2\2\u0141\u013a\3\2\2\2\u0141\u013d\3\2\2\2\u0142")
+        buf.write("/\3\2\2\2\u0143\u0144\b\31\1\2\u0144\u014f\5*\26\2\u0145")
+        buf.write("\u0146\7\64\2\2\u0146\u0147\5\22\n\2\u0147\u0148\7\65")
+        buf.write("\2\2\u0148\u014f\3\2\2\2\u0149\u014a\7\64\2\2\u014a\u014b")
+        buf.write("\5\22\n\2\u014b\u014c\7\67\2\2\u014c\u014d\7\65\2\2\u014d")
+        buf.write("\u014f\3\2\2\2\u014e\u0143\3\2\2\2\u014e\u0145\3\2\2\2")
+        buf.write("\u014e\u0149\3\2\2\2\u014f\u015b\3\2\2\2\u0150\u0151\f")
+        buf.write("\7\2\2\u0151\u0152\7\62\2\2\u0152\u0153\5R*\2\u0153\u0154")
+        buf.write("\7\63\2\2\u0154\u015a\3\2\2\2\u0155\u0156\f\6\2\2\u0156")
+        buf.write("\u015a\7\27\2\2\u0157\u0158\f\5\2\2\u0158\u015a\7\32\2")
+        buf.write("\2\u0159\u0150\3\2\2\2\u0159\u0155\3\2\2\2\u0159\u0157")
+        buf.write("\3\2\2\2\u015a\u015d\3\2\2\2\u015b\u0159\3\2\2\2\u015b")
+        buf.write("\u015c\3\2\2\2\u015c\61\3\2\2\2\u015d\u015b\3\2\2\2\u015e")
+        buf.write("\u015f\b\32\1\2\u015f\u0160\5J&\2\u0160\u0166\3\2\2\2")
+        buf.write("\u0161\u0162\f\3\2\2\u0162\u0163\7\67\2\2\u0163\u0165")
+        buf.write("\5J&\2\u0164\u0161\3\2\2\2\u0165\u0168\3\2\2\2\u0166\u0164")
+        buf.write("\3\2\2\2\u0166\u0167\3\2\2\2\u0167\63\3\2\2\2\u0168\u0166")
+        buf.write("\3\2\2\2\u0169\u016a\b\33\1\2\u016a\u016b\5.\30\2\u016b")
+        buf.write("\u0177\3\2\2\2\u016c\u016d\f\5\2\2\u016d\u016e\7\24\2")
+        buf.write("\2\u016e\u0176\5.\30\2\u016f\u0170\f\4\2\2\u0170\u0171")
+        buf.write("\7\34\2\2\u0171\u0176\5.\30\2\u0172\u0173\f\3\2\2\u0173")
+        buf.write("\u0174\7\17\2\2\u0174\u0176\5.\30\2\u0175\u016c\3\2\2")
+        buf.write("\2\u0175\u016f\3\2\2\2\u0175\u0172\3\2\2\2\u0176\u0179")
+        buf.write("\3\2\2\2\u0177\u0175\3\2\2\2\u0177\u0178\3\2\2\2\u0178")
+        buf.write("\65\3\2\2\2\u0179\u0177\3\2\2\2\u017a\u017b\b\34\1\2\u017b")
+        buf.write("\u017c\5\64\33\2\u017c\u0185\3\2\2\2\u017d\u017e\f\4\2")
+        buf.write("\2\u017e\u017f\7\26\2\2\u017f\u0184\5\64\33\2\u0180\u0181")
+        buf.write("\f\3\2\2\u0181\u0182\7\31\2\2\u0182\u0184\5\64\33\2\u0183")
+        buf.write("\u017d\3\2\2\2\u0183\u0180\3\2\2\2\u0184\u0187\3\2\2\2")
+        buf.write("\u0185\u0183\3\2\2\2\u0185\u0186\3\2\2\2\u0186\67\3\2")
+        buf.write("\2\2\u0187\u0185\3\2\2\2\u0188\u0189\b\35\1\2\u0189\u018a")
+        buf.write("\5\66\34\2\u018a\u0193\3\2\2\2\u018b\u018c\f\4\2\2\u018c")
+        buf.write("\u018d\7 \2\2\u018d\u0192\5\66\34\2\u018e\u018f\f\3\2")
+        buf.write("\2\u018f\u0190\7\'\2\2\u0190\u0192\5\66\34\2\u0191\u018b")
+        buf.write("\3\2\2\2\u0191\u018e\3\2\2\2\u0192\u0195\3\2\2\2\u0193")
+        buf.write("\u0191\3\2\2\2\u0193\u0194\3\2\2\2\u01949\3\2\2\2\u0195")
+        buf.write("\u0193\3\2\2\2\u0196\u0197\b\36\1\2\u0197\u0198\58\35")
+        buf.write("\2\u0198\u01a7\3\2\2\2\u0199\u019a\f\6\2\2\u019a\u019b")
+        buf.write("\7\37\2\2\u019b\u01a6\58\35\2\u019c\u019d\f\5\2\2\u019d")
+        buf.write("\u019e\7%\2\2\u019e\u01a6\58\35\2\u019f\u01a0\f\4\2\2")
+        buf.write("\u01a0\u01a1\7\"\2\2\u01a1\u01a6\58\35\2\u01a2\u01a3\f")
+        buf.write("\3\2\2\u01a3\u01a4\7&\2\2\u01a4\u01a6\58\35\2\u01a5\u0199")
+        buf.write("\3\2\2\2\u01a5\u019c\3\2\2\2\u01a5\u019f\3\2\2\2\u01a5")
+        buf.write("\u01a2\3\2\2\2\u01a6\u01a9\3\2\2\2\u01a7\u01a5\3\2\2\2")
+        buf.write("\u01a7\u01a8\3\2\2\2\u01a8;\3\2\2\2\u01a9\u01a7\3\2\2")
+        buf.write("\2\u01aa\u01ab\b\37\1\2\u01ab\u01ac\5:\36\2\u01ac\u01b5")
+        buf.write("\3\2\2\2\u01ad\u01ae\f\4\2\2\u01ae\u01af\7$\2\2\u01af")
+        buf.write("\u01b4\5:\36\2\u01b0\u01b1\f\3\2\2\u01b1\u01b2\7\16\2")
+        buf.write("\2\u01b2\u01b4\5:\36\2\u01b3\u01ad\3\2\2\2\u01b3\u01b0")
+        buf.write("\3\2\2\2\u01b4\u01b7\3\2\2\2\u01b5\u01b3\3\2\2\2\u01b5")
+        buf.write("\u01b6\3\2\2\2\u01b6=\3\2\2\2\u01b7\u01b5\3\2\2\2\u01b8")
+        buf.write("\u01b9\b \1\2\u01b9\u01ba\5<\37\2\u01ba\u01c0\3\2\2\2")
+        buf.write("\u01bb\u01bc\f\3\2\2\u01bc\u01bd\7\21\2\2\u01bd\u01bf")
+        buf.write("\5<\37\2\u01be\u01bb\3\2\2\2\u01bf\u01c2\3\2\2\2\u01c0")
+        buf.write("\u01be\3\2\2\2\u01c0\u01c1\3\2\2\2\u01c1?\3\2\2\2\u01c2")
+        buf.write("\u01c0\3\2\2\2\u01c3\u01c4\b!\1\2\u01c4\u01c5\5> \2\u01c5")
+        buf.write("\u01cb\3\2\2\2\u01c6\u01c7\f\3\2\2\u01c7\u01c8\7*\2\2")
+        buf.write("\u01c8\u01ca\5> \2\u01c9\u01c6\3\2\2\2\u01ca\u01cd\3\2")
+        buf.write("\2\2\u01cb\u01c9\3\2\2\2\u01cb\u01cc\3\2\2\2\u01ccA\3")
+        buf.write("\2\2\2\u01cd\u01cb\3\2\2\2\u01ce\u01cf\b\"\1\2\u01cf\u01d0")
+        buf.write("\5@!\2\u01d0\u01d6\3\2\2\2\u01d1\u01d2\f\3\2\2\u01d2\u01d3")
+        buf.write("\7,\2\2\u01d3\u01d5\5@!\2\u01d4\u01d1\3\2\2\2\u01d5\u01d8")
+        buf.write("\3\2\2\2\u01d6\u01d4\3\2\2\2\u01d6\u01d7\3\2\2\2\u01d7")
+        buf.write("C\3\2\2\2\u01d8\u01d6\3\2\2\2\u01d9\u01da\b#\1\2\u01da")
+        buf.write("\u01db\5B\"\2\u01db\u01e1\3\2\2\2\u01dc\u01dd\f\3\2\2")
+        buf.write("\u01dd\u01de\7\22\2\2\u01de\u01e0\5B\"\2\u01df\u01dc\3")
+        buf.write("\2\2\2\u01e0\u01e3\3\2\2\2\u01e1\u01df\3\2\2\2\u01e1\u01e2")
+        buf.write("\3\2\2\2\u01e2E\3\2\2\2\u01e3\u01e1\3\2\2\2\u01e4\u01e5")
+        buf.write("\b$\1\2\u01e5\u01e6\5D#\2\u01e6\u01ec\3\2\2\2\u01e7\u01e8")
+        buf.write("\f\3\2\2\u01e8\u01e9\7.\2\2\u01e9\u01eb\5D#\2\u01ea\u01e7")
+        buf.write("\3\2\2\2\u01eb\u01ee\3\2\2\2\u01ec\u01ea\3\2\2\2\u01ec")
+        buf.write("\u01ed\3\2\2\2\u01edG\3\2\2\2\u01ee\u01ec\3\2\2\2\u01ef")
+        buf.write("\u01f5\5F$\2\u01f0\u01f1\7)\2\2\u01f1\u01f2\5R*\2\u01f2")
+        buf.write("\u01f3\7\36\2\2\u01f3\u01f4\5H%\2\u01f4\u01f6\3\2\2\2")
+        buf.write("\u01f5\u01f0\3\2\2\2\u01f5\u01f6\3\2\2\2\u01f6I\3\2\2")
+        buf.write("\2\u01f7\u01fd\5H%\2\u01f8\u01f9\5.\30\2\u01f9\u01fa\5")
+        buf.write("L\'\2\u01fa\u01fb\5J&\2\u01fb\u01fd\3\2\2\2\u01fc\u01f7")
+        buf.write("\3\2\2\2\u01fc\u01f8\3\2\2\2\u01fdK\3\2\2\2\u01fe\u01ff")
+        buf.write("\t\3\2\2\u01ffM\3\2\2\2\u0200\u0201\78\2\2\u0201\u0203")
+        buf.write("\7\60\2\2\u0202\u0204\5P)\2\u0203\u0202\3\2\2\2\u0203")
+        buf.write("\u0204\3\2\2\2\u0204\u0205\3\2\2\2\u0205\u0215\7\61\2")
+        buf.write("\2\u0206\u0207\78\2\2\u0207\u0208\7\60\2\2\u0208\u0209")
+        buf.write("\7=\2\2\u0209\u0215\7\61\2\2\u020a\u020b\5\60\31\2\u020b")
+        buf.write("\u020c\7\62\2\2\u020c\u020d\5R*\2\u020d\u020e\7\63\2\2")
+        buf.write("\u020e\u0210\7\60\2\2\u020f\u0211\5P)\2\u0210\u020f\3")
+        buf.write("\2\2\2\u0210\u0211\3\2\2\2\u0211\u0212\3\2\2\2\u0212\u0213")
+        buf.write("\7\61\2\2\u0213\u0215\3\2\2\2\u0214\u0200\3\2\2\2\u0214")
+        buf.write("\u0206\3\2\2\2\u0214\u020a\3\2\2\2\u0215O\3\2\2\2\u0216")
+        buf.write("\u021c\5R*\2\u0217\u0218\5R*\2\u0218\u0219\7\67\2\2\u0219")
+        buf.write("\u021a\5P)\2\u021a\u021c\3\2\2\2\u021b\u0216\3\2\2\2\u021b")
+        buf.write("\u0217\3\2\2\2\u021cQ\3\2\2\2\u021d\u021e\5J&\2\u021e")
+        buf.write("S\3\2\2\2@Y^ceiruy|\u0082\u008b\u0091\u009b\u00a0\u00a4")
+        buf.write("\u00b0\u00b7\u00bd\u00c2\u00cb\u00d2\u00d6\u00de\u00e2")
+        buf.write("\u00e5\u00f0\u0103\u0107\u010b\u0113\u0117\u011c\u0124")
+        buf.write("\u0127\u012e\u0134\u0141\u014e\u0159\u015b\u0166\u0175")
+        buf.write("\u0177\u0183\u0185\u0191\u0193\u01a5\u01a7\u01b3\u01b5")
+        buf.write("\u01c0\u01cb\u01d6\u01e1\u01ec\u01f5\u01fc\u0203\u0210")
+        buf.write("\u0214\u021b")
         return buf.getvalue()
 
 
@@ -441,6 +446,14 @@ class HeroCParser ( Parser ):
         def getRuleIndex(self):
             return HeroCParser.RULE_prog
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterProg" ):
+                listener.enterProg(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitProg" ):
+                listener.exitProg(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitProg" ):
                 return visitor.visitProg(self)
@@ -488,6 +501,14 @@ class HeroCParser ( Parser ):
 
         def getRuleIndex(self):
             return HeroCParser.RULE_program
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterProgram" ):
+                listener.enterProgram(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitProgram" ):
+                listener.exitProgram(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitProgram" ):
@@ -576,6 +597,14 @@ class HeroCParser ( Parser ):
         def getRuleIndex(self):
             return HeroCParser.RULE_declaration
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterDeclaration" ):
+                listener.enterDeclaration(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitDeclaration" ):
+                listener.exitDeclaration(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitDeclaration" ):
                 return visitor.visitDeclaration(self)
@@ -628,6 +657,14 @@ class HeroCParser ( Parser ):
 
         def getRuleIndex(self):
             return HeroCParser.RULE_initDeclaratorList
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterInitDeclaratorList" ):
+                listener.enterInitDeclaratorList(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitInitDeclaratorList" ):
+                listener.exitInitDeclaratorList(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitInitDeclaratorList" ):
@@ -691,6 +728,14 @@ class HeroCParser ( Parser ):
 
         def getRuleIndex(self):
             return HeroCParser.RULE_initDeclarator
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterInitDeclarator" ):
+                listener.enterInitDeclarator(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitInitDeclarator" ):
+                listener.exitInitDeclarator(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitInitDeclarator" ):
@@ -763,6 +808,14 @@ class HeroCParser ( Parser ):
         def getRuleIndex(self):
             return HeroCParser.RULE_initLongDeclarator
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterInitLongDeclarator" ):
+                listener.enterInitLongDeclarator(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitInitLongDeclarator" ):
+                listener.exitInitLongDeclarator(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitInitLongDeclarator" ):
                 return visitor.visitInitLongDeclarator(self)
@@ -827,6 +880,14 @@ class HeroCParser ( Parser ):
 
         def getRuleIndex(self):
             return HeroCParser.RULE_initLongListDeclarator
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterInitLongListDeclarator" ):
+                listener.enterInitLongListDeclarator(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitInitLongListDeclarator" ):
+                listener.exitInitLongListDeclarator(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitInitLongListDeclarator" ):
@@ -950,6 +1011,14 @@ class HeroCParser ( Parser ):
         def getRuleIndex(self):
             return HeroCParser.RULE_initializer
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterInitializer" ):
+                listener.enterInitializer(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitInitializer" ):
+                listener.exitInitializer(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitInitializer" ):
                 return visitor.visitInitializer(self)
@@ -1020,6 +1089,14 @@ class HeroCParser ( Parser ):
         def getRuleIndex(self):
             return HeroCParser.RULE_initializerList
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterInitializerList" ):
+                listener.enterInitializerList(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitInitializerList" ):
+                listener.exitInitializerList(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitInitializerList" ):
                 return visitor.visitInitializerList(self)
@@ -1067,6 +1144,14 @@ class HeroCParser ( Parser ):
 
         def getRuleIndex(self):
             return HeroCParser.RULE_pointer
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterPointer" ):
+                listener.enterPointer(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitPointer" ):
+                listener.exitPointer(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitPointer" ):
@@ -1124,6 +1209,14 @@ class HeroCParser ( Parser ):
         def getRuleIndex(self):
             return HeroCParser.RULE_functionDefinition
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterFunctionDefinition" ):
+                listener.enterFunctionDefinition(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitFunctionDefinition" ):
+                listener.exitFunctionDefinition(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitFunctionDefinition" ):
                 return visitor.visitFunctionDefinition(self)
@@ -1179,6 +1272,14 @@ class HeroCParser ( Parser ):
 
         def getRuleIndex(self):
             return HeroCParser.RULE_declarationList
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterDeclarationList" ):
+                listener.enterDeclarationList(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitDeclarationList" ):
+                listener.exitDeclarationList(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitDeclarationList" ):
@@ -1251,6 +1352,14 @@ class HeroCParser ( Parser ):
         def getRuleIndex(self):
             return HeroCParser.RULE_statement
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterStatement" ):
+                listener.enterStatement(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitStatement" ):
+                listener.exitStatement(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitStatement" ):
                 return visitor.visitStatement(self)
@@ -1320,6 +1429,14 @@ class HeroCParser ( Parser ):
         def getRuleIndex(self):
             return HeroCParser.RULE_compoundStatement
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterCompoundStatement" ):
+                listener.enterCompoundStatement(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitCompoundStatement" ):
+                listener.exitCompoundStatement(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitCompoundStatement" ):
                 return visitor.visitCompoundStatement(self)
@@ -1372,6 +1489,14 @@ class HeroCParser ( Parser ):
 
         def getRuleIndex(self):
             return HeroCParser.RULE_blockItemList
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterBlockItemList" ):
+                listener.enterBlockItemList(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitBlockItemList" ):
+                listener.exitBlockItemList(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitBlockItemList" ):
@@ -1430,6 +1555,14 @@ class HeroCParser ( Parser ):
         def getRuleIndex(self):
             return HeroCParser.RULE_blockItem
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterBlockItem" ):
+                listener.enterBlockItem(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitBlockItem" ):
+                listener.exitBlockItem(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitBlockItem" ):
                 return visitor.visitBlockItem(self)
@@ -1480,6 +1613,14 @@ class HeroCParser ( Parser ):
 
         def getRuleIndex(self):
             return HeroCParser.RULE_expressionStatement
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExpressionStatement" ):
+                listener.enterExpressionStatement(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExpressionStatement" ):
+                listener.exitExpressionStatement(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitExpressionStatement" ):
@@ -1534,6 +1675,14 @@ class HeroCParser ( Parser ):
 
         def getRuleIndex(self):
             return HeroCParser.RULE_selectionStatement
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterSelectionStatement" ):
+                listener.enterSelectionStatement(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitSelectionStatement" ):
+                listener.exitSelectionStatement(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitSelectionStatement" ):
@@ -1601,6 +1750,14 @@ class HeroCParser ( Parser ):
 
         def getRuleIndex(self):
             return HeroCParser.RULE_iterationStatement
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterIterationStatement" ):
+                listener.enterIterationStatement(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitIterationStatement" ):
+                listener.exitIterationStatement(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitIterationStatement" ):
@@ -1746,6 +1903,14 @@ class HeroCParser ( Parser ):
         def getRuleIndex(self):
             return HeroCParser.RULE_jumpStatement
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterJumpStatement" ):
+                listener.enterJumpStatement(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitJumpStatement" ):
+                listener.exitJumpStatement(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitJumpStatement" ):
                 return visitor.visitJumpStatement(self)
@@ -1829,6 +1994,14 @@ class HeroCParser ( Parser ):
         def getRuleIndex(self):
             return HeroCParser.RULE_primaryExpression
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterPrimaryExpression" ):
+                listener.enterPrimaryExpression(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitPrimaryExpression" ):
+                listener.exitPrimaryExpression(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitPrimaryExpression" ):
                 return visitor.visitPrimaryExpression(self)
@@ -1903,6 +2076,14 @@ class HeroCParser ( Parser ):
         def getRuleIndex(self):
             return HeroCParser.RULE_unaryOperator
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterUnaryOperator" ):
+                listener.enterUnaryOperator(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitUnaryOperator" ):
+                listener.exitUnaryOperator(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitUnaryOperator" ):
                 return visitor.visitUnaryOperator(self)
@@ -1940,12 +2121,12 @@ class HeroCParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def postfixExpression(self):
-            return self.getTypedRuleContext(HeroCParser.PostfixExpressionContext,0)
-
-
         def functionCallExpression(self):
             return self.getTypedRuleContext(HeroCParser.FunctionCallExpressionContext,0)
+
+
+        def postfixExpression(self):
+            return self.getTypedRuleContext(HeroCParser.PostfixExpressionContext,0)
 
 
         def unaryOperator(self):
@@ -1961,6 +2142,14 @@ class HeroCParser ( Parser ):
 
         def getRuleIndex(self):
             return HeroCParser.RULE_unaryExpression
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterUnaryExpression" ):
+                listener.enterUnaryExpression(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitUnaryExpression" ):
+                listener.exitUnaryExpression(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitUnaryExpression" ):
@@ -1982,13 +2171,13 @@ class HeroCParser ( Parser ):
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 310
-                self.postfixExpression(0)
+                self.functionCallExpression()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 311
-                self.functionCallExpression()
+                self.postfixExpression(0)
                 pass
 
             elif la_ == 3:
@@ -2044,6 +2233,14 @@ class HeroCParser ( Parser ):
 
         def getRuleIndex(self):
             return HeroCParser.RULE_postfixExpression
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterPostfixExpression" ):
+                listener.enterPostfixExpression(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitPostfixExpression" ):
+                listener.exitPostfixExpression(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitPostfixExpression" ):
@@ -2170,6 +2367,14 @@ class HeroCParser ( Parser ):
         def getRuleIndex(self):
             return HeroCParser.RULE_argumentExpressionList
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterArgumentExpressionList" ):
+                listener.enterArgumentExpressionList(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitArgumentExpressionList" ):
+                listener.exitArgumentExpressionList(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitArgumentExpressionList" ):
                 return visitor.visitArgumentExpressionList(self)
@@ -2236,6 +2441,14 @@ class HeroCParser ( Parser ):
 
         def getRuleIndex(self):
             return HeroCParser.RULE_multiplicativeExpression
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterMultiplicativeExpression" ):
+                listener.enterMultiplicativeExpression(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitMultiplicativeExpression" ):
+                listener.exitMultiplicativeExpression(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitMultiplicativeExpression" ):
@@ -2337,6 +2550,14 @@ class HeroCParser ( Parser ):
         def getRuleIndex(self):
             return HeroCParser.RULE_additiveExpression
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAdditiveExpression" ):
+                listener.enterAdditiveExpression(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAdditiveExpression" ):
+                listener.exitAdditiveExpression(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitAdditiveExpression" ):
                 return visitor.visitAdditiveExpression(self)
@@ -2424,6 +2645,14 @@ class HeroCParser ( Parser ):
         def getRuleIndex(self):
             return HeroCParser.RULE_shiftExpression
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterShiftExpression" ):
+                listener.enterShiftExpression(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitShiftExpression" ):
+                listener.exitShiftExpression(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitShiftExpression" ):
                 return visitor.visitShiftExpression(self)
@@ -2510,6 +2739,14 @@ class HeroCParser ( Parser ):
 
         def getRuleIndex(self):
             return HeroCParser.RULE_relationalExpression
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterRelationalExpression" ):
+                listener.enterRelationalExpression(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitRelationalExpression" ):
+                listener.exitRelationalExpression(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitRelationalExpression" ):
@@ -2624,6 +2861,14 @@ class HeroCParser ( Parser ):
         def getRuleIndex(self):
             return HeroCParser.RULE_equalityExpression
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterEqualityExpression" ):
+                listener.enterEqualityExpression(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitEqualityExpression" ):
+                listener.exitEqualityExpression(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitEqualityExpression" ):
                 return visitor.visitEqualityExpression(self)
@@ -2711,6 +2956,14 @@ class HeroCParser ( Parser ):
         def getRuleIndex(self):
             return HeroCParser.RULE_andExpression
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAndExpression" ):
+                listener.enterAndExpression(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAndExpression" ):
+                listener.exitAndExpression(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitAndExpression" ):
                 return visitor.visitAndExpression(self)
@@ -2777,6 +3030,14 @@ class HeroCParser ( Parser ):
 
         def getRuleIndex(self):
             return HeroCParser.RULE_exclusiveOrExpression
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExclusiveOrExpression" ):
+                listener.enterExclusiveOrExpression(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExclusiveOrExpression" ):
+                listener.exitExclusiveOrExpression(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitExclusiveOrExpression" ):
@@ -2845,6 +3106,14 @@ class HeroCParser ( Parser ):
         def getRuleIndex(self):
             return HeroCParser.RULE_inclusiveOrExpression
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterInclusiveOrExpression" ):
+                listener.enterInclusiveOrExpression(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitInclusiveOrExpression" ):
+                listener.exitInclusiveOrExpression(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitInclusiveOrExpression" ):
                 return visitor.visitInclusiveOrExpression(self)
@@ -2912,6 +3181,14 @@ class HeroCParser ( Parser ):
         def getRuleIndex(self):
             return HeroCParser.RULE_logicalAndExpression
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterLogicalAndExpression" ):
+                listener.enterLogicalAndExpression(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitLogicalAndExpression" ):
+                listener.exitLogicalAndExpression(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitLogicalAndExpression" ):
                 return visitor.visitLogicalAndExpression(self)
@@ -2978,6 +3255,14 @@ class HeroCParser ( Parser ):
 
         def getRuleIndex(self):
             return HeroCParser.RULE_logicalOrExpression
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterLogicalOrExpression" ):
+                listener.enterLogicalOrExpression(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitLogicalOrExpression" ):
+                listener.exitLogicalOrExpression(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitLogicalOrExpression" ):
@@ -3050,6 +3335,14 @@ class HeroCParser ( Parser ):
         def getRuleIndex(self):
             return HeroCParser.RULE_conditionalExpression
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterConditionalExpression" ):
+                listener.enterConditionalExpression(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitConditionalExpression" ):
+                listener.exitConditionalExpression(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitConditionalExpression" ):
                 return visitor.visitConditionalExpression(self)
@@ -3114,6 +3407,14 @@ class HeroCParser ( Parser ):
         def getRuleIndex(self):
             return HeroCParser.RULE_assignmentExpression
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAssignmentExpression" ):
+                listener.enterAssignmentExpression(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAssignmentExpression" ):
+                listener.exitAssignmentExpression(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitAssignmentExpression" ):
                 return visitor.visitAssignmentExpression(self)
@@ -3166,6 +3467,14 @@ class HeroCParser ( Parser ):
         def getRuleIndex(self):
             return HeroCParser.RULE_assignmentOperator
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterAssignmentOperator" ):
+                listener.enterAssignmentOperator(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitAssignmentOperator" ):
+                listener.exitAssignmentOperator(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitAssignmentOperator" ):
                 return visitor.visitAssignmentOperator(self)
@@ -3213,8 +3522,24 @@ class HeroCParser ( Parser ):
         def Char(self):
             return self.getToken(HeroCParser.Char, 0)
 
+        def postfixExpression(self):
+            return self.getTypedRuleContext(HeroCParser.PostfixExpressionContext,0)
+
+
+        def expression(self):
+            return self.getTypedRuleContext(HeroCParser.ExpressionContext,0)
+
+
         def getRuleIndex(self):
             return HeroCParser.RULE_functionCallExpression
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterFunctionCallExpression" ):
+                listener.enterFunctionCallExpression(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitFunctionCallExpression" ):
+                listener.exitFunctionCallExpression(self)
 
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitFunctionCallExpression" ):
@@ -3231,9 +3556,9 @@ class HeroCParser ( Parser ):
         self.enterRule(localctx, 76, self.RULE_functionCallExpression)
         self._la = 0 # Token type
         try:
-            self.state = 520
+            self.state = 530
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,59,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,60,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 510
@@ -3264,6 +3589,30 @@ class HeroCParser ( Parser ):
                 self.match(HeroCParser.RightParen)
                 pass
 
+            elif la_ == 3:
+                self.enterOuterAlt(localctx, 3)
+                self.state = 520
+                self.postfixExpression(0)
+                self.state = 521
+                self.match(HeroCParser.LeftBracket)
+                self.state = 522
+                self.expression()
+                self.state = 523
+                self.match(HeroCParser.RightBracket)
+                self.state = 524
+                self.match(HeroCParser.LeftParen)
+                self.state = 526
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+                if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << HeroCParser.Sizeof) | (1 << HeroCParser.Not) | (1 << HeroCParser.And) | (1 << HeroCParser.Star) | (1 << HeroCParser.Plus) | (1 << HeroCParser.PlusPlus) | (1 << HeroCParser.Minus) | (1 << HeroCParser.MinusMinus) | (1 << HeroCParser.Tilde) | (1 << HeroCParser.LeftParen) | (1 << HeroCParser.LeftBrace) | (1 << HeroCParser.ID) | (1 << HeroCParser.Constant) | (1 << HeroCParser.String))) != 0):
+                    self.state = 525
+                    self.functionParameterList()
+
+
+                self.state = 528
+                self.match(HeroCParser.RightParen)
+                pass
+
 
         except RecognitionException as re:
             localctx.exception = re
@@ -3290,6 +3639,14 @@ class HeroCParser ( Parser ):
         def getRuleIndex(self):
             return HeroCParser.RULE_functionParameterList
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterFunctionParameterList" ):
+                listener.enterFunctionParameterList(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitFunctionParameterList" ):
+                listener.exitFunctionParameterList(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitFunctionParameterList" ):
                 return visitor.visitFunctionParameterList(self)
@@ -3304,22 +3661,22 @@ class HeroCParser ( Parser ):
         localctx = HeroCParser.FunctionParameterListContext(self, self._ctx, self.state)
         self.enterRule(localctx, 78, self.RULE_functionParameterList)
         try:
-            self.state = 527
+            self.state = 537
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,60,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,61,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 522
+                self.state = 532
                 self.expression()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 523
+                self.state = 533
                 self.expression()
-                self.state = 524
+                self.state = 534
                 self.match(HeroCParser.Comma)
-                self.state = 525
+                self.state = 535
                 self.functionParameterList()
                 pass
 
@@ -3345,6 +3702,14 @@ class HeroCParser ( Parser ):
         def getRuleIndex(self):
             return HeroCParser.RULE_expression
 
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterExpression" ):
+                listener.enterExpression(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitExpression" ):
+                listener.exitExpression(self)
+
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitExpression" ):
                 return visitor.visitExpression(self)
@@ -3360,7 +3725,7 @@ class HeroCParser ( Parser ):
         self.enterRule(localctx, 80, self.RULE_expression)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 529
+            self.state = 539
             self.assignmentExpression()
         except RecognitionException as re:
             localctx.exception = re

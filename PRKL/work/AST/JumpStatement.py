@@ -4,7 +4,7 @@ from ASM.ASM import ASM
 from ASM.Registers import Registers
 from .ForExpression import ForExpression
 from .WhileExpression import WhileExpression
-
+from .DoWhileExpression import DoWhileExpression
 class JumpStatementType(Enum):
     RETURN = "RETURN"
     BREAK = "BREAK"
@@ -34,7 +34,7 @@ class JumpStatement(Node):
         while True:
             if p is None:
                 break
-            if isinstance(p, ForExpression) or isinstance(p, WhileExpression):
+            if isinstance(p, ForExpression) or isinstance(p, WhileExpression) or isinstance(p, DoWhileExpression):
                 break
             p = p.parent
         return p

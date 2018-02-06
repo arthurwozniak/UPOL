@@ -160,7 +160,10 @@ class HeroCCustomVisitor(HeroCVisitor):
     def visitCompoundStatement(self, ctx: HeroCParser.CompoundStatementContext):
         block_body = ctx.getTypedRuleContext(
             HeroCParser.BlockItemListContext, 0)
-        block_items = self.visit(block_body)
+        if block_body is not None:
+            block_items = self.visit(block_body)
+        else:
+            block_items = []
         block = AST.Block(statements=block_items)
 
         return block
@@ -285,6 +288,8 @@ class HeroCCustomVisitor(HeroCVisitor):
         elif isinstance(ctx.getChild(0), HeroCParser.UnaryOperatorContext):
             op_symbol = ctx.getChild(0).getText()
             expr = self.visit(ctx.getChild(1))
+            if op_symbol == "-" and isinstance(expr, AST.Number):
+                return AST.Number(-expr.value)
             return AST.UnaryExpression(expression=expr, operation=op_symbol)
         return AST.Number(value=8)
 
@@ -414,7 +419,7 @@ class HeroCCustomVisitor(HeroCVisitor):
 
         if ctx.getChildCount() != 3:
             return self.visitChildren(ctx)
-        help(ctx)
+        # help(ctx)
 
         operation = ctx.getChild(1).getSymbol()
         if operation.type not in [HeroCLexer.Caret]:
@@ -514,8 +519,13 @@ class HeroCCustomVisitor(HeroCVisitor):
             parameters = self.visit(parameters)
         elif len(ctx.getChild(2).getText()) == 3:
             parameters = [AST.Number(value=ord(ctx.getChild(2).getText()[1]))]
-        name = ctx.getChild(0).getSymbol().text
-        fcall = AST.FunctionCall(function=name, arguments=parameters)
+        if isinstance(ctx.getChild(0), HeroCParser.PostfixExpressionContext):
+            subscript = AST.SubscriptExpression(expression=self.visit(ctx.postfixExpression()), \
+                                                sub_expr=self.visit(ctx.expression()))
+            func = subscript
+        else:
+            func = ctx.getChild(0).getSymbol().text
+        fcall = AST.FunctionCall(function=func, arguments=parameters)
         return fcall
 
     # Visit a parse tree produced by HeroCParser#functionParameterList.

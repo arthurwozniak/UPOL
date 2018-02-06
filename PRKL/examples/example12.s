@@ -18,7 +18,9 @@ bar:
 	leave	
 	ret	
 
+	addq	$0, %rsp
 
+	movq	$0, %rax
 	leave	
 	ret	
 foo:
@@ -50,15 +52,17 @@ foo:
 	leave	
 	ret	
 
+	addq	$0, %rsp
 
+	movq	$0, %rax
 	leave	
 	ret	
 main:
 	pushq	%rbp
 	movq	%rsp, %rbp
-	movq	$100, -8(%rbp)
 
 	subq	$8, %rsp
+	movq	$100, -8(%rbp)
 	pushq	%rdi
 	pushq	%rsi
 	pushq	%rdx
@@ -351,6 +355,8 @@ main:
 	popq	%rsi
 	popq	%rdi
 
+	addq	$8, %rsp
 
+	movq	$0, %rax
 	leave	
 	ret	

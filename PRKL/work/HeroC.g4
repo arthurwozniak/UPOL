@@ -126,8 +126,8 @@ unaryOperator
     ;
 
 unaryExpression
-    :   postfixExpression
-    |   functionCallExpression
+    :   functionCallExpression
+    |   postfixExpression
     |   unaryOperator unaryExpression
     |   'sizeof' '(' Long ')'
     ;
@@ -221,6 +221,7 @@ assignmentOperator
 functionCallExpression
     :   ID '(' functionParameterList? ')'
     |   ID '(' Char ')'
+    |   postfixExpression '[' expression ']' '(' functionParameterList? ')'
     ;
 
 functionParameterList
@@ -330,10 +331,12 @@ fragment HexDigit:      [0-9a-fA-F];
 
 
 /** ASCII a string */
-Char:                   '\'' CharSymbol '\'';
-String:                 '"' (CharSymbol | Escape)* '"';
+Char:                   '\'' (CharSymbol1 | CharSymbol2) '\'';
+String:                 '"' (CharSymbol1 | CharSymbol2 | Escape)* '"';
 fragment Escape:        '\\' ['"?abfnrtv\\];
-fragment CharSymbol:    '\u0000' .. '\u007F';
+fragment CharSymbol1:    '\u0000' .. '\u0021';
+fragment CharSymbol2:    '\u0023' .. '\u007F';
+
 
 
 

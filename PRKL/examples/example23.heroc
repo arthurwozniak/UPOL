@@ -31,10 +31,14 @@ main ()
 {
     /* simple lisp-style pair manipulation */
     long a = cons (10, cons (20, cons (30, 0)));
+
+
     print_long (car (a));
     print_nl ();
+
     print_long (car (cdr (a)));
     print_nl ();
     print_long (car (cdr (cdr (a))));
     print_nl ();
+
 }

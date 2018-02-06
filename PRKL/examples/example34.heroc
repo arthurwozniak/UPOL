@@ -6,6 +6,7 @@ main ()
     b = &a;
     c = &b;
     d = &c;
+
     print_long (*b);
     print_nl ();
     print_long (**c);
@@ -16,10 +17,13 @@ main ()
     print_nl ();
     print_long (c [0][0]);
     print_nl ();
+
     print_long (*c [0]);
+
     print_nl ();
     print_long (d [0][0][0]);
     print_nl ();
+
     print_long (*d [0][0]);
     print_nl ();
     print_long (**d [0]);

@@ -1,6 +1,8 @@
 class Node:
-    parent = None
+    _parent = None
     _parent_block = None
+    propagation = set()
+
     def __init__(self, parent=None):
         self.set_parent(parent)
 
@@ -33,6 +35,14 @@ class Node:
             self._parent_block = self._parent_block.parent
 
         return self._parent_block
+
+    @property
+    def parent(self):
+        return self._parent
+
+    @parent.setter
+    def parent(self, value):
+        self._parent = value
 
     def label_id(self):
         return hex(id(self))[2:]

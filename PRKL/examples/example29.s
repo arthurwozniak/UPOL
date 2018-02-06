@@ -2,10 +2,10 @@
             .global main
 
             .type	main, @function
+        .data 
 main:
 	pushq	%rbp
 	movq	%rsp, %rbp
-	subq	$0, %rsp
 	pushq	%rdi
 	pushq	%rsi
 	pushq	%rdx
@@ -108,7 +108,8 @@ main:
 	addq	%rcx, %rax
 	movq	%rax, %rcx
 	popq	%rax
-	shld	%rcx, %rax
+	cltq	
+	salq	%cl, %rax
 	movq	%rax, %rdi
 	call	print_long
 	popq	%r9
@@ -144,7 +145,8 @@ main:
 	movq	$6, %rax
 	movq	%rax, %rcx
 	popq	%rax
-	shld	%rcx, %rax
+	cltq	
+	salq	%cl, %rax
 
 	pushq	%rax
 	movq	$7, %rax
@@ -192,7 +194,8 @@ main:
 	imulq	%rcx, %rax
 	movq	%rax, %rcx
 	popq	%rax
-	addq	%rcx, %rax
+	cltq	
+	sarq	%cl, %rax
 	movq	%rax, %rdi
 	call	print_long
 	popq	%r9
@@ -228,7 +231,8 @@ main:
 	movq	$6, %rax
 	movq	%rax, %rcx
 	popq	%rax
-	addq	%rcx, %rax
+	cltq	
+	sarq	%cl, %rax
 
 	pushq	%rax
 	movq	$2, %rax
@@ -268,9 +272,11 @@ main:
 
 	pushq	%rax
 	movq	$3, %rax
-	movq	%rax, %rcx
+	movq	%rax, %rbx
 	popq	%rax
-	addq	%rcx, %rax
+	cqto	
+	idivq	%rbx
+	movq	%rdx, %rax
 
 	pushq	%rax
 	movq	$1, %rax
@@ -310,9 +316,11 @@ main:
 
 	pushq	%rax
 	movq	$3, %rax
-	movq	%rax, %rcx
+	movq	%rax, %rbx
 	popq	%rax
-	addq	%rcx, %rax
+	cqto	
+	idivq	%rbx
+	movq	%rdx, %rax
 
 	pushq	%rax
 	movq	$10, %rax
@@ -358,9 +366,11 @@ main:
 
 	pushq	%rax
 	movq	$3, %rax
-	movq	%rax, %rcx
+	movq	%rax, %rbx
 	popq	%rax
-	addq	%rcx, %rax
+	cqto	
+	idivq	%rbx
+	movq	%rdx, %rax
 	movq	%rax, %rdi
 	call	print_long
 	popq	%r9
@@ -403,15 +413,15 @@ main:
 	movq	%rax, %rcx
 	popq	%rax
 	cmp	%rcx, %rax
-	jne	COMP_FALSE_BinaryExpression_7f326fa083c8
+	jne	COMP_FALSE_BinaryExpression_7f3794d826a0
 
-COMP_TRUE_BinaryExpression_7f326fa083c8:
+COMP_TRUE_BinaryExpression_7f3794d826a0:
 	movq	$1, %rax
-	jmp	COMP_END_BinaryExpression_7f326fa083c8
+	jmp	COMP_END_BinaryExpression_7f3794d826a0
 
-COMP_FALSE_BinaryExpression_7f326fa083c8:
+COMP_FALSE_BinaryExpression_7f3794d826a0:
 	movq	$0, %rax
-COMP_END_BinaryExpression_7f326fa083c8:
+COMP_END_BinaryExpression_7f3794d826a0:
 	movq	%rax, %rdi
 	call	print_long
 	popq	%r9
@@ -451,15 +461,15 @@ COMP_END_BinaryExpression_7f326fa083c8:
 	movq	%rax, %rcx
 	popq	%rax
 	cmp	%rcx, %rax
-	jne	COMP_FALSE_BinaryExpression_7f326fa08518
+	jne	COMP_FALSE_BinaryExpression_7f3794d827f0
 
-COMP_TRUE_BinaryExpression_7f326fa08518:
+COMP_TRUE_BinaryExpression_7f3794d827f0:
 	movq	$1, %rax
-	jmp	COMP_END_BinaryExpression_7f326fa08518
+	jmp	COMP_END_BinaryExpression_7f3794d827f0
 
-COMP_FALSE_BinaryExpression_7f326fa08518:
+COMP_FALSE_BinaryExpression_7f3794d827f0:
 	movq	$0, %rax
-COMP_END_BinaryExpression_7f326fa08518:
+COMP_END_BinaryExpression_7f3794d827f0:
 	movq	%rax, %rcx
 	popq	%rax
 	imulq	%rcx, %rax
@@ -487,5 +497,6 @@ COMP_END_BinaryExpression_7f326fa08518:
 	popq	%rdi
 
 
+	movq	$0, %rax
 	leave	
 	ret	

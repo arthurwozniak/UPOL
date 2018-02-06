@@ -40,12 +40,13 @@ class Variable(Node):
         if self.type == VariableType.POINTER:
             return 8
         else:
-            return self.size.value * 8 + 8 # + 8 due to pointer to array
+            return self.size.value * 8
 
     def asm(self):
         from .Program import Program
         from .Number import Number
         from .UnaryExpression import UnaryExpression
+        from .Array import Array
         if not(isinstance(self.parent, Program)):
             return ""
         code = ""
@@ -53,7 +54,10 @@ class Variable(Node):
         if self.value is None or self.value == []:
             code += "\t\t.zero {0}\n".format(self.byte_size())
         elif isinstance(self.value, Number):
-            code += "\t\t.quad ${0}\n".format(self.value.value)
+            code += "\t\t.quad {0}\n".format(self.value.value)
+        elif isinstance(self.value, list):
+            for val in self.value:
+                code += "\t\t.quad {0}\n".format(val.value)
         elif isinstance(self.value, UnaryExpression):
             code += "\t\t.quad {0}\n".format(self.value.expression.text)
         return code

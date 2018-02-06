@@ -6,7 +6,6 @@
 main:
 	pushq	%rbp
 	movq	%rsp, %rbp
-	subq	$0, %rsp
 	pushq	%rdi
 	pushq	%rsi
 	pushq	%rdx
@@ -35,7 +34,8 @@ main:
 	movq	$4, %rax
 	movq	%rax, %rcx
 	popq	%rax
-	shld	%rcx, %rax
+	cltq	
+	salq	%cl, %rax
 
 	pushq	%rax
 	movq	$5, %rax
@@ -207,7 +207,8 @@ main:
 	movq	$7, %rax
 	movq	%rax, %rcx
 	popq	%rax
-	shld	%rcx, %rax
+	cltq	
+	salq	%cl, %rax
 
 	pushq	%rax
 	movq	$28, %rax
@@ -254,5 +255,6 @@ main:
 	popq	%rdi
 
 
+	movq	$0, %rax
 	leave	
 	ret	

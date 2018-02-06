@@ -37,6 +37,7 @@ class Function(Node):
         code += "\n"
 
         # obnovíme registry
+        code += ASM.instruction("movq", "$0", Registers.RAX)
         code += ASM.instruction("leave")
         code += ASM.instruction("ret")
         return code

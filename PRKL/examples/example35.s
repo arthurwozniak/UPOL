@@ -2,6 +2,7 @@
             .global main
 
             .type	main, @function
+        .data 
 helper:
 	pushq	%rbp
 	movq	%rsp, %rbp
@@ -37,11 +38,19 @@ helper:
 	popq	%rsi
 	popq	%rdi
 
-	subq	$24, %rsp
-	movq	-24(%rbp), %rax
+
+
+	subq	$16, %rsp
+	movq	-8(%rbp), %rax
 	movq	%rax, -16(%rbp)
+	movq	-16(%rbp), %rax
 
-
+	pushq	%rax
+	movq	$111, %rax
+	movq	%rax, %rcx
+	popq	%rax
+	addq	%rcx, %rax
+	movq	%rax, -24(%rbp)
 	pushq	%rdi
 	pushq	%rsi
 	pushq	%rdx
@@ -72,11 +81,19 @@ helper:
 	popq	%rsi
 	popq	%rdi
 
-	subq	$40, %rsp
-	movq	-40(%rbp), %rax
+
+
+	subq	$16, %rsp
+	movq	-24(%rbp), %rax
 	movq	%rax, -32(%rbp)
+	movq	-32(%rbp), %rax
 
-
+	pushq	%rax
+	movq	$2, %rax
+	movq	%rax, %rcx
+	popq	%rax
+	imulq	%rcx, %rax
+	movq	%rax, -40(%rbp)
 	pushq	%rdi
 	pushq	%rsi
 	pushq	%rdx
@@ -173,15 +190,17 @@ helper:
 	leave	
 	ret	
 
+	addq	$0, %rsp
 
+	movq	$0, %rax
 	leave	
 	ret	
 main:
 	pushq	%rbp
 	movq	%rsp, %rbp
+
 	subq	$8, %rsp
 	movq	$111, -8(%rbp)
-
 	pushq	%rdi
 	pushq	%rsi
 	pushq	%rdx
@@ -258,9 +277,9 @@ main:
 	popq	%rsi
 	popq	%rdi
 
-	subq	$16, %rsp
+
+	subq	$8, %rsp
 	movq	$222, -16(%rbp)
-
 	pushq	%rdi
 	pushq	%rsi
 	pushq	%rdx
@@ -368,6 +387,8 @@ main:
 	popq	%rsi
 	popq	%rdi
 
+	addq	$8, %rsp
 
+	movq	$0, %rax
 	leave	
 	ret	

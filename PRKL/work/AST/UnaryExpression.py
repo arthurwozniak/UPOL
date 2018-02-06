@@ -22,8 +22,9 @@ class UnaryExpression(Node):
         if self.operation == "&":
             code += ASM.instruction("leaq", self.expression.address(), Registers.RAX)
         elif self.operation == "*":
-            code += ASM.instruction("movq", self.expression.address(), Registers.RBX)
-            code += ASM.instruction("movq", Registers.RBX.dereference(), Registers.RAX)
+            # code += ASM.instruction("movq", self.expression.address(), Registers.RBX)
+            code += self.expression.asm()
+            code += ASM.instruction("movq", Registers.RAX.dereference(), Registers.RAX)
         elif self.operation == "!":
             code += self.expression.asm()
             code += ASM.instruction("cmp", "$0", Registers.RAX)
@@ -39,6 +40,20 @@ class UnaryExpression(Node):
         elif self.operation == "-":
             code += self.expression.asm()
             code += ASM.instruction("negq", Registers.RAX);
+
+        elif self.operation == "~":
+            code += self.expression.asm()
+            code += ASM.instruction("notq", Registers.RAX);
+
+        elif self.operation == "--":
+            code += self.expression.asm()
+            code += ASM.instruction("decq", Registers.RAX);
+            code += ASM.instruction("movq", Registers.RAX, self.expression.address())
+
+        elif self.operation == "++":
+            code += self.expression.asm()
+            code += ASM.instruction("incq", Registers.RAX);
+            code += ASM.instruction("movq", Registers.RAX, self.expression.address())
 
         return code
 
