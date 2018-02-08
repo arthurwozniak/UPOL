@@ -6,53 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="59f98e62-6fe5-4564-b5ec-4bd6a0ab8cc3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/compiler-test.sh" afterPath="$PROJECT_DIR$/compiler-test.sh" />
-      <change beforePath="$PROJECT_DIR$/cv2/NEG.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cv2/POS.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cv2/parser.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cv3/Makefile" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cv3/example" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cv3/example.l" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cv3/lex.yy.c" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/heroc-2016.pdf" afterPath="$PROJECT_DIR$/docs/heroc-2016.pdf" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" afterPath="$PROJECT_DIR$/Readme.md" />
+      <change beforePath="$PROJECT_DIR$/examples/example01.heroc" afterPath="$PROJECT_DIR$/examples/example01.heroc" />
       <change beforePath="$PROJECT_DIR$/pokus" afterPath="$PROJECT_DIR$/pokus" />
       <change beforePath="$PROJECT_DIR$/test.s" afterPath="$PROJECT_DIR$/test.s" />
-      <change beforePath="$PROJECT_DIR$/work/ASM/ASM.py" afterPath="$PROJECT_DIR$/compiler/ASM/ASM.py" />
-      <change beforePath="$PROJECT_DIR$/work/ASM/Registers.py" afterPath="$PROJECT_DIR$/compiler/ASM/Registers.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/Array.py" afterPath="$PROJECT_DIR$/compiler/AST/Array.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/BinaryExpression.py" afterPath="$PROJECT_DIR$/compiler/AST/BinaryExpression.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/Block.py" afterPath="$PROJECT_DIR$/compiler/AST/Block.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/DoWhileExpression.py" afterPath="$PROJECT_DIR$/compiler/AST/DoWhileExpression.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/Environment.py" afterPath="$PROJECT_DIR$/compiler/AST/Environment.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/ForExpression.py" afterPath="$PROJECT_DIR$/compiler/AST/ForExpression.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/Function.py" afterPath="$PROJECT_DIR$/compiler/AST/Function.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/FunctionCall.py" afterPath="$PROJECT_DIR$/compiler/AST/FunctionCall.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/Identifier.py" afterPath="$PROJECT_DIR$/compiler/AST/Identifier.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/IfEvalStatement.py" afterPath="$PROJECT_DIR$/compiler/AST/IfEvalStatement.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/IfStatement.py" afterPath="$PROJECT_DIR$/compiler/AST/IfStatement.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/JumpStatement.py" afterPath="$PROJECT_DIR$/compiler/AST/JumpStatement.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/Node.py" afterPath="$PROJECT_DIR$/compiler/AST/Node.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/Number.py" afterPath="$PROJECT_DIR$/compiler/AST/Number.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/PostfixExpression.py" afterPath="$PROJECT_DIR$/compiler/AST/PostfixExpression.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/Program.py" afterPath="$PROJECT_DIR$/compiler/AST/Program.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/SemanticException.py" afterPath="$PROJECT_DIR$/compiler/AST/SemanticException.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/String.py" afterPath="$PROJECT_DIR$/compiler/AST/String.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/SubscriptExpression.py" afterPath="$PROJECT_DIR$/compiler/AST/SubscriptExpression.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/UnaryExpression.py" afterPath="$PROJECT_DIR$/compiler/AST/UnaryExpression.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/Variable.py" afterPath="$PROJECT_DIR$/compiler/AST/Variable.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/WhileExpression.py" afterPath="$PROJECT_DIR$/compiler/AST/WhileExpression.py" />
-      <change beforePath="$PROJECT_DIR$/work/AST/__init__.py" afterPath="$PROJECT_DIR$/compiler/AST/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/work/HeroC.g4" afterPath="$PROJECT_DIR$/compiler/HeroC.g4" />
-      <change beforePath="$PROJECT_DIR$/work/HeroC.tokens" afterPath="$PROJECT_DIR$/compiler/HeroC.tokens" />
-      <change beforePath="$PROJECT_DIR$/work/HeroCCustomVisitor.py" afterPath="$PROJECT_DIR$/compiler/HeroCCustomVisitor.py" />
-      <change beforePath="$PROJECT_DIR$/work/HeroCLexer.py" afterPath="$PROJECT_DIR$/compiler/HeroCLexer.py" />
-      <change beforePath="$PROJECT_DIR$/work/HeroCLexer.tokens" afterPath="$PROJECT_DIR$/compiler/HeroCLexer.tokens" />
-      <change beforePath="$PROJECT_DIR$/work/HeroCParser.py" afterPath="$PROJECT_DIR$/compiler/HeroCParser.py" />
-      <change beforePath="$PROJECT_DIR$/work/HeroCVisitor.py" afterPath="$PROJECT_DIR$/compiler/HeroCVisitor.py" />
-      <change beforePath="$PROJECT_DIR$/work/ParserErrorListener.py" afterPath="$PROJECT_DIR$/compiler/ParserErrorListener.py" />
-      <change beforePath="$PROJECT_DIR$/work/compile.py" afterPath="$PROJECT_DIR$/compiler/compiler.py" />
-      <change beforePath="$PROJECT_DIR$/work/print_tree.py" afterPath="$PROJECT_DIR$/compiler/print_tree.py" />
-      <change beforePath="$PROJECT_DIR$/x86-64-psABI-1.0.pdf" afterPath="$PROJECT_DIR$/docs/x86-64-psABI-1.0.pdf" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -77,8 +34,8 @@
         <entry file="file://$PROJECT_DIR$/Readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="327">
-                <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -86,28 +43,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="example32.heroc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examples/example32.heroc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="example31.heroc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examples/example31.heroc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="example30.heroc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examples/example30.heroc">
+      <file leaf-file-name="example01.heroc.AST" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/example01.heroc.AST">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -121,6 +58,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-7">
               <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="example01.heroc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/example01.heroc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -253,7 +200,6 @@
         <option value="$PROJECT_DIR$/work/AST/PostfixExpression.py" />
         <option value="$PROJECT_DIR$/work/AST/SemanticException.py" />
         <option value="$PROJECT_DIR$/work/lexer.py" />
-        <option value="$PROJECT_DIR$/examples/example01.heroc" />
         <option value="$PROJECT_DIR$/compiler-test.sh" />
         <option value="$PROJECT_DIR$/work/print_tree.py" />
         <option value="$PROJECT_DIR$/work/AST/Program.py" />
@@ -269,6 +215,7 @@
         <option value="$PROJECT_DIR$/work/AST/Function.py" />
         <option value="$PROJECT_DIR$/work/AST/BinaryExpression.py" />
         <option value="$PROJECT_DIR$/work/AST/SubscriptExpression.py" />
+        <option value="$PROJECT_DIR$/examples/example01.heroc" />
         <option value="$PROJECT_DIR$/Readme.md" />
       </list>
     </option>
@@ -299,11 +246,6 @@
             <path>
               <item name="PRKL" type="b2602c69:ProjectViewProjectNode" />
               <item name="PRKL" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PRKL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PRKL" type="462c0819:PsiDirectoryNode" />
-              <item name="compiler" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -454,11 +396,19 @@
       <option name="project" value="LOCAL" />
       <updated>1518094145797</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="dir reorganization">
+      <created>1518094318846</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1518094318846</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1926" height="1083" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -467,7 +417,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17588204" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17588204" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38702703" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -492,7 +442,8 @@
     <MESSAGE value="All examples works. Time for clean-up." />
     <MESSAGE value="Refactoring, documentation in progress..." />
     <MESSAGE value="Typo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Typo" />
+    <MESSAGE value="dir reorganization" />
+    <option name="LAST_COMMIT_MESSAGE" value="dir reorganization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -501,13 +452,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/examples/example40.heroc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/compiler/AST/String.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -622,14 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/example01.heroc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -894,11 +830,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/examples/example01.heroc.AST">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/example01.heroc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="327">
-            <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
