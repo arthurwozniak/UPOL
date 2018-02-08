@@ -3,7 +3,7 @@
 srcDir="./examples/"
 srcFiles=$srcDir"*.heroc"
 
-compiler="./work/compile.py"
+compiler="./compiler/compiler.py"
 
 
 for i in $srcFiles; do
