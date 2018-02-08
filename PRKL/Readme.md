@@ -1,7 +1,7 @@
 TBD 
-#Překladač jazyka HeroC
+# Překladač jazyka HeroC
 
-##Specifikace jazyka
+## Specifikace jazyka
 Základy specifikace jazyka jsou popsány v souboru `heroc-2016.pdf`. HeroC je odvozen
 z jazyka C, který výrazně zjednodušuje (například uvažuje pouze jediný datový typ) a
 přidává vlastní specifika.
