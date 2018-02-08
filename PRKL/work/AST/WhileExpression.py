@@ -3,8 +3,6 @@ from ASM.ASM import ASM
 from ASM.Registers import Registers
 
 
-
-
 class WhileExpression(Node):
 
     def __init__(self, condition=None, parent=None, statement=None):
@@ -32,12 +30,11 @@ class WhileExpression(Node):
             code += ASM.instruction("je", "{0}_END".format(self.label_name()))
 
         code += "{0}_BODY:\n".format(self.label_name())
-        #print(self.statements)
+        # print(self.statements)
         code += self.statements.asm()
 
         code += ASM.instruction("jmp", "{0}_COND".format(self.label_name()))
 
         code += "{0}_END:\n".format(self.label_name())
-
 
         return code

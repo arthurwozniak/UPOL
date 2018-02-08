@@ -1,6 +1,7 @@
 from . import Node
 from ASM.ASM import ASM
 from ASM.Registers import Registers
+from .SemanticException import SemanticException
 
 class PostfixExpression(Node):
 
@@ -38,4 +39,4 @@ class PostfixExpression(Node):
             return "incq"
         elif self.operation == "--":
             return "decq"
-        raise Exception("Unsupported postfix operation `{0}`".format(self.operation))
+        raise SemanticException("Unsupported postfix operation `{0}`".format(self.operation))

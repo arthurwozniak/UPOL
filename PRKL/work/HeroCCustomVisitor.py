@@ -12,7 +12,7 @@ import sys
 DEBUG = False
 
 def describe(func):
-    '''Decorator to print function call details - parameters names and effective values'''
+    """Decorator to print function call details - parameters names and effective values"""
     def wrapper(*func_args, **func_kwargs):
         if not DEBUG:
             return func(*func_args, **func_kwargs)
@@ -130,6 +130,7 @@ class HeroCCustomVisitor(HeroCVisitor):
     @describe
     def visitFunctionDefinition(self, ctx: HeroCParser.FunctionDefinitionContext):
         # nemůžu ošetřit níže, protože nemám pravidlo pro ID
+        body = []
         id = ctx.getChild(0)
         args = []
         for i in ctx.getChildren():
@@ -216,7 +217,6 @@ class HeroCCustomVisitor(HeroCVisitor):
             statement = self.visit(ctx.getChild(1))
             return AST.DoWhileExpression(condition=condition, statement=statement)
         elif name == "for":
-            expressions = ctx.getTypedRuleContexts(HeroCParser.ExpressionContext)
             pos = 2
             semis = 0
             init = None
@@ -520,7 +520,7 @@ class HeroCCustomVisitor(HeroCVisitor):
         elif len(ctx.getChild(2).getText()) == 3:
             parameters = [AST.Number(value=ord(ctx.getChild(2).getText()[1]))]
         if isinstance(ctx.getChild(0), HeroCParser.PostfixExpressionContext):
-            subscript = AST.SubscriptExpression(expression=self.visit(ctx.postfixExpression()), \
+            subscript = AST.SubscriptExpression(expression=self.visit(ctx.postfixExpression()),
                                                 sub_expr=self.visit(ctx.expression()))
             func = subscript
         else:

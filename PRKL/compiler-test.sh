@@ -3,7 +3,7 @@
 srcDir="./examples/"
 srcFiles=$srcDir"*.heroc"
 
-compiler="./work/lexer.py"
+compiler="./work/compile.py"
 
 
 for i in $srcFiles; do
@@ -12,8 +12,8 @@ for i in $srcFiles; do
 	cat $i | python3.4 $compiler > $srcDir$name".s" 2> $srcDir$name".err"
 	gcc -m64 -o $srcDir$name $srcDir$name".s" herocio.c
 	$srcDir$name > $srcDir$name".out"
-	test=`diff $srcDir$name".out" $srcDir$name".txt"`
-	if [ -z $test ]; then
+	test=$(diff $srcDir$name".out" $srcDir$name".txt")
+	if [ "$test" == "" ]; then
 		echo $i "passed"
 	else
 		echo $i "failed"

@@ -12,11 +12,11 @@ print_string:
 
 	subq	$8, %rsp
 	movq	$0, -24(%rbp)
-ForExpression_7fd737e6b1d0_INIT:
+ForExpression_7f9ba33737f0_INIT:
 	movq	$0, %rax
 
 	movq	%rax, -24(%rbp)
-ForExpression_7fd737e6b1d0_COND:
+ForExpression_7f9ba33737f0_COND:
 	movq	-24(%rbp), %rax
 
 	pushq	%rax
@@ -24,18 +24,18 @@ ForExpression_7fd737e6b1d0_COND:
 	movq	%rax, %rcx
 	popq	%rax
 	cmp	%rcx, %rax
-	jge	COMP_FALSE_BinaryExpression_7fd737e6b048
+	jge	COMP_FALSE_BinaryExpression_7f9ba33734e0
 
-COMP_TRUE_BinaryExpression_7fd737e6b048:
+COMP_TRUE_BinaryExpression_7f9ba33734e0:
 	movq	$1, %rax
-	jmp	COMP_END_BinaryExpression_7fd737e6b048
+	jmp	COMP_END_BinaryExpression_7f9ba33734e0
 
-COMP_FALSE_BinaryExpression_7fd737e6b048:
+COMP_FALSE_BinaryExpression_7f9ba33734e0:
 	movq	$0, %rax
-COMP_END_BinaryExpression_7fd737e6b048:
+COMP_END_BinaryExpression_7f9ba33734e0:
 	cmp	$0, %rax
-	je	ForExpression_7fd737e6b1d0_END
-ForExpression_7fd737e6b1d0_BODY:
+	je	ForExpression_7f9ba33737f0_END
+ForExpression_7f9ba33737f0_BODY:
 	pushq	%rdi
 	pushq	%rsi
 	pushq	%rdx
@@ -59,14 +59,14 @@ ForExpression_7fd737e6b1d0_BODY:
 	popq	%rsi
 	popq	%rdi
 
-ForExpression_7fd737e6b1d0_STEP:
+ForExpression_7f9ba33737f0_STEP:
 	movq	-24(%rbp), %rax
 	pushq	%rax
 	incq	%rax
 	movq	%rax, -24(%rbp)
 	popq	%rax
-	jmp	ForExpression_7fd737e6b1d0_COND
-ForExpression_7fd737e6b1d0_END:
+	jmp	ForExpression_7f9ba33737f0_COND
+ForExpression_7f9ba33737f0_END:
 
 	pushq	%rdi
 	pushq	%rsi

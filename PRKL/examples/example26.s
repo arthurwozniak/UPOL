@@ -130,15 +130,15 @@ pairp:
 	movq	%rax, %rcx
 	popq	%rax
 	cmp	%rcx, %rax
-	jne	COMP_FALSE_BinaryExpression_7f324c556080
+	jne	COMP_FALSE_BinaryExpression_7f01abc1f550
 
-COMP_TRUE_BinaryExpression_7f324c556080:
+COMP_TRUE_BinaryExpression_7f01abc1f550:
 	movq	$1, %rax
-	jmp	COMP_END_BinaryExpression_7f324c556080
+	jmp	COMP_END_BinaryExpression_7f01abc1f550
 
-COMP_FALSE_BinaryExpression_7f324c556080:
+COMP_FALSE_BinaryExpression_7f01abc1f550:
 	movq	$0, %rax
-COMP_END_BinaryExpression_7f324c556080:
+COMP_END_BinaryExpression_7f01abc1f550:
 	leave	
 	ret	
 
@@ -274,21 +274,21 @@ prt:
 	movq	%rdi, -8(%rbp)
 	movq	%rsi, -16(%rbp)
 	subq	$16, %rsp
-IfStatement_7f324c5619e8_COND:
+IfStatement_7f01abb495c0_COND:
 	movq	-8(%rbp), %rax
 	cmp	$0, %rax
-	je	NOT_FALSE_UnaryExpression_7f324c561400
+	je	NOT_FALSE_UnaryExpression_7f01abc25ef0
 
-NOT_TRUE_UnaryExpression_7f324c561400:
+NOT_TRUE_UnaryExpression_7f01abc25ef0:
 	movq	$0, %rax
-	jmp	NOT_END_UnaryExpression_7f324c561400
+	jmp	NOT_END_UnaryExpression_7f01abc25ef0
 
-NOT_FALSE_UnaryExpression_7f324c561400:
+NOT_FALSE_UnaryExpression_7f01abc25ef0:
 	movq	$1, %rax
-NOT_END_UnaryExpression_7f324c561400:
+NOT_END_UnaryExpression_7f01abc25ef0:
 	cmp	$0, %rax
-	je	IfStatement_7f324c5619e8_ELSE
-IfStatement_7f324c5619e8_THEN:
+	je	IfStatement_7f01abb495c0_ELSE
+IfStatement_7f01abb495c0_THEN:
 	pushq	%rdi
 	pushq	%rsi
 	pushq	%rdx
@@ -325,12 +325,12 @@ IfStatement_7f324c5619e8_THEN:
 	leave	
 	ret	
 
-	jmp	IfStatement_7f324c5619e8_END
+	jmp	IfStatement_7f01abb495c0_END
 
-IfStatement_7f324c5619e8_ELSE:
-IfStatement_7f324c5619e8_END:
+IfStatement_7f01abb495c0_ELSE:
+IfStatement_7f01abb495c0_END:
 
-IfStatement_7f324c565198_COND:
+IfStatement_7f01abb49390_COND:
 	pushq	%rdi
 	pushq	%rsi
 	pushq	%rdx
@@ -347,18 +347,18 @@ IfStatement_7f324c565198_COND:
 	popq	%rsi
 	popq	%rdi
 	cmp	$0, %rax
-	je	NOT_FALSE_UnaryExpression_7f324c561da0
+	je	NOT_FALSE_UnaryExpression_7f01abb49978
 
-NOT_TRUE_UnaryExpression_7f324c561da0:
+NOT_TRUE_UnaryExpression_7f01abb49978:
 	movq	$0, %rax
-	jmp	NOT_END_UnaryExpression_7f324c561da0
+	jmp	NOT_END_UnaryExpression_7f01abb49978
 
-NOT_FALSE_UnaryExpression_7f324c561da0:
+NOT_FALSE_UnaryExpression_7f01abb49978:
 	movq	$1, %rax
-NOT_END_UnaryExpression_7f324c561da0:
+NOT_END_UnaryExpression_7f01abb49978:
 	cmp	$0, %rax
-	je	IfStatement_7f324c565198_ELSE
-IfStatement_7f324c565198_THEN:
+	je	IfStatement_7f01abb49390_ELSE
+IfStatement_7f01abb49390_THEN:
 	pushq	%rdi
 	pushq	%rsi
 	pushq	%rdx
@@ -393,16 +393,16 @@ IfStatement_7f324c565198_THEN:
 	leave	
 	ret	
 
-	jmp	IfStatement_7f324c565198_END
+	jmp	IfStatement_7f01abb49390_END
 
-IfStatement_7f324c565198_ELSE:
-IfStatement_7f324c565198_END:
+IfStatement_7f01abb49390_ELSE:
+IfStatement_7f01abb49390_END:
 
-IfStatement_7f324c565ac8_COND:
+IfStatement_7f01abb496a0_COND:
 	movq	-16(%rbp), %rax
 	cmp	$0, %rax
-	je	IfStatement_7f324c565ac8_ELSE
-IfStatement_7f324c565ac8_THEN:
+	je	IfStatement_7f01abb496a0_ELSE
+IfStatement_7f01abb496a0_THEN:
 	pushq	%rdi
 	pushq	%rsi
 	pushq	%rdx
@@ -419,10 +419,10 @@ IfStatement_7f324c565ac8_THEN:
 	popq	%rsi
 	popq	%rdi
 
-	jmp	IfStatement_7f324c565ac8_END
+	jmp	IfStatement_7f01abb496a0_END
 
-IfStatement_7f324c565ac8_ELSE:
-IfStatement_7f324c565ac8_END:
+IfStatement_7f01abb496a0_ELSE:
+IfStatement_7f01abb496a0_END:
 
 	pushq	%rdi
 	pushq	%rsi
@@ -456,7 +456,7 @@ IfStatement_7f324c565ac8_END:
 	popq	%rsi
 	popq	%rdi
 
-IfStatement_7f324c559e10_COND:
+IfStatement_7f01abc21a20_COND:
 	pushq	%rdi
 	pushq	%rsi
 	pushq	%rdx
@@ -474,7 +474,7 @@ IfStatement_7f324c559e10_COND:
 	popq	%rdi
 
 	cmp	$0, %rax
-	je	COMP_FALSE_BinaryExpression_7f324c565240
+	je	COMP_FALSE_BinaryExpression_7f01abb49940
 
 	pushq	%rdi
 	pushq	%rsi
@@ -505,14 +505,14 @@ IfStatement_7f324c559e10_COND:
 	popq	%rdx
 	popq	%rsi
 	popq	%rdi
-	jmp	COMP_END_BinaryExpression_7f324c565240
+	jmp	COMP_END_BinaryExpression_7f01abb49940
 
-COMP_FALSE_BinaryExpression_7f324c565240:
+COMP_FALSE_BinaryExpression_7f01abb49940:
 	movq	$0, %rax
-COMP_END_BinaryExpression_7f324c565240:
+COMP_END_BinaryExpression_7f01abb49940:
 	cmp	$0, %rax
-	je	IfStatement_7f324c559e10_ELSE
-IfStatement_7f324c559e10_THEN:
+	je	IfStatement_7f01abc21a20_ELSE
+IfStatement_7f01abc21a20_THEN:
 	pushq	%rdi
 	pushq	%rsi
 	pushq	%rdx
@@ -561,10 +561,10 @@ IfStatement_7f324c559e10_THEN:
 	popq	%rsi
 	popq	%rdi
 
-	jmp	IfStatement_7f324c559e10_END
+	jmp	IfStatement_7f01abc21a20_END
 
-IfStatement_7f324c559e10_ELSE:
-IfStatement_7f324c559320_COND:
+IfStatement_7f01abc21a20_ELSE:
+IfStatement_7f01abc21390_COND:
 	pushq	%rdi
 	pushq	%rsi
 	pushq	%rdx
@@ -581,8 +581,8 @@ IfStatement_7f324c559320_COND:
 	popq	%rsi
 	popq	%rdi
 	cmp	$0, %rax
-	je	IfStatement_7f324c559320_ELSE
-IfStatement_7f324c559320_THEN:
+	je	IfStatement_7f01abc21390_ELSE
+IfStatement_7f01abc21390_THEN:
 	pushq	%rdi
 	pushq	%rsi
 	pushq	%rdx
@@ -663,18 +663,18 @@ IfStatement_7f324c559320_THEN:
 	popq	%rsi
 	popq	%rdi
 
-	jmp	IfStatement_7f324c559320_END
+	jmp	IfStatement_7f01abc21390_END
 
-IfStatement_7f324c559320_ELSE:
-IfStatement_7f324c559320_END:
+IfStatement_7f01abc21390_ELSE:
+IfStatement_7f01abc21390_END:
 
-IfStatement_7f324c559e10_END:
+IfStatement_7f01abc21a20_END:
 
-IfStatement_7f324c559208_COND:
+IfStatement_7f01abc21eb8_COND:
 	movq	-16(%rbp), %rax
 	cmp	$0, %rax
-	je	IfStatement_7f324c559208_ELSE
-IfStatement_7f324c559208_THEN:
+	je	IfStatement_7f01abc21eb8_ELSE
+IfStatement_7f01abc21eb8_THEN:
 	pushq	%rdi
 	pushq	%rsi
 	pushq	%rdx
@@ -691,10 +691,10 @@ IfStatement_7f324c559208_THEN:
 	popq	%rsi
 	popq	%rdi
 
-	jmp	IfStatement_7f324c559208_END
+	jmp	IfStatement_7f01abc21eb8_END
 
-IfStatement_7f324c559208_ELSE:
-IfStatement_7f324c559208_END:
+IfStatement_7f01abc21eb8_ELSE:
+IfStatement_7f01abc21eb8_END:
 
 	addq	$0, %rsp
 
@@ -735,7 +735,7 @@ append:
 	movq	%rdi, -8(%rbp)
 	movq	%rsi, -16(%rbp)
 	subq	$16, %rsp
-IfEvalStatement_7f324c565ef0_COND:
+IfEvalStatement_7f01abb674e0_COND:
 	movq	-8(%rbp), %rax
 
 	pushq	%rax
@@ -743,22 +743,22 @@ IfEvalStatement_7f324c565ef0_COND:
 	movq	%rax, %rcx
 	popq	%rax
 	cmp	%rcx, %rax
-	jne	COMP_FALSE_BinaryExpression_7f324c565c18
+	jne	COMP_FALSE_BinaryExpression_7f01abb67208
 
-COMP_TRUE_BinaryExpression_7f324c565c18:
+COMP_TRUE_BinaryExpression_7f01abb67208:
 	movq	$1, %rax
-	jmp	COMP_END_BinaryExpression_7f324c565c18
+	jmp	COMP_END_BinaryExpression_7f01abb67208
 
-COMP_FALSE_BinaryExpression_7f324c565c18:
+COMP_FALSE_BinaryExpression_7f01abb67208:
 	movq	$0, %rax
-COMP_END_BinaryExpression_7f324c565c18:
+COMP_END_BinaryExpression_7f01abb67208:
 	cmp	$0, %rax
-	je	IfEvalStatement_7f324c565ef0_ELSE
-IfEvalStatement_7f324c565ef0_THEN:
+	je	IfEvalStatement_7f01abb674e0_ELSE
+IfEvalStatement_7f01abb674e0_THEN:
 	movq	-16(%rbp), %rax
-	jmp	IfEvalStatement_7f324c565ef0_END
+	jmp	IfEvalStatement_7f01abb674e0_END
 
-IfEvalStatement_7f324c565ef0_ELSE:
+IfEvalStatement_7f01abb674e0_ELSE:
 	pushq	%rdi
 	pushq	%rsi
 	pushq	%rdx
@@ -820,7 +820,7 @@ IfEvalStatement_7f324c565ef0_ELSE:
 	popq	%rdx
 	popq	%rsi
 	popq	%rdi
-IfEvalStatement_7f324c565ef0_END:
+IfEvalStatement_7f01abb674e0_END:
 	leave	
 	ret	
 
@@ -835,7 +835,7 @@ mapcons:
 	movq	%rdi, -8(%rbp)
 	movq	%rsi, -16(%rbp)
 	subq	$16, %rsp
-IfEvalStatement_7f324c505c18_COND:
+IfEvalStatement_7f01abb6f160_COND:
 	movq	-16(%rbp), %rax
 
 	pushq	%rax
@@ -843,22 +843,22 @@ IfEvalStatement_7f324c505c18_COND:
 	movq	%rax, %rcx
 	popq	%rax
 	cmp	%rcx, %rax
-	jne	COMP_FALSE_BinaryExpression_7f324c505828
+	jne	COMP_FALSE_BinaryExpression_7f01abb67d30
 
-COMP_TRUE_BinaryExpression_7f324c505828:
+COMP_TRUE_BinaryExpression_7f01abb67d30:
 	movq	$1, %rax
-	jmp	COMP_END_BinaryExpression_7f324c505828
+	jmp	COMP_END_BinaryExpression_7f01abb67d30
 
-COMP_FALSE_BinaryExpression_7f324c505828:
+COMP_FALSE_BinaryExpression_7f01abb67d30:
 	movq	$0, %rax
-COMP_END_BinaryExpression_7f324c505828:
+COMP_END_BinaryExpression_7f01abb67d30:
 	cmp	$0, %rax
-	je	IfEvalStatement_7f324c505c18_ELSE
-IfEvalStatement_7f324c505c18_THEN:
+	je	IfEvalStatement_7f01abb6f160_ELSE
+IfEvalStatement_7f01abb6f160_THEN:
 	movq	$0, %rax
-	jmp	IfEvalStatement_7f324c505c18_END
+	jmp	IfEvalStatement_7f01abb6f160_END
 
-IfEvalStatement_7f324c505c18_ELSE:
+IfEvalStatement_7f01abb6f160_ELSE:
 	pushq	%rdi
 	pushq	%rsi
 	pushq	%rdx
@@ -936,7 +936,7 @@ IfEvalStatement_7f324c505c18_ELSE:
 	popq	%rdx
 	popq	%rsi
 	popq	%rdi
-IfEvalStatement_7f324c505c18_END:
+IfEvalStatement_7f01abb6f160_END:
 	leave	
 	ret	
 
@@ -950,11 +950,11 @@ power:
 	movq	%rsp, %rbp
 	movq	%rdi, -8(%rbp)
 	subq	$8, %rsp
-IfStatement_7f324c50e940_COND:
+IfStatement_7f01abb6fe48_COND:
 	movq	-8(%rbp), %rax
 	cmp	$0, %rax
-	je	IfStatement_7f324c50e940_ELSE
-IfStatement_7f324c50e940_THEN:
+	je	IfStatement_7f01abb6fe48_ELSE
+IfStatement_7f01abb6fe48_THEN:
 
 	subq	$8, %rsp
 	pushq	%rdi
@@ -1037,9 +1037,9 @@ IfStatement_7f324c50e940_THEN:
 	leave	
 	ret	
 
-	jmp	IfStatement_7f324c50e940_END
+	jmp	IfStatement_7f01abb6fe48_END
 
-IfStatement_7f324c50e940_ELSE:
+IfStatement_7f01abb6fe48_ELSE:
 	pushq	%rdi
 	pushq	%rsi
 	pushq	%rdx
@@ -1060,7 +1060,7 @@ IfStatement_7f324c50e940_ELSE:
 	leave	
 	ret	
 
-IfStatement_7f324c50e940_END:
+IfStatement_7f01abb6fe48_END:
 
 	addq	$0, %rsp
 

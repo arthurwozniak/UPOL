@@ -2,6 +2,7 @@ from . import Node
 from ASM.ASM import ASM
 from ASM.Registers import Registers
 
+
 class UnaryExpression(Node):
 
     def __init__(self, expression=None, parent=None, operation=None):
@@ -39,20 +40,20 @@ class UnaryExpression(Node):
 
         elif self.operation == "-":
             code += self.expression.asm()
-            code += ASM.instruction("negq", Registers.RAX);
+            code += ASM.instruction("negq", Registers.RAX)
 
         elif self.operation == "~":
             code += self.expression.asm()
-            code += ASM.instruction("notq", Registers.RAX);
+            code += ASM.instruction("notq", Registers.RAX)
 
         elif self.operation == "--":
             code += self.expression.asm()
-            code += ASM.instruction("decq", Registers.RAX);
+            code += ASM.instruction("decq", Registers.RAX)
             code += ASM.instruction("movq", Registers.RAX, self.expression.address())
 
         elif self.operation == "++":
             code += self.expression.asm()
-            code += ASM.instruction("incq", Registers.RAX);
+            code += ASM.instruction("incq", Registers.RAX)
             code += ASM.instruction("movq", Registers.RAX, self.expression.address())
 
         return code

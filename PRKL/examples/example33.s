@@ -1839,7 +1839,7 @@ walk:
 	movq	%rdi, -8(%rbp)
 	movq	%rsi, -16(%rbp)
 	subq	$16, %rsp
-IfStatement_7fef397349b0_COND:
+IfStatement_7f4f7a8faeb8_COND:
 	movq	-8(%rbp), %rax
 
 	pushq	%rax
@@ -1847,18 +1847,18 @@ IfStatement_7fef397349b0_COND:
 	movq	%rax, %rcx
 	popq	%rax
 	cmp	%rcx, %rax
-	jne	COMP_FALSE_BinaryExpression_7fef39734550
+	jne	COMP_FALSE_BinaryExpression_7f4f7a8faa58
 
-COMP_TRUE_BinaryExpression_7fef39734550:
+COMP_TRUE_BinaryExpression_7f4f7a8faa58:
 	movq	$1, %rax
-	jmp	COMP_END_BinaryExpression_7fef39734550
+	jmp	COMP_END_BinaryExpression_7f4f7a8faa58
 
-COMP_FALSE_BinaryExpression_7fef39734550:
+COMP_FALSE_BinaryExpression_7f4f7a8faa58:
 	movq	$0, %rax
-COMP_END_BinaryExpression_7fef39734550:
+COMP_END_BinaryExpression_7f4f7a8faa58:
 
 	cmp	$0, %rax
-	je	COMP_FALSE_BinaryExpression_7fef397346d8
+	je	COMP_FALSE_BinaryExpression_7f4f7a8fabe0
 
 	movq	-16(%rbp), %rax
 
@@ -1867,23 +1867,23 @@ COMP_END_BinaryExpression_7fef39734550:
 	movq	%rax, %rcx
 	popq	%rax
 	cmp	%rcx, %rax
-	jne	COMP_FALSE_BinaryExpression_7fef39734668
+	jne	COMP_FALSE_BinaryExpression_7f4f7a8fab70
 
-COMP_TRUE_BinaryExpression_7fef39734668:
+COMP_TRUE_BinaryExpression_7f4f7a8fab70:
 	movq	$1, %rax
-	jmp	COMP_END_BinaryExpression_7fef39734668
+	jmp	COMP_END_BinaryExpression_7f4f7a8fab70
 
-COMP_FALSE_BinaryExpression_7fef39734668:
+COMP_FALSE_BinaryExpression_7f4f7a8fab70:
 	movq	$0, %rax
-COMP_END_BinaryExpression_7fef39734668:
-	jmp	COMP_END_BinaryExpression_7fef397346d8
+COMP_END_BinaryExpression_7f4f7a8fab70:
+	jmp	COMP_END_BinaryExpression_7f4f7a8fabe0
 
-COMP_FALSE_BinaryExpression_7fef397346d8:
+COMP_FALSE_BinaryExpression_7f4f7a8fabe0:
 	movq	$0, %rax
-COMP_END_BinaryExpression_7fef397346d8:
+COMP_END_BinaryExpression_7f4f7a8fabe0:
 	cmp	$0, %rax
-	je	IfStatement_7fef397349b0_ELSE
-IfStatement_7fef397349b0_THEN:
+	je	IfStatement_7f4f7a8faeb8_ELSE
+IfStatement_7f4f7a8faeb8_THEN:
 	movq	$1, %rax
 
 	movq	%rax, %r11
@@ -1913,12 +1913,12 @@ IfStatement_7fef397349b0_THEN:
 	leave	
 	ret	
 
-	jmp	IfStatement_7fef397349b0_END
+	jmp	IfStatement_7f4f7a8faeb8_END
 
-IfStatement_7fef397349b0_ELSE:
-IfStatement_7fef397349b0_END:
+IfStatement_7f4f7a8faeb8_ELSE:
+IfStatement_7f4f7a8faeb8_END:
 
-IfStatement_7fef39734ef0_COND:
+IfStatement_7f4f7a8fd438_COND:
 	leaq	maze, %rax
 	pushq	%rax
 	movq	-8(%rbp), %rax
@@ -1945,18 +1945,18 @@ IfStatement_7fef39734ef0_COND:
 	movq	%rax, %rcx
 	popq	%rax
 	cmp	%rcx, %rax
-	jne	COMP_FALSE_BinaryExpression_7fef39734c18
+	jne	COMP_FALSE_BinaryExpression_7f4f7a8fd160
 
-COMP_TRUE_BinaryExpression_7fef39734c18:
+COMP_TRUE_BinaryExpression_7f4f7a8fd160:
 	movq	$1, %rax
-	jmp	COMP_END_BinaryExpression_7fef39734c18
+	jmp	COMP_END_BinaryExpression_7f4f7a8fd160
 
-COMP_FALSE_BinaryExpression_7fef39734c18:
+COMP_FALSE_BinaryExpression_7f4f7a8fd160:
 	movq	$0, %rax
-COMP_END_BinaryExpression_7fef39734c18:
+COMP_END_BinaryExpression_7f4f7a8fd160:
 
 	cmp	$0, %rax
-	jne	COMP_FALSE_BinaryExpression_7fef39734e10
+	jne	COMP_FALSE_BinaryExpression_7f4f7a8fd358
 
 	leaq	was_here, %rax
 	pushq	%rax
@@ -1978,22 +1978,22 @@ COMP_END_BinaryExpression_7fef39734c18:
 	popq	%rax
 	addq	%rax, %rbx
 	movq	(%rbx), %rax
-	jmp	COMP_END_BinaryExpression_7fef39734e10
+	jmp	COMP_END_BinaryExpression_7f4f7a8fd358
 
-COMP_FALSE_BinaryExpression_7fef39734e10:
+COMP_FALSE_BinaryExpression_7f4f7a8fd358:
 	movq	$1, %rax
-COMP_END_BinaryExpression_7fef39734e10:
+COMP_END_BinaryExpression_7f4f7a8fd358:
 	cmp	$0, %rax
-	je	IfStatement_7fef39734ef0_ELSE
-IfStatement_7fef39734ef0_THEN:
+	je	IfStatement_7f4f7a8fd438_ELSE
+IfStatement_7f4f7a8fd438_THEN:
 	movq	$0, %rax
 	leave	
 	ret	
 
-	jmp	IfStatement_7fef39734ef0_END
+	jmp	IfStatement_7f4f7a8fd438_END
 
-IfStatement_7fef39734ef0_ELSE:
-IfStatement_7fef39734ef0_END:
+IfStatement_7f4f7a8fd438_ELSE:
+IfStatement_7f4f7a8fd438_END:
 
 	movq	$1, %rax
 
@@ -2020,7 +2020,7 @@ IfStatement_7fef39734ef0_END:
 	movq	(%rbx), %rax
 	movq	%r11, (%rbx)
 
-IfStatement_7fef396c3a90_COND:
+IfStatement_7f4f7a8fdf98_COND:
 	pushq	%rdi
 	pushq	%rsi
 	pushq	%rdx
@@ -2046,7 +2046,7 @@ IfStatement_7fef396c3a90_COND:
 	popq	%rdi
 
 	cmp	$0, %rax
-	jne	COMP_FALSE_BinaryExpression_7fef396c3438
+	jne	COMP_FALSE_BinaryExpression_7f4f7a8fd940
 
 	pushq	%rdi
 	pushq	%rsi
@@ -2071,14 +2071,14 @@ IfStatement_7fef396c3a90_COND:
 	popq	%rdx
 	popq	%rsi
 	popq	%rdi
-	jmp	COMP_END_BinaryExpression_7fef396c3438
+	jmp	COMP_END_BinaryExpression_7f4f7a8fd940
 
-COMP_FALSE_BinaryExpression_7fef396c3438:
+COMP_FALSE_BinaryExpression_7f4f7a8fd940:
 	movq	$1, %rax
-COMP_END_BinaryExpression_7fef396c3438:
+COMP_END_BinaryExpression_7f4f7a8fd940:
 
 	cmp	$0, %rax
-	jne	COMP_FALSE_BinaryExpression_7fef396c35f8
+	jne	COMP_FALSE_BinaryExpression_7f4f7a8fdb00
 
 	pushq	%rdi
 	pushq	%rsi
@@ -2103,14 +2103,14 @@ COMP_END_BinaryExpression_7fef396c3438:
 	popq	%rdx
 	popq	%rsi
 	popq	%rdi
-	jmp	COMP_END_BinaryExpression_7fef396c35f8
+	jmp	COMP_END_BinaryExpression_7f4f7a8fdb00
 
-COMP_FALSE_BinaryExpression_7fef396c35f8:
+COMP_FALSE_BinaryExpression_7f4f7a8fdb00:
 	movq	$1, %rax
-COMP_END_BinaryExpression_7fef396c35f8:
+COMP_END_BinaryExpression_7f4f7a8fdb00:
 
 	cmp	$0, %rax
-	jne	COMP_FALSE_BinaryExpression_7fef396c37b8
+	jne	COMP_FALSE_BinaryExpression_7f4f7a8fdcc0
 
 	pushq	%rdi
 	pushq	%rsi
@@ -2135,14 +2135,14 @@ COMP_END_BinaryExpression_7fef396c35f8:
 	popq	%rdx
 	popq	%rsi
 	popq	%rdi
-	jmp	COMP_END_BinaryExpression_7fef396c37b8
+	jmp	COMP_END_BinaryExpression_7f4f7a8fdcc0
 
-COMP_FALSE_BinaryExpression_7fef396c37b8:
+COMP_FALSE_BinaryExpression_7f4f7a8fdcc0:
 	movq	$1, %rax
-COMP_END_BinaryExpression_7fef396c37b8:
+COMP_END_BinaryExpression_7f4f7a8fdcc0:
 	cmp	$0, %rax
-	je	IfStatement_7fef396c3a90_ELSE
-IfStatement_7fef396c3a90_THEN:
+	je	IfStatement_7f4f7a8fdf98_ELSE
+IfStatement_7f4f7a8fdf98_THEN:
 	movq	$1, %rax
 
 	movq	%rax, %r11
@@ -2172,10 +2172,10 @@ IfStatement_7fef396c3a90_THEN:
 	leave	
 	ret	
 
-	jmp	IfStatement_7fef396c3a90_END
+	jmp	IfStatement_7f4f7a8fdf98_END
 
-IfStatement_7fef396c3a90_ELSE:
-IfStatement_7fef396c3a90_END:
+IfStatement_7f4f7a8fdf98_ELSE:
+IfStatement_7f4f7a8fdf98_END:
 
 	movq	$0, %rax
 	leave	
@@ -2192,11 +2192,11 @@ solve:
 
 	subq	$8, %rsp
 	movq	$0, -8(%rbp)
-ForExpression_7fef396c6320_INIT:
+ForExpression_7f4f7a96c748_INIT:
 	movq	$0, %rax
 
 	movq	%rax, -8(%rbp)
-ForExpression_7fef396c6320_COND:
+ForExpression_7f4f7a96c748_COND:
 	movq	-8(%rbp), %rax
 
 	pushq	%rax
@@ -2204,18 +2204,18 @@ ForExpression_7fef396c6320_COND:
 	movq	%rax, %rcx
 	popq	%rax
 	cmp	%rcx, %rax
-	jge	COMP_FALSE_BinaryExpression_7fef396c3fd0
+	jge	COMP_FALSE_BinaryExpression_7f4f7a96c4a8
 
-COMP_TRUE_BinaryExpression_7fef396c3fd0:
+COMP_TRUE_BinaryExpression_7f4f7a96c4a8:
 	movq	$1, %rax
-	jmp	COMP_END_BinaryExpression_7fef396c3fd0
+	jmp	COMP_END_BinaryExpression_7f4f7a96c4a8
 
-COMP_FALSE_BinaryExpression_7fef396c3fd0:
+COMP_FALSE_BinaryExpression_7f4f7a96c4a8:
 	movq	$0, %rax
-COMP_END_BinaryExpression_7fef396c3fd0:
+COMP_END_BinaryExpression_7f4f7a96c4a8:
 	cmp	$0, %rax
-	je	ForExpression_7fef396c6320_END
-ForExpression_7fef396c6320_BODY:
+	je	ForExpression_7f4f7a96c748_END
+ForExpression_7f4f7a96c748_BODY:
 	movq	$0, %rax
 
 	movq	%rax, %r11
@@ -2240,14 +2240,14 @@ ForExpression_7fef396c6320_BODY:
 	movq	(%rbx), %rax
 	movq	%r11, (%rbx)
 
-ForExpression_7fef396c6320_STEP:
+ForExpression_7f4f7a96c748_STEP:
 	movq	-8(%rbp), %rax
 	pushq	%rax
 	incq	%rax
 	movq	%rax, -8(%rbp)
 	popq	%rax
-	jmp	ForExpression_7fef396c6320_COND
-ForExpression_7fef396c6320_END:
+	jmp	ForExpression_7f4f7a96c748_COND
+ForExpression_7f4f7a96c748_END:
 
 	pushq	%rdi
 	pushq	%rsi
@@ -2282,11 +2282,11 @@ print_solution:
 	subq	$16, %rsp
 	movq	$0, -8(%rbp)
 	movq	$0, -16(%rbp)
-ForExpression_7fef396cdf98_INIT:
+ForExpression_7f4f7a90b4e0_INIT:
 	movq	$0, %rax
 
 	movq	%rax, -16(%rbp)
-ForExpression_7fef396cdf98_COND:
+ForExpression_7f4f7a90b4e0_COND:
 	movq	-16(%rbp), %rax
 
 	pushq	%rax
@@ -2294,23 +2294,23 @@ ForExpression_7fef396cdf98_COND:
 	movq	%rax, %rcx
 	popq	%rax
 	cmp	%rcx, %rax
-	jge	COMP_FALSE_BinaryExpression_7fef396cd4e0
+	jge	COMP_FALSE_BinaryExpression_7f4f7a9039e8
 
-COMP_TRUE_BinaryExpression_7fef396cd4e0:
+COMP_TRUE_BinaryExpression_7f4f7a9039e8:
 	movq	$1, %rax
-	jmp	COMP_END_BinaryExpression_7fef396cd4e0
+	jmp	COMP_END_BinaryExpression_7f4f7a9039e8
 
-COMP_FALSE_BinaryExpression_7fef396cd4e0:
+COMP_FALSE_BinaryExpression_7f4f7a9039e8:
 	movq	$0, %rax
-COMP_END_BinaryExpression_7fef396cd4e0:
+COMP_END_BinaryExpression_7f4f7a9039e8:
 	cmp	$0, %rax
-	je	ForExpression_7fef396cdf98_END
-ForExpression_7fef396cdf98_BODY:
-ForExpression_7fef396cdf28_INIT:
+	je	ForExpression_7f4f7a90b4e0_END
+ForExpression_7f4f7a90b4e0_BODY:
+ForExpression_7f4f7a90b470_INIT:
 	movq	$0, %rax
 
 	movq	%rax, -8(%rbp)
-ForExpression_7fef396cdf28_COND:
+ForExpression_7f4f7a90b470_COND:
 	movq	-8(%rbp), %rax
 
 	pushq	%rax
@@ -2318,19 +2318,19 @@ ForExpression_7fef396cdf28_COND:
 	movq	%rax, %rcx
 	popq	%rax
 	cmp	%rcx, %rax
-	jge	COMP_FALSE_BinaryExpression_7fef396cd630
+	jge	COMP_FALSE_BinaryExpression_7f4f7a903b38
 
-COMP_TRUE_BinaryExpression_7fef396cd630:
+COMP_TRUE_BinaryExpression_7f4f7a903b38:
 	movq	$1, %rax
-	jmp	COMP_END_BinaryExpression_7fef396cd630
+	jmp	COMP_END_BinaryExpression_7f4f7a903b38
 
-COMP_FALSE_BinaryExpression_7fef396cd630:
+COMP_FALSE_BinaryExpression_7f4f7a903b38:
 	movq	$0, %rax
-COMP_END_BinaryExpression_7fef396cd630:
+COMP_END_BinaryExpression_7f4f7a903b38:
 	cmp	$0, %rax
-	je	ForExpression_7fef396cdf28_END
-ForExpression_7fef396cdf28_BODY:
-IfStatement_7fef396cdeb8_COND:
+	je	ForExpression_7f4f7a90b470_END
+ForExpression_7f4f7a90b470_BODY:
+IfStatement_7f4f7a90b400_COND:
 	leaq	maze, %rax
 	pushq	%rax
 	movq	-8(%rbp), %rax
@@ -2357,18 +2357,18 @@ IfStatement_7fef396cdeb8_COND:
 	movq	%rax, %rcx
 	popq	%rax
 	cmp	%rcx, %rax
-	je	COMP_FALSE_BinaryExpression_7fef396cd9b0
+	je	COMP_FALSE_BinaryExpression_7f4f7a903eb8
 
-COMP_TRUE_BinaryExpression_7fef396cd9b0:
+COMP_TRUE_BinaryExpression_7f4f7a903eb8:
 	movq	$1, %rax
-	jmp	COMP_END_BinaryExpression_7fef396cd9b0
+	jmp	COMP_END_BinaryExpression_7f4f7a903eb8
 
-COMP_FALSE_BinaryExpression_7fef396cd9b0:
+COMP_FALSE_BinaryExpression_7f4f7a903eb8:
 	movq	$0, %rax
-COMP_END_BinaryExpression_7fef396cd9b0:
+COMP_END_BinaryExpression_7f4f7a903eb8:
 	cmp	$0, %rax
-	je	IfStatement_7fef396cdeb8_ELSE
-IfStatement_7fef396cdeb8_THEN:
+	je	IfStatement_7f4f7a90b400_ELSE
+IfStatement_7f4f7a90b400_THEN:
 	pushq	%rdi
 	pushq	%rsi
 	pushq	%rdx
@@ -2385,10 +2385,10 @@ IfStatement_7fef396cdeb8_THEN:
 	popq	%rsi
 	popq	%rdi
 
-	jmp	IfStatement_7fef396cdeb8_END
+	jmp	IfStatement_7f4f7a90b400_END
 
-IfStatement_7fef396cdeb8_ELSE:
-IfStatement_7fef396cde48_COND:
+IfStatement_7f4f7a90b400_ELSE:
+IfStatement_7f4f7a90b390_COND:
 	leaq	correct_path, %rax
 	pushq	%rax
 	movq	-8(%rbp), %rax
@@ -2410,8 +2410,8 @@ IfStatement_7fef396cde48_COND:
 	addq	%rax, %rbx
 	movq	(%rbx), %rax
 	cmp	$0, %rax
-	je	IfStatement_7fef396cde48_ELSE
-IfStatement_7fef396cde48_THEN:
+	je	IfStatement_7f4f7a90b390_ELSE
+IfStatement_7f4f7a90b390_THEN:
 	pushq	%rdi
 	pushq	%rsi
 	pushq	%rdx
@@ -2428,9 +2428,9 @@ IfStatement_7fef396cde48_THEN:
 	popq	%rsi
 	popq	%rdi
 
-	jmp	IfStatement_7fef396cde48_END
+	jmp	IfStatement_7f4f7a90b390_END
 
-IfStatement_7fef396cde48_ELSE:
+IfStatement_7f4f7a90b390_ELSE:
 	pushq	%rdi
 	pushq	%rsi
 	pushq	%rdx
@@ -2447,18 +2447,18 @@ IfStatement_7fef396cde48_ELSE:
 	popq	%rsi
 	popq	%rdi
 
-IfStatement_7fef396cde48_END:
+IfStatement_7f4f7a90b390_END:
 
-IfStatement_7fef396cdeb8_END:
+IfStatement_7f4f7a90b400_END:
 
-ForExpression_7fef396cdf28_STEP:
+ForExpression_7f4f7a90b470_STEP:
 	movq	-8(%rbp), %rax
 	pushq	%rax
 	incq	%rax
 	movq	%rax, -8(%rbp)
 	popq	%rax
-	jmp	ForExpression_7fef396cdf28_COND
-ForExpression_7fef396cdf28_END:
+	jmp	ForExpression_7f4f7a90b470_COND
+ForExpression_7f4f7a90b470_END:
 
 	pushq	%rdi
 	pushq	%rsi
@@ -2474,14 +2474,14 @@ ForExpression_7fef396cdf28_END:
 	popq	%rsi
 	popq	%rdi
 
-ForExpression_7fef396cdf98_STEP:
+ForExpression_7f4f7a90b4e0_STEP:
 	movq	-16(%rbp), %rax
 	pushq	%rax
 	incq	%rax
 	movq	%rax, -16(%rbp)
 	popq	%rax
-	jmp	ForExpression_7fef396cdf98_COND
-ForExpression_7fef396cdf98_END:
+	jmp	ForExpression_7f4f7a90b4e0_COND
+ForExpression_7f4f7a90b4e0_END:
 
 	addq	$16, %rsp
 

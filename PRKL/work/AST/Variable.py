@@ -1,6 +1,8 @@
 from enum import Enum
 from . import Node
 from ASM.ASM import ASM
+from ASM.Registers import Registers
+
 
 class VariableType(Enum):
     LONG = "LONG"
@@ -26,7 +28,7 @@ class Variable(Node):
     def __str__(self):
         tmp = self.depth * '\t' + self.__class__.__name__
         tmp += "\n" + str(self.id)
-        tmp += "\n" + (1+self.depth) * "\t" + "Type: " + str(self.type)
+        tmp += "\n" + (1 + self.depth) * "\t" + "Type: " + str(self.type)
         if self.type == VariableType.ARRAY:
             for i in self.value:
                 tmp += "\n" + str(i)
@@ -42,12 +44,14 @@ class Variable(Node):
         else:
             return self.size.value * 8
 
-    def asm(self):
+    def asm_global(self):
         from .Program import Program
         from .Number import Number
         from .UnaryExpression import UnaryExpression
         from .Array import Array
-        if not(isinstance(self.parent, Program)):
+        from .SubscriptExpression import SubscriptExpression
+
+        if not (isinstance(self.parent, Program)):
             return ""
         code = ""
         code += "\t{0}:\n".format(self.id.text)
@@ -62,4 +66,46 @@ class Variable(Node):
             code += "\t\t.quad {0}\n".format(self.value.expression.text)
         return code
 
+    def asm(self, offset):
+        from .Identifier import Identifier
+        from .SemanticException import SemanticException
+        from .FunctionCall import FunctionCall
+        from .SubscriptExpression import SubscriptExpression
+        from .Number import Number
+        from .BinaryExpression import BinaryExpression
+        from .UnaryExpression import UnaryExpression
+        code = ""
 
+        if isinstance(self.value, Number):
+            code += ASM.instruction("movq", "${0}".format(self.value.value), "-{1}({0})".format(Registers.RBP, offset))
+        elif isinstance(self.value, Identifier) or isinstance(self.value, UnaryExpression) or isinstance(self.value,
+                                                                                                         FunctionCall):
+            # assigned_var_offset = self.environment[i.value.text]
+            # self.environment.get()
+            code += self.value.asm()
+            code += ASM.instruction("movq", "{0}".format(Registers.RAX), "-{1}({0})".format(Registers.RBP, offset))
+        elif isinstance(self.value, BinaryExpression) or isinstance(self.value, SubscriptExpression):
+            code += self.value.asm()
+            code += ASM.instruction("movq", "{0}".format(Registers.RAX), "-{1}({0})".format(Registers.RBP, offset))
+        elif self.type == VariableType.ARRAY:
+
+            # uninitialized array, fill with 0
+            if len(self.value) == 0:
+                for pos in reversed(range(self.size.value)):
+                    code += ASM.instruction("movq", "$0", "-{1}({0})".format(Registers.RBP, offset - 8 * pos))
+            # declaration with list of values
+            elif self.size.value == len(self.value):
+
+                for pos, elem in reversed(list(enumerate(self.value))):
+                    if isinstance(elem, Number):
+                        code += ASM.instruction("movq", "${0}".format(elem.value),
+                                                "-{1}({0})".format(Registers.RBP, offset - 8 * pos))
+                    else:
+                        code += elem.asm()
+                        code += ASM.instruction("movq", Registers.RAX,
+                                                "-{1}({0})".format(Registers.RBP, offset - 8 * pos))
+            # size mismatch
+            else:
+                raise SemanticException("Invalid count of array `{0}` elements".format(self.id.text))
+
+        return code

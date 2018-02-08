@@ -47,7 +47,6 @@ class FunctionCall(Node):
             code += self.function.asm()
             code += ASM.instruction("call", "*{0}".format(Registers.RAX))
 
-
         # restore unsafe registers
         for register in reversed(ASM.UNSAFE_REGISTERS):
             code += ASM.instruction("popq", register)

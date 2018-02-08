@@ -569,18 +569,18 @@ main:
 	movq	%rax, %rcx
 	popq	%rax
 	cmp	%rcx, %rax
-	jge	COMP_FALSE_BinaryExpression_7fae12ca77f0
+	jge	COMP_FALSE_BinaryExpression_7fce12a03cf8
 
-COMP_TRUE_BinaryExpression_7fae12ca77f0:
+COMP_TRUE_BinaryExpression_7fce12a03cf8:
 	movq	$1, %rax
-	jmp	COMP_END_BinaryExpression_7fae12ca77f0
+	jmp	COMP_END_BinaryExpression_7fce12a03cf8
 
-COMP_FALSE_BinaryExpression_7fae12ca77f0:
+COMP_FALSE_BinaryExpression_7fce12a03cf8:
 	movq	$0, %rax
-COMP_END_BinaryExpression_7fae12ca77f0:
+COMP_END_BinaryExpression_7fce12a03cf8:
 
 	cmp	$0, %rax
-	je	COMP_FALSE_BinaryExpression_7fae12ca79b0
+	je	COMP_FALSE_BinaryExpression_7fce12a03eb8
 
 	movq	$40, %rax
 
@@ -589,20 +589,20 @@ COMP_END_BinaryExpression_7fae12ca77f0:
 	movq	%rax, %rcx
 	popq	%rax
 	cmp	%rcx, %rax
-	jg	COMP_FALSE_BinaryExpression_7fae12ca7940
+	jg	COMP_FALSE_BinaryExpression_7fce12a03e48
 
-COMP_TRUE_BinaryExpression_7fae12ca7940:
+COMP_TRUE_BinaryExpression_7fce12a03e48:
 	movq	$1, %rax
-	jmp	COMP_END_BinaryExpression_7fae12ca7940
+	jmp	COMP_END_BinaryExpression_7fce12a03e48
 
-COMP_FALSE_BinaryExpression_7fae12ca7940:
+COMP_FALSE_BinaryExpression_7fce12a03e48:
 	movq	$0, %rax
-COMP_END_BinaryExpression_7fae12ca7940:
-	jmp	COMP_END_BinaryExpression_7fae12ca79b0
+COMP_END_BinaryExpression_7fce12a03e48:
+	jmp	COMP_END_BinaryExpression_7fce12a03eb8
 
-COMP_FALSE_BinaryExpression_7fae12ca79b0:
+COMP_FALSE_BinaryExpression_7fce12a03eb8:
 	movq	$0, %rax
-COMP_END_BinaryExpression_7fae12ca79b0:
+COMP_END_BinaryExpression_7fce12a03eb8:
 	movq	%rax, %rdi
 	call	print_long
 	popq	%r9
@@ -642,18 +642,18 @@ COMP_END_BinaryExpression_7fae12ca79b0:
 	movq	%rax, %rcx
 	popq	%rax
 	cmp	%rcx, %rax
-	jge	COMP_FALSE_BinaryExpression_7fae12ca7b00
+	jge	COMP_FALSE_BinaryExpression_7fce12a06048
 
-COMP_TRUE_BinaryExpression_7fae12ca7b00:
+COMP_TRUE_BinaryExpression_7fce12a06048:
 	movq	$1, %rax
-	jmp	COMP_END_BinaryExpression_7fae12ca7b00
+	jmp	COMP_END_BinaryExpression_7fce12a06048
 
-COMP_FALSE_BinaryExpression_7fae12ca7b00:
+COMP_FALSE_BinaryExpression_7fce12a06048:
 	movq	$0, %rax
-COMP_END_BinaryExpression_7fae12ca7b00:
+COMP_END_BinaryExpression_7fce12a06048:
 
 	cmp	$0, %rax
-	je	COMP_FALSE_BinaryExpression_7fae12ca7c18
+	je	COMP_FALSE_BinaryExpression_7fce12a06160
 
 	movq	$40, %rax
 
@@ -662,30 +662,30 @@ COMP_END_BinaryExpression_7fae12ca7b00:
 	movq	%rax, %rcx
 	popq	%rax
 	cmp	%rcx, %rax
-	jl	COMP_FALSE_BinaryExpression_7fae12ca7b70
+	jl	COMP_FALSE_BinaryExpression_7fce12a060b8
 
-COMP_TRUE_BinaryExpression_7fae12ca7b70:
+COMP_TRUE_BinaryExpression_7fce12a060b8:
 	movq	$1, %rax
-	jmp	COMP_END_BinaryExpression_7fae12ca7b70
+	jmp	COMP_END_BinaryExpression_7fce12a060b8
 
-COMP_FALSE_BinaryExpression_7fae12ca7b70:
+COMP_FALSE_BinaryExpression_7fce12a060b8:
 	movq	$0, %rax
-COMP_END_BinaryExpression_7fae12ca7b70:
-	jmp	COMP_END_BinaryExpression_7fae12ca7c18
+COMP_END_BinaryExpression_7fce12a060b8:
+	jmp	COMP_END_BinaryExpression_7fce12a06160
 
-COMP_FALSE_BinaryExpression_7fae12ca7c18:
+COMP_FALSE_BinaryExpression_7fce12a06160:
 	movq	$0, %rax
-COMP_END_BinaryExpression_7fae12ca7c18:
+COMP_END_BinaryExpression_7fce12a06160:
 
 	cmp	$0, %rax
-	jne	COMP_FALSE_BinaryExpression_7fae12ca7c50
+	jne	COMP_FALSE_BinaryExpression_7fce12a06198
 
 	movq	$333, %rax
-	jmp	COMP_END_BinaryExpression_7fae12ca7c50
+	jmp	COMP_END_BinaryExpression_7fce12a06198
 
-COMP_FALSE_BinaryExpression_7fae12ca7c50:
+COMP_FALSE_BinaryExpression_7fce12a06198:
 	movq	$1, %rax
-COMP_END_BinaryExpression_7fae12ca7c50:
+COMP_END_BinaryExpression_7fce12a06198:
 	movq	%rax, %rcx
 	popq	%rax
 	addq	%rcx, %rax

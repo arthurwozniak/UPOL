@@ -2,9 +2,8 @@ from . import Node
 from ASM.ASM import ASM
 from ASM.Registers import Registers
 
+
 class BinaryExpression(Node):
-
-
 
     def __init__(self, left=None, right=None, parent=None, operation=None):
         super(BinaryExpression, self).__init__(parent)
@@ -44,13 +43,12 @@ class BinaryExpression(Node):
 
         code = ""
 
-
         left_code = self.left.asm()
         right_code = self.right.asm()
 
         # backup of used registers
-        #code += ASM.instruction("pushq", Registers.RAX)
-        #code += ASM.instruction("pushq", Registers.RBX)
+        # code += ASM.instruction("pushq", Registers.RAX)
+        # code += ASM.instruction("pushq", Registers.RBX)
         code += left_code
         code += "\n"
         # backup result
@@ -62,11 +60,10 @@ class BinaryExpression(Node):
 
         code += self._translate_operation()
 
-        #ASM.instruction("popq", Registers.RBX)
-        #ASM.instruction("popq", Registers.RAX)
+        # ASM.instruction("popq", Registers.RBX)
+        # ASM.instruction("popq", Registers.RAX)
 
         return code
-
 
     def _assign_special_operation(self):
         from .Identifier import Identifier
@@ -84,7 +81,7 @@ class BinaryExpression(Node):
         else:
             right_code = self.right.asm()
 
-            code += right_code;
+            code += right_code
             code += "\n"
             code += ASM.instruction("pushq", Registers.RAX)
 
@@ -103,14 +100,13 @@ class BinaryExpression(Node):
 
         return code
 
-
     def _assign_operation(self):
         from .Identifier import Identifier
         from .UnaryExpression import UnaryExpression
         code = ""
         right_code = self.right.asm()
 
-        code += right_code;
+        code += right_code
         code += "\n"
         if isinstance(self.left, Identifier):
             code += ASM.instruction("movq", Registers.RAX, self.left.address())
@@ -154,32 +150,6 @@ class BinaryExpression(Node):
         code += ASM.instruction(translate_table[self.operation], "COMP_FALSE_{0}\n".format(self.label_name()))
         code += "COMP_TRUE_{0}:\n".format(self.label_name())
         code += ASM.instruction("movq", "$1", Registers.RAX)
-        code += ASM.instruction("jmp", "COMP_END_{0}\n".format(self.label_name()))
-
-        code += "COMP_FALSE_{0}:\n".format(self.label_name())
-        code += ASM.instruction("movq", "$0", Registers.RAX)
-        code += "COMP_END_{0}:\n".format(self.label_name())
-
-        return code
-
-    def _boolean_operation2(self):
-        code = ""
-        left_code = self.left.asm()
-        right_code = self.right.asm()
-
-        # backup of used registers
-        # code += ASM.instruction("pushq", Registers.RAX)
-        # code += ASM.instruction("pushq", Registers.RBX)
-        code += left_code
-        code += "\n"
-
-        code += ASM.instruction("cmp", "$0", Registers.RAX)
-        code += ASM.instruction("je", "COMP_FALSE_{0}\n".format(self.label_name()))
-        code += right_code
-        code += "\n"
-        code += ASM.instruction("cmp", "$0", Registers.RAX)
-        code += ASM.instruction("je", "COMP_FALSE_{0}\n".format(self.label_name()))
-
         code += ASM.instruction("jmp", "COMP_END_{0}\n".format(self.label_name()))
 
         code += "COMP_FALSE_{0}:\n".format(self.label_name())
@@ -261,7 +231,6 @@ class BinaryExpression(Node):
         # ASM.instruction("popq", Registers.RAX)
 
         return code
-
 
     def _translate_operation(self):
         operation = "addq"

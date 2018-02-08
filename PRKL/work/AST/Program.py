@@ -2,8 +2,8 @@ from ASM.ASM import ASM
 from .Variable import Variable, VariableType
 from .Function import Function
 
-class Program:
 
+class Program:
     propagation = set()
     parent_block = None
     functions = []
@@ -20,16 +20,19 @@ class Program:
                 stmt.parent = self
 
     def __str__(self):
-        return "\n".join([str(i) for i in self.statements])
+        return "\n".join([str(i) for i in self.statements]) + "\n"
 
     def asm(self):
         code = ""
         code += ASM.program_directive()
         for i in self.statements:
             i.parent = self
-            if isinstance(i, Variable):
-                self.environment.add(i.id.text, i.byte_size(), i.type)
             if isinstance(i, Function):
                 self.functions.append(str(i.id))
-            code += i.asm()
+            if isinstance(i, Variable):
+                self.environment.add(i.id.text, i.byte_size(), i.type)
+                code += i.asm_global()
+            else:
+                code += i.asm()
+
         return code

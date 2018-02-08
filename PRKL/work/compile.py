@@ -8,8 +8,10 @@ from HeroCParser import HeroCParser
 from ParserErrorListener import ParserErrorListener
 from antlr4 import InputStream, CommonTokenStream
 
+from AST.SemanticException import SemanticException
 
-def printTree():
+
+def print_tree():
     stream = InputStream(sys.stdin.read())
     lexer = HeroCLexer(stream)
     parser = HeroCParser(CommonTokenStream(lexer))
@@ -20,9 +22,14 @@ def printTree():
         for i in error_listener.errors:
             sys.stderr.write(i)
         sys.exit(0)
-    treeVisitor = HeroCCustomVisitor()
-    AST = treeVisitor.visit(tree)
-    sys.stdout.write(str(AST))
+    tree_visitor = HeroCCustomVisitor()
+    ast = tree_visitor.visit(tree)
+    asm = ""
+    try:
+        asm = ast.asm()
+    except SemanticException as se:
+        sys.stderr.write(se.message + "\n")
+    sys.stdout.write(str(asm))
 
 if __name__ == '__main__':
-    printTree()
+    print_tree()

@@ -2,6 +2,7 @@ from . import Node
 from ASM.ASM import ASM
 from ASM.Registers import Registers
 from .Variable import VariableType
+from .SemanticException import SemanticException
 
 class Identifier(Node):
     _address = None
@@ -23,7 +24,7 @@ class Identifier(Node):
 
         while True:
             if parent is None:
-                raise Exception("Variable `{0}` not found".format(self.text))
+                raise SemanticException("Variable `{0}` not found".format(self.text))
 
             environment = parent.environment
 

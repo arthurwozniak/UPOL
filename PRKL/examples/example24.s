@@ -130,15 +130,15 @@ pairp:
 	movq	%rax, %rcx
 	popq	%rax
 	cmp	%rcx, %rax
-	jne	COMP_FALSE_BinaryExpression_7f7ca8bec128
+	jne	COMP_FALSE_BinaryExpression_7fe1882657b8
 
-COMP_TRUE_BinaryExpression_7f7ca8bec128:
+COMP_TRUE_BinaryExpression_7fe1882657b8:
 	movq	$1, %rax
-	jmp	COMP_END_BinaryExpression_7f7ca8bec128
+	jmp	COMP_END_BinaryExpression_7fe1882657b8
 
-COMP_FALSE_BinaryExpression_7f7ca8bec128:
+COMP_FALSE_BinaryExpression_7fe1882657b8:
 	movq	$0, %rax
-COMP_END_BinaryExpression_7f7ca8bec128:
+COMP_END_BinaryExpression_7fe1882657b8:
 	leave	
 	ret	
 
