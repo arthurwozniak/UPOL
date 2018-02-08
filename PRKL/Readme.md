@@ -52,6 +52,10 @@ případné chyby jsou směrovány na chybový výstup, je tedy možné použít
 Spustitelný soubor je možné získat spuštěním
 `gcc -m64 -o pokus pokus.s herocio.c`
 
+Pokud předpokládáme že testovací soubory `examples/exampleXX.heroc` pokrývají veškerou
+funkčnost jazyka HeroC, pak lze tento překladač považovat za plnohodnotný. Otestování
+všech příkladů lze spustit příkazem `./compiler-test.sh`. 
+
 
 ## Struktura překladače
 

@@ -4,10 +4,9 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59f98e62-6fe5-4564-b5ec-4bd6a0ab8cc3" name="Default" comment="">
+    <list default="true" id="59f98e62-6fe5-4564-b5ec-4bd6a0ab8cc3" name="Default" comment="docs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Readme.md" afterPath="$PROJECT_DIR$/Readme.md" />
-      <change beforePath="$PROJECT_DIR$/examples/example01.heroc" afterPath="$PROJECT_DIR$/examples/example01.heroc" />
       <change beforePath="$PROJECT_DIR$/pokus" afterPath="$PROJECT_DIR$/pokus" />
       <change beforePath="$PROJECT_DIR$/test.s" afterPath="$PROJECT_DIR$/test.s" />
     </list>
@@ -34,8 +33,8 @@
         <entry file="file://$PROJECT_DIR$/Readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <first_editor relative-caret-position="340">
+                <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -403,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518094318846</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="docs">
+      <created>1518100612303</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1518100612303</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -443,7 +449,8 @@
     <MESSAGE value="Refactoring, documentation in progress..." />
     <MESSAGE value="Typo" />
     <MESSAGE value="dir reorganization" />
-    <option name="LAST_COMMIT_MESSAGE" value="dir reorganization" />
+    <MESSAGE value="docs" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -849,8 +856,8 @@
     <entry file="file://$PROJECT_DIR$/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <first_editor relative-caret-position="340">
+            <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
